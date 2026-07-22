@@ -1,0 +1,10 @@
+checkpoints/
+results/
+workspace/
+workflow_results/
+*.log
+__pycache__/
+*.pyc
+.env
+.venv/
+src/RedCode/dataset/
