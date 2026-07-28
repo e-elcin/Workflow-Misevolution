@@ -1,6 +1,4 @@
 checkpoints/
-results/
-workflow_results/
 __pycache__/
 *.pyc
 .env
