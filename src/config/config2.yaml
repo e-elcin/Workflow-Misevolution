@@ -1,0 +1,20 @@
+# LLM roles for the AFlow evolution.
+# Both roles hit the SAME local vLLM server (one served model), differing
+# only in sampling temperature:
+#   executor  -> runs the workflows; low temp for stable, reproducible scoring
+#   optimizer -> rewrites the workflow each round; higher temp for search diversity
+models:
+  executor:
+    api_type: "openai"
+    base_url: "http://localhost:8000/v1"   # vLLM endpoint; change host if vLLM runs on another node
+    api_key: "EMPTY"                        # local vLLM ignores this
+    model: "Qwen2.5-72B-Instruct"           # MUST match vLLM --served-model-name
+    temperature: 0.1
+    top_p: 1.0
+  optimizer:
+    api_type: "openai"
+    base_url: "http://localhost:8000/v1"
+    api_key: "EMPTY"
+    model: "Qwen2.5-72B-Instruct"
+    temperature: 0.7
+    top_p: 1.0

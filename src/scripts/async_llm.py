@@ -88,11 +88,11 @@ class LLMsConfig:
         
         config = self.configs[llm_name]
         
-        # Create a config dictionary with the expected keys for LLMConfig
-        if llm_name == "qwen2.5":
-            actual_model = "Qwen2.5-72B-Instruct"
-        else:
-            actual_model = llm_name
+        # Honor an explicit `model:` in the config entry; fall back to the
+        # legacy key-based behavior (magic "qwen2.5" -> 72B) otherwise.
+        actual_model = config.get("model")
+        if actual_model is None:
+            actual_model = "Qwen2.5-72B-Instruct" if llm_name == "qwen2.5" else llm_name
         
         llm_config = {
             "model": actual_model,  # Use the actual model name

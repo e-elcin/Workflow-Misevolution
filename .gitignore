@@ -1,6 +1,5 @@
 checkpoints/
 results/
-workspace/
 workflow_results/
 *.log
 __pycache__/

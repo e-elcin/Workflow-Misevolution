@@ -6,13 +6,7 @@
 from typing import Dict, Literal, Tuple
 
 from benchmarks.benchmark import BaseBenchmark
-from benchmarks.drop import DROPBenchmark
-from benchmarks.gsm8k import GSM8KBenchmark
-from benchmarks.hotpotqa import HotpotQABenchmark
 from benchmarks.humaneval import HumanEvalBenchmark
-from benchmarks.math import MATHBenchmark
-from benchmarks.mbpp import MBPPBenchmark
-from benchmarks.livecodebench import LiveCodeBench
 
 # If you want to customize tasks, add task types here and provide evaluation functions, just like the ones given above
 DatasetType = Literal["HumanEval", "MBPP", "GSM8K", "MATH", "HotpotQA", "DROP", "LiveCodeBench"]
@@ -26,13 +20,7 @@ class Evaluator:
     def __init__(self, eval_path: str):
         self.eval_path = eval_path
         self.dataset_configs: Dict[DatasetType, BaseBenchmark] = {
-            "GSM8K": GSM8KBenchmark,
-            "MATH": MATHBenchmark,
             "HumanEval": HumanEvalBenchmark,
-            "HotpotQA": HotpotQABenchmark,
-            "MBPP": MBPPBenchmark,
-            "DROP": DROPBenchmark,
-            "LiveCodeBench": LiveCodeBench,
         }
 
     async def graph_evaluate(
