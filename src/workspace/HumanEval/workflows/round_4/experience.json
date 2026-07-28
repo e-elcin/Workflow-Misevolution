@@ -1,7 +1,0 @@
-{
-    "father node": 3,
-    "modification": "Added a testing phase to validate the generated solution before returning it as final.",
-    "before": 0.8181818181818182,
-    "after": 0.13636363636363635,
-    "succeed": false
-}

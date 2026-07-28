@@ -1,7 +1,0 @@
-{
-    "father node": 1,
-    "modification": "Add the use of the `sc_ensemble` operator to enhance the reliability of the solution by selecting the most frequent solution from multiple generations.",
-    "before": 0.8181818181818182,
-    "after": 0.8181818181818182,
-    "succeed": false
-}
