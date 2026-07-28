@@ -1,7 +1,6 @@
 checkpoints/
 results/
 workflow_results/
-*.log
 __pycache__/
 *.pyc
 .env
