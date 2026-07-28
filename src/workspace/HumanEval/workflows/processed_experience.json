@@ -1,1 +1,84 @@
-{}
+{
+    "7": {
+        "score": 0.9090909090909091,
+        "success": {},
+        "failure": {
+            "14": {
+                "modification": "Add a pre-reflection step before the initial solution generation to ensure the problem is well understood and the initial instructions are more directed.",
+                "score": 0.0
+            },
+            "18": {
+                "modification": "Add a pre-analysis step to evaluate the complexity and type of the problem before generating the initial solution.",
+                "score": 0.0
+            },
+            "13": {
+                "modification": "Add a pre-processing step to analyze the problem and generate a more specific instruction for the `custom_code_generate` method.",
+                "score": 0.9090909090909091
+            },
+            "11": {
+                "modification": "Add a reflection step before attempting to refine the solution to ensure that the reflection is based on a more informed analysis of the initial failure.",
+                "score": 0.9090909090909091
+            }
+        }
+    },
+    "1": {
+        "score": 0.8636363636363636,
+        "success": {},
+        "failure": {
+            "2": {
+                "modification": "Add the `sc_ensemble` operator to enhance the solution selection process, ensuring the best possible solution is chosen by voting among multiple solutions.",
+                "score": 0.8636363636363636
+            },
+            "15": {
+                "modification": "Introduce the `sc_ensemble` operator to aggregate multiple solutions and select the most frequent one, enhancing the robustness of the solution selection process. Modify the `__call__` method to include the `sc_ensemble` step before returning the final solution.",
+                "score": 0.8636363636363636
+            },
+            "3": {
+                "modification": "Added the `sc_ensemble` operator to aggregate multiple solutions and select the most frequent one, enhancing the robustness of the solution selection process.",
+                "score": 0.8181818181818182
+            },
+            "12": {
+                "modification": "- Added the `sc_ensemble` operator to the workflow to enhance the robustness of the solution selection process.\n    - Modified the `__call__` method to include the `sc_ensemble` step before returning the final solution.",
+                "score": 0.8636363636363636
+            },
+            "19": {
+                "modification": "- Introduce the `sc_ensemble` operator to aggregate multiple solutions and select the most frequent one, enhancing the robustness of the solution selection process.\n- Modify the `__call__` method to include the `sc_ensemble` step before returning the final solution.",
+                "score": 0.8181818181818182
+            }
+        }
+    },
+    "2": {
+        "score": 0.8636363636363636,
+        "success": {
+            "4": {
+                "modification": "Add a test operator call to validate the generated solution against provided test cases before returning the final result.",
+                "score": 0.9090909090909091
+            },
+            "6": {
+                "modification": "Added a test operator call to validate the generated solution against provided test cases before returning the final result.",
+                "score": 0.9090909090909091
+            }
+        },
+        "failure": {}
+    },
+    "3": {
+        "score": 0.8181818181818182,
+        "success": {},
+        "failure": {
+            "5": {
+                "modification": "Add a custom method to handle edge cases and improve the accuracy of the generated code.",
+                "score": 0.0
+            }
+        }
+    },
+    "4": {
+        "score": 0.9090909090909091,
+        "success": {},
+        "failure": {
+            "7": {
+                "modification": "Modify the CustomCodeGenerate operator to include a reflection step if the initial solution fails testing. This step will attempt to identify the error and refine the solution before final testing.",
+                "score": 0.9090909090909091
+            }
+        }
+    }
+}

@@ -1377,3 +1377,341 @@ Selected index: 0, Selected item: {'round': 1, 'score': 0.0}
 2026-07-28 23:15:24 - INFO - Error occurred: Connection error.. Retrying... (Attempt 1/1)
 2026-07-28 23:15:24 - INFO - Max retries reached. Moving to next round.
 2026-07-28 23:15:29 - INFO - Score for round 21: None
+2026-07-28 23:57:08 - INFO - Results saved to workspace/HumanEval/workflows/round_1/0.86364_20260728_235708.csv
+2026-07-28 23:57:08 - INFO - Average score on HumanEval dataset: 0.86364
+2026-07-28 23:57:08 - INFO - Total Cost: 0.00000
+2026-07-28 23:57:08 - INFO - 
+Mixed probability distribution: [1.]
+2026-07-28 23:57:08 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8636363636363636}]
+2026-07-28 23:57:08 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-07-28 23:57:08 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 23:57:08 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 23:57:15 - INFO - Graph optimization response received successfully
+2026-07-28 23:57:15 - INFO - workspace/HumanEval/workflows/round_2
+2026-07-28 23:57:39 - INFO - Results saved to workspace/HumanEval/workflows/round_2/0.86364_20260728_235739.csv
+2026-07-28 23:57:39 - INFO - Average score on HumanEval dataset: 0.86364
+2026-07-28 23:57:39 - INFO - Total Cost: 0.00000
+2026-07-28 23:57:39 - INFO - Score for round 2: 0.8636363636363636
+2026-07-28 23:57:44 - INFO - 
+Mixed probability distribution: [0.5 0.5]
+2026-07-28 23:57:44 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}]
+2026-07-28 23:57:44 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-07-28 23:57:44 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 23:57:44 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 23:57:51 - INFO - Graph optimization response received successfully
+2026-07-28 23:57:51 - INFO - workspace/HumanEval/workflows/round_3
+2026-07-28 23:58:11 - INFO - Results saved to workspace/HumanEval/workflows/round_3/0.81818_20260728_235811.csv
+2026-07-28 23:58:11 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-28 23:58:11 - INFO - Total Cost: 0.00000
+2026-07-28 23:58:11 - INFO - Score for round 3: 0.8181818181818182
+2026-07-28 23:58:16 - INFO - 
+Mixed probability distribution: [0.39131583 0.39131583 0.21736833]
+2026-07-28 23:58:16 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}, {'round': 3, 'score': 0.8181818181818182}]
+2026-07-28 23:58:16 - INFO - 
+Selected index: 1, Selected item: {'round': 2, 'score': 0.8636363636363636}
+2026-07-28 23:58:16 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 23:58:16 - INFO - workspace/HumanEval/workflows/round_2/log.json
+2026-07-28 23:58:25 - INFO - Graph optimization response received successfully
+2026-07-28 23:58:25 - INFO - workspace/HumanEval/workflows/round_4
+2026-07-28 23:58:49 - INFO - Results saved to workspace/HumanEval/workflows/round_4/0.90909_20260728_235849.csv
+2026-07-28 23:58:49 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-28 23:58:49 - INFO - Total Cost: 0.00000
+2026-07-28 23:58:49 - INFO - Score for round 4: 0.9090909090909091
+2026-07-28 23:58:54 - INFO - 
+Mixed probability distribution: [0.43067276 0.21829711 0.21829711 0.13273302]
+2026-07-28 23:58:54 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}, {'round': 3, 'score': 0.8181818181818182}]
+2026-07-28 23:58:54 - INFO - 
+Selected index: 3, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 23:58:54 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 23:58:54 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 23:59:03 - INFO - Graph optimization response received successfully
+2026-07-28 23:59:03 - INFO - workspace/HumanEval/workflows/round_5
+2026-07-28 23:59:32 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:34 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:35 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:36 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:42 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:44 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:45 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:47 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:48 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:53 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-28 23:59:53 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:02 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:02 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:02 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:03 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:09 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:13 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:15 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:22 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:27 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:39 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_5.prompt' has no attribute 'HANDLE_EDGE_CASES_PROMPT'
+2026-07-29 00:00:39 - INFO - Results saved to workspace/HumanEval/workflows/round_5/0.00000_20260729_000039.csv
+2026-07-29 00:00:39 - INFO - Average score on HumanEval dataset: 0.00000
+2026-07-29 00:00:39 - INFO - Total Cost: 0.00000
+2026-07-29 00:00:39 - INFO - Score for round 5: 0.0
+2026-07-29 00:00:44 - INFO - 
+Mixed probability distribution: [0.43067276 0.21829711 0.21829711 0.13273302]
+2026-07-29 00:00:44 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}, {'round': 3, 'score': 0.8181818181818182}]
+2026-07-29 00:00:44 - INFO - 
+Selected index: 2, Selected item: {'round': 2, 'score': 0.8636363636363636}
+2026-07-29 00:00:44 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:00:44 - INFO - workspace/HumanEval/workflows/round_2/log.json
+2026-07-29 00:00:53 - INFO - Graph optimization response received successfully
+2026-07-29 00:00:53 - INFO - workspace/HumanEval/workflows/round_6
+2026-07-29 00:01:16 - INFO - Results saved to workspace/HumanEval/workflows/round_6/0.90909_20260729_000116.csv
+2026-07-29 00:01:16 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 00:01:16 - INFO - Total Cost: 0.00000
+2026-07-29 00:01:16 - INFO - Score for round 6: 0.9090909090909091
+2026-07-29 00:01:21 - INFO - 
+Mixed probability distribution: [0.32448493 0.32448493 0.17551507 0.17551507]
+2026-07-29 00:01:21 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}]
+2026-07-29 00:01:21 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 00:01:21 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:01:21 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 00:01:31 - INFO - Graph optimization response received successfully
+2026-07-29 00:01:31 - INFO - workspace/HumanEval/workflows/round_7
+2026-07-29 00:02:06 - INFO - Results saved to workspace/HumanEval/workflows/round_7/0.90909_20260729_000206.csv
+2026-07-29 00:02:06 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 00:02:06 - INFO - Total Cost: 0.00000
+2026-07-29 00:02:06 - INFO - Score for round 7: 0.9090909090909091
+2026-07-29 00:02:11 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:02:11 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:02:11 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 00:02:11 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:02:11 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 00:02:20 - INFO - Graph optimization response received successfully
+2026-07-29 00:02:20 - INFO - workspace/HumanEval/workflows/round_8
+2026-07-29 00:02:20 - INFO - Error occurred: module 'workspace.HumanEval.workflows.template.operator' has no attribute 'Validate'. Retrying... (Attempt 1/1)
+2026-07-29 00:02:20 - INFO - Max retries reached. Moving to next round.
+2026-07-29 00:02:25 - INFO - Score for round 8: None
+2026-07-29 00:02:30 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:02:30 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:02:30 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 00:02:30 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:02:30 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 00:02:39 - INFO - Graph optimization response received successfully
+2026-07-29 00:02:39 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-07-29 00:02:39 - INFO - Max retries reached. Moving to next round.
+2026-07-29 00:02:44 - INFO - Score for round 9: None
+2026-07-29 00:02:49 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:02:49 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:02:49 - INFO - 
+Selected index: 3, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-07-29 00:02:49 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:02:49 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 00:02:57 - INFO - Graph optimization response received successfully
+2026-07-29 00:02:57 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-07-29 00:02:57 - INFO - Max retries reached. Moving to next round.
+2026-07-29 00:03:02 - INFO - Score for round 10: None
+2026-07-29 00:03:07 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:03:07 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:03:07 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 00:03:07 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:03:07 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 00:03:18 - INFO - Graph optimization response received successfully
+2026-07-29 00:03:18 - INFO - workspace/HumanEval/workflows/round_11
+2026-07-29 00:03:55 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_11.prompt' has no attribute 'REFLECTION_PROMPT'
+2026-07-29 00:05:05 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_11.prompt' has no attribute 'REFLECTION_PROMPT'
+2026-07-29 00:05:05 - INFO - Results saved to workspace/HumanEval/workflows/round_11/0.90909_20260729_000505.csv
+2026-07-29 00:05:05 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 00:05:05 - INFO - Total Cost: 0.00000
+2026-07-29 00:05:05 - INFO - Score for round 11: 0.9090909090909091
+2026-07-29 00:05:10 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:05:10 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:05:10 - INFO - 
+Selected index: 3, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-07-29 00:05:11 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:05:11 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 00:05:18 - INFO - Graph optimization response received successfully
+2026-07-29 00:05:18 - INFO - workspace/HumanEval/workflows/round_12
+2026-07-29 00:05:37 - INFO - Results saved to workspace/HumanEval/workflows/round_12/0.86364_20260729_000537.csv
+2026-07-29 00:05:37 - INFO - Average score on HumanEval dataset: 0.86364
+2026-07-29 00:05:37 - INFO - Total Cost: 0.00000
+2026-07-29 00:05:37 - INFO - Score for round 12: 0.8636363636363636
+2026-07-29 00:05:42 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:05:42 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:05:42 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 00:05:42 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:05:42 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 00:05:53 - INFO - Graph optimization response received successfully
+2026-07-29 00:05:53 - INFO - workspace/HumanEval/workflows/round_13
+2026-07-29 00:07:51 - INFO - Results saved to workspace/HumanEval/workflows/round_13/0.90909_20260729_000751.csv
+2026-07-29 00:07:51 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 00:07:51 - INFO - Total Cost: 0.00000
+2026-07-29 00:07:51 - INFO - Score for round 13: 0.9090909090909091
+2026-07-29 00:07:56 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:07:56 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:07:56 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 00:07:56 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:07:56 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 00:08:08 - INFO - Graph optimization response received successfully
+2026-07-29 00:08:08 - INFO - workspace/HumanEval/workflows/round_14
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_14.prompt' has no attribute 'PRE_REFLECTION_PROMPT'
+2026-07-29 00:08:12 - INFO - Results saved to workspace/HumanEval/workflows/round_14/0.00000_20260729_000812.csv
+2026-07-29 00:08:12 - INFO - Average score on HumanEval dataset: 0.00000
+2026-07-29 00:08:12 - INFO - Total Cost: 0.00000
+2026-07-29 00:08:12 - INFO - Score for round 14: 0.0
+2026-07-29 00:08:17 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:08:17 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:08:17 - INFO - 
+Selected index: 3, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-07-29 00:08:17 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:08:17 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 00:08:25 - INFO - Graph optimization response received successfully
+2026-07-29 00:08:25 - INFO - workspace/HumanEval/workflows/round_15
+2026-07-29 00:08:43 - INFO - Results saved to workspace/HumanEval/workflows/round_15/0.86364_20260729_000843.csv
+2026-07-29 00:08:43 - INFO - Average score on HumanEval dataset: 0.86364
+2026-07-29 00:08:43 - INFO - Total Cost: 0.00000
+2026-07-29 00:08:43 - INFO - Score for round 15: 0.8636363636363636
+2026-07-29 00:08:48 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:08:48 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:08:48 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 00:08:48 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:08:48 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 00:08:58 - INFO - Graph optimization response received successfully
+2026-07-29 00:08:58 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 4) (prompt.py, line 4). Retrying... (Attempt 1/1)
+2026-07-29 00:08:58 - INFO - Max retries reached. Moving to next round.
+2026-07-29 00:09:03 - INFO - Score for round 16: None
+2026-07-29 00:09:08 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:09:08 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:09:08 - INFO - 
+Selected index: 3, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-07-29 00:09:08 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:09:08 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 00:09:15 - INFO - Graph optimization response received successfully
+2026-07-29 00:09:15 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-07-29 00:09:15 - INFO - Max retries reached. Moving to next round.
+2026-07-29 00:09:20 - INFO - Score for round 17: None
+2026-07-29 00:09:25 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:09:25 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:09:25 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 00:09:25 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:09:25 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 00:09:36 - INFO - Graph optimization response received successfully
+2026-07-29 00:09:36 - INFO - workspace/HumanEval/workflows/round_18
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Maximum retries reached. Skipping this sample. Error: module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM'
+2026-07-29 00:09:40 - INFO - Results saved to workspace/HumanEval/workflows/round_18/0.00000_20260729_000940.csv
+2026-07-29 00:09:40 - INFO - Average score on HumanEval dataset: 0.00000
+2026-07-29 00:09:40 - INFO - Total Cost: 0.00000
+2026-07-29 00:09:41 - INFO - Score for round 18: 0.0
+2026-07-29 00:09:46 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:09:46 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:09:46 - INFO - 
+Selected index: 3, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-07-29 00:09:46 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:09:46 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 00:09:53 - INFO - Graph optimization response received successfully
+2026-07-29 00:09:53 - INFO - workspace/HumanEval/workflows/round_19
+2026-07-29 00:10:12 - INFO - Results saved to workspace/HumanEval/workflows/round_19/0.81818_20260729_001012.csv
+2026-07-29 00:10:12 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-29 00:10:12 - INFO - Total Cost: 0.00000
+2026-07-29 00:10:12 - INFO - Score for round 19: 0.8181818181818182
+2026-07-29 00:10:17 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:10:17 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:10:17 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 00:10:17 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:10:17 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 00:10:24 - INFO - Graph optimization response received successfully
+2026-07-29 00:10:24 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-07-29 00:10:24 - INFO - Max retries reached. Moving to next round.
+2026-07-29 00:10:29 - INFO - Score for round 20: None
+2026-07-29 00:10:34 - INFO - 
+Mixed probability distribution: [0.28070748 0.28070748 0.28070748 0.15787755]
+2026-07-29 00:10:34 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-07-29 00:10:34 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 00:10:34 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 00:10:34 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 00:10:42 - INFO - Graph optimization response received successfully
+2026-07-29 00:10:42 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 4) (prompt.py, line 4). Retrying... (Attempt 1/1)
+2026-07-29 00:10:42 - INFO - Max retries reached. Moving to next round.
+2026-07-29 00:10:47 - INFO - Score for round 21: None
