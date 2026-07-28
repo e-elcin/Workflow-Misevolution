@@ -1,0 +1,623 @@
+2026-07-28 17:21:26 - INFO - Results saved to workspace/HumanEval/workflows/round_1/0.81818_20260728_172126.csv
+2026-07-28 17:21:26 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-28 17:21:26 - INFO - Total Cost: 0.00000
+2026-07-28 17:21:26 - INFO - 
+Mixed probability distribution: [1.]
+2026-07-28 17:21:26 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}]
+2026-07-28 17:21:26 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:21:26 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:21:26 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:21:33 - INFO - Graph optimization response received successfully
+2026-07-28 17:21:33 - INFO - workspace/HumanEval/workflows/round_2
+2026-07-28 17:21:33 - INFO - Error occurred: ScEnsemble.__init__() missing 1 required positional argument: 'llm'. Retrying... (Attempt 1/1)
+2026-07-28 17:21:33 - INFO - Max retries reached. Moving to next round.
+2026-07-28 17:21:38 - INFO - Score for round 2: None
+2026-07-28 17:21:43 - INFO - 
+Mixed probability distribution: [1.]
+2026-07-28 17:21:43 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}]
+2026-07-28 17:21:43 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:21:43 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:21:43 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:21:50 - INFO - Graph optimization response received successfully
+2026-07-28 17:21:50 - INFO - workspace/HumanEval/workflows/round_3
+2026-07-28 17:22:12 - INFO - Results saved to workspace/HumanEval/workflows/round_3/0.81818_20260728_172212.csv
+2026-07-28 17:22:12 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-28 17:22:12 - INFO - Total Cost: 0.00000
+2026-07-28 17:22:12 - INFO - Score for round 3: 0.8181818181818182
+2026-07-28 17:22:17 - INFO - 
+Mixed probability distribution: [0.5 0.5]
+2026-07-28 17:22:17 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}]
+2026-07-28 17:22:17 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:22:17 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:22:17 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:22:24 - INFO - Graph optimization response received successfully
+2026-07-28 17:22:24 - INFO - workspace/HumanEval/workflows/round_4
+2026-07-28 17:22:51 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:22:52 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:22:54 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:22:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:00 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:04 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:04 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:06 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:07 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:21 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:21 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:22 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:28 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:33 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:41 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:46 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:53 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:23:53 - INFO - Results saved to workspace/HumanEval/workflows/round_4/0.13636_20260728_172353.csv
+2026-07-28 17:23:53 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:23:53 - INFO - Total Cost: 0.00000
+2026-07-28 17:23:53 - INFO - Score for round 4: 0.13636363636363635
+2026-07-28 17:23:58 - INFO - 
+Mixed probability distribution: [0.44999979 0.44999979 0.10000042]
+2026-07-28 17:23:58 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}]
+2026-07-28 17:23:58 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:23:58 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:23:58 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:24:06 - INFO - Graph optimization response received successfully
+2026-07-28 17:24:06 - INFO - workspace/HumanEval/workflows/round_5
+2026-07-28 17:24:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:14 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:17 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:20 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:22 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:23 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:23 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:24 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:25 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:28 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:29 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:32 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:24:32 - INFO - Results saved to workspace/HumanEval/workflows/round_5/0.13636_20260728_172432.csv
+2026-07-28 17:24:32 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:24:32 - INFO - Total Cost: 0.00000
+2026-07-28 17:24:32 - INFO - Score for round 5: 0.13636363636363635
+2026-07-28 17:24:37 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:24:37 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:24:37 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:24:37 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:24:37 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:24:45 - INFO - Graph optimization response received successfully
+2026-07-28 17:24:45 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:24:45 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:24:45 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:24:45 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:24:45 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:24:53 - INFO - Graph optimization response received successfully
+2026-07-28 17:24:53 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:24:53 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:24:53 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:24:53 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:24:53 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:25:00 - INFO - Graph optimization response received successfully
+2026-07-28 17:25:00 - INFO - workspace/HumanEval/workflows/round_6
+2026-07-28 17:25:07 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:08 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:08 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:09 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:11 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:14 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:17 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:17 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:19 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:19 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:24 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:25:30 - INFO - Results saved to workspace/HumanEval/workflows/round_6/0.13636_20260728_172530.csv
+2026-07-28 17:25:30 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:25:30 - INFO - Total Cost: 0.00000
+2026-07-28 17:25:30 - INFO - Score for round 6: 0.13636363636363635
+2026-07-28 17:25:35 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:25:35 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:25:35 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:25:35 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:25:35 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:25:42 - INFO - Graph optimization response received successfully
+2026-07-28 17:25:42 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:25:42 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:25:42 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:25:42 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:25:42 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:25:49 - INFO - Graph optimization response received successfully
+2026-07-28 17:25:49 - INFO - workspace/HumanEval/workflows/round_7
+2026-07-28 17:26:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:21 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:22 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:28 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:29 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:36 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:43 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:45 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:46 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:55 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:26:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:27:03 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:27:10 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:27:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:27:30 - INFO - Results saved to workspace/HumanEval/workflows/round_7/0.13636_20260728_172730.csv
+2026-07-28 17:27:30 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:27:30 - INFO - Total Cost: 0.00000
+2026-07-28 17:27:30 - INFO - Score for round 7: 0.13636363636363635
+2026-07-28 17:27:35 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:27:35 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:27:35 - INFO - 
+Selected index: 2, Selected item: {'round': 4, 'score': 0.13636363636363635}
+2026-07-28 17:27:35 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:27:43 - INFO - Graph optimization response received successfully
+2026-07-28 17:27:44 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-07-28 17:27:44 - INFO - Max retries reached. Moving to next round.
+2026-07-28 17:27:49 - INFO - Score for round 8: None
+2026-07-28 17:27:54 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:27:54 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:27:54 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:27:54 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:27:54 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:28:01 - INFO - Graph optimization response received successfully
+2026-07-28 17:28:01 - INFO - workspace/HumanEval/workflows/round_9
+2026-07-28 17:28:28 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:33 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:40 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:40 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:42 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:46 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:50 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:28:58 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:04 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:08 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:20 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:35 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:35 - INFO - Results saved to workspace/HumanEval/workflows/round_9/0.13636_20260728_172935.csv
+2026-07-28 17:29:35 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:29:35 - INFO - Total Cost: 0.00000
+2026-07-28 17:29:35 - INFO - Score for round 9: 0.13636363636363635
+2026-07-28 17:29:40 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:29:40 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:29:40 - INFO - 
+Selected index: 3, Selected item: {'round': 5, 'score': 0.13636363636363635}
+2026-07-28 17:29:40 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:29:48 - INFO - Graph optimization response received successfully
+2026-07-28 17:29:48 - INFO - workspace/HumanEval/workflows/round_10
+2026-07-28 17:29:55 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:55 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:55 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:56 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:58 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:59 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:29:59 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:00 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:00 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:01 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:02 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:04 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:05 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:05 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:06 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:06 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:10 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:16 - INFO - Results saved to workspace/HumanEval/workflows/round_10/0.13636_20260728_173016.csv
+2026-07-28 17:30:16 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:30:16 - INFO - Total Cost: 0.00000
+2026-07-28 17:30:16 - INFO - Score for round 10: 0.13636363636363635
+2026-07-28 17:30:21 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:30:21 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:30:21 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:30:21 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:30:21 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:30:29 - INFO - Graph optimization response received successfully
+2026-07-28 17:30:29 - INFO - workspace/HumanEval/workflows/round_11
+2026-07-28 17:30:54 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:56 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:30:58 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:01 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:03 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:07 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:09 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:09 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:10 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:20 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:23 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:23 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:25 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:25 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:36 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:42 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:31:49 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:04 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:04 - INFO - Results saved to workspace/HumanEval/workflows/round_11/0.13636_20260728_173204.csv
+2026-07-28 17:32:04 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:32:04 - INFO - Total Cost: 0.00000
+2026-07-28 17:32:04 - INFO - Score for round 11: 0.13636363636363635
+2026-07-28 17:32:09 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:32:09 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:32:09 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:32:09 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:32:09 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:32:17 - INFO - Graph optimization response received successfully
+2026-07-28 17:32:17 - INFO - workspace/HumanEval/workflows/round_12
+2026-07-28 17:32:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:47 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:49 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:55 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:56 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:32:58 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:00 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:00 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:08 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:10 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:21 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:26 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:37 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:52 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:33:52 - INFO - Results saved to workspace/HumanEval/workflows/round_12/0.13636_20260728_173352.csv
+2026-07-28 17:33:52 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:33:52 - INFO - Total Cost: 0.00000
+2026-07-28 17:33:52 - INFO - Score for round 12: 0.13636363636363635
+2026-07-28 17:33:57 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:33:57 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:33:57 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:33:58 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:33:58 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:34:04 - INFO - Graph optimization response received successfully
+2026-07-28 17:34:05 - INFO - workspace/HumanEval/workflows/round_13
+2026-07-28 17:34:05 - INFO - Error occurred: Test.__init__() missing 1 required positional argument: 'llm'. Retrying... (Attempt 1/1)
+2026-07-28 17:34:05 - INFO - Max retries reached. Moving to next round.
+2026-07-28 17:34:10 - INFO - Score for round 13: None
+2026-07-28 17:34:15 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:34:15 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:34:15 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:34:15 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:34:15 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:34:21 - INFO - Graph optimization response received successfully
+2026-07-28 17:34:21 - INFO - workspace/HumanEval/workflows/round_14
+2026-07-28 17:34:22 - INFO - Error occurred: Test.__init__() missing 1 required positional argument: 'llm'. Retrying... (Attempt 1/1)
+2026-07-28 17:34:22 - INFO - Max retries reached. Moving to next round.
+2026-07-28 17:34:27 - INFO - Score for round 14: None
+2026-07-28 17:34:32 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:34:32 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:34:32 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:34:32 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:34:32 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:34:37 - INFO - Graph optimization response received successfully
+2026-07-28 17:34:37 - INFO - workspace/HumanEval/workflows/round_15
+2026-07-28 17:34:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:45 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:46 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:47 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:48 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:48 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:48 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:49 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:49 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:52 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:53 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:54 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:54 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:56 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:56 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:34:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:01 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:05 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:05 - INFO - Results saved to workspace/HumanEval/workflows/round_15/0.13636_20260728_173505.csv
+2026-07-28 17:35:05 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:35:05 - INFO - Total Cost: 0.00000
+2026-07-28 17:35:05 - INFO - Score for round 15: 0.13636363636363635
+2026-07-28 17:35:10 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:35:10 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:35:10 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:35:10 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:35:10 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:35:18 - INFO - Graph optimization response received successfully
+2026-07-28 17:35:18 - INFO - workspace/HumanEval/workflows/round_16
+2026-07-28 17:35:46 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:47 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:48 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:50 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:51 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:58 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:35:59 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:00 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:09 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:15 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:22 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:39 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:59 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:36:59 - INFO - Results saved to workspace/HumanEval/workflows/round_16/0.13636_20260728_173659.csv
+2026-07-28 17:36:59 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:36:59 - INFO - Total Cost: 0.00000
+2026-07-28 17:36:59 - INFO - Score for round 16: 0.13636363636363635
+2026-07-28 17:37:04 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:37:04 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:37:04 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:37:04 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:37:04 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:37:12 - INFO - Graph optimization response received successfully
+2026-07-28 17:37:12 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:37:12 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:37:12 - INFO - 
+Selected index: 3, Selected item: {'round': 5, 'score': 0.13636363636363635}
+2026-07-28 17:37:12 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:37:19 - INFO - Graph optimization response received successfully
+2026-07-28 17:37:19 - INFO - workspace/HumanEval/workflows/round_17
+2026-07-28 17:37:26 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:26 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:26 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:27 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:29 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:29 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:33 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:35 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:35 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:36 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:37 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:38 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:41 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:43 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:47 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:37:47 - INFO - Results saved to workspace/HumanEval/workflows/round_17/0.13636_20260728_173747.csv
+2026-07-28 17:37:47 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:37:47 - INFO - Total Cost: 0.00000
+2026-07-28 17:37:47 - INFO - Score for round 17: 0.13636363636363635
+2026-07-28 17:37:52 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:37:52 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:37:52 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:37:52 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:37:52 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:37:59 - INFO - Graph optimization response received successfully
+2026-07-28 17:37:59 - INFO - workspace/HumanEval/workflows/round_18
+2026-07-28 17:38:27 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:28 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:29 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:35 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:37 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:39 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:39 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:40 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:45 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:52 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:53 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:54 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:38:55 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:39:01 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:39:04 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:39:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:39:17 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:39:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:39:31 - INFO - Results saved to workspace/HumanEval/workflows/round_18/0.13636_20260728_173931.csv
+2026-07-28 17:39:31 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:39:31 - INFO - Total Cost: 0.00000
+2026-07-28 17:39:31 - INFO - Score for round 18: 0.13636363636363635
+2026-07-28 17:39:36 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:39:36 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:39:36 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:39:36 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:39:36 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:39:43 - INFO - Graph optimization response received successfully
+2026-07-28 17:39:43 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:39:43 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:39:43 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:39:43 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:39:43 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:39:52 - INFO - Graph optimization response received successfully
+2026-07-28 17:39:52 - INFO - workspace/HumanEval/workflows/round_19
+2026-07-28 17:40:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:19 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:21 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:24 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:25 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:33 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:34 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:45 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:47 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:47 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:47 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:48 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:40:54 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:41:01 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:41:07 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:41:13 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:41:26 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:41:26 - INFO - Results saved to workspace/HumanEval/workflows/round_19/0.13636_20260728_174126.csv
+2026-07-28 17:41:26 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:41:26 - INFO - Total Cost: 0.00000
+2026-07-28 17:41:26 - INFO - Score for round 19: 0.13636363636363635
+2026-07-28 17:41:31 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:41:31 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:41:31 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:41:31 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:41:31 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:41:40 - INFO - Graph optimization response received successfully
+2026-07-28 17:41:40 - INFO - workspace/HumanEval/workflows/round_20
+2026-07-28 17:42:07 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:08 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:09 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:12 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:19 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:20 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:22 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:29 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:31 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:34 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:34 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:36 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:41 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:52 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:42:59 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:43:19 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:43:19 - INFO - Results saved to workspace/HumanEval/workflows/round_20/0.13636_20260728_174319.csv
+2026-07-28 17:43:19 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:43:19 - INFO - Total Cost: 0.00000
+2026-07-28 17:43:19 - INFO - Score for round 20: 0.13636363636363635
+2026-07-28 17:43:24 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:43:24 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:43:24 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:43:25 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:43:25 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:43:33 - INFO - Graph optimization response received successfully
+2026-07-28 17:43:33 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:43:33 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:43:33 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-28 17:43:33 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:43:33 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-28 17:43:40 - INFO - Graph optimization response received successfully
+2026-07-28 17:43:40 - INFO - 
+Mixed probability distribution: [0.42499958 0.42499958 0.07500042 0.07500042]
+2026-07-28 17:43:40 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 3, 'score': 0.8181818181818182}, {'round': 4, 'score': 0.13636363636363635}, {'round': 5, 'score': 0.13636363636363635}]
+2026-07-28 17:43:40 - INFO - 
+Selected index: 1, Selected item: {'round': 3, 'score': 0.8181818181818182}
+2026-07-28 17:43:40 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-28 17:43:40 - INFO - workspace/HumanEval/workflows/round_3/log.json
+2026-07-28 17:43:48 - INFO - Graph optimization response received successfully
+2026-07-28 17:43:48 - INFO - workspace/HumanEval/workflows/round_21
+2026-07-28 17:44:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:16 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:17 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:18 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:20 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:26 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:27 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:29 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:30 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:39 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:41 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:42 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:43 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:44 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:51 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:44:57 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:45:08 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:45:25 - INFO - Maximum retries reached. Skipping this sample. Error: [Errno 2] No such file or directory: 'data/datasets/humaneval_public_test.jsonl'
+2026-07-28 17:45:25 - INFO - Results saved to workspace/HumanEval/workflows/round_21/0.13636_20260728_174525.csv
+2026-07-28 17:45:25 - INFO - Average score on HumanEval dataset: 0.13636
+2026-07-28 17:45:25 - INFO - Total Cost: 0.00000
+2026-07-28 17:45:25 - INFO - Score for round 21: 0.13636363636363635

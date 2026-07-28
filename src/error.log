@@ -1,0 +1,210 @@
+2026-07-28 17:21:23 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-07-28 17:21:26 - Error: .
+ Solution: def tri(n):
+
+    def tribonacci(n, memo={}):
+        if n in memo:
+            return memo[n]
+        if n == 1:
+            return 3
+        if n % 2 == 0:
+            result = 1 + n / 2
+        else:
+            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
+        memo[n] = result
+        return result
+    result = []
+    for i in range(1, n + 1):
+        result.append(tribonacci(i))
+    return result.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    
+    assert candidate(3) == [1, 3, 2.0, 8.0]
+    assert candidate(4) == [1, 3, 2.0, 8.0, 3.0]
+    assert candidate(5) == [1, 3, 2.0, 8.0, 3.0, 15.0]
+    assert candidate(6) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0]
+    assert candidate(7) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0]
+    assert candidate(8) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0]
+    assert candidate(9) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0]
+    assert candidate(20) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0, 6.0, 48.0, 7.0, 63.0, 8.0, 80.0, 9.0, 99.0, 10.0, 120.0, 11.0]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(0) == [1]
+    assert candidate(1) == [1, 3]
+
+2026-07-28 17:21:26 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-07-28 17:21:26 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-07-28 17:22:00 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-07-28 17:22:07 - Error: .
+ Solution: def tri(n):
+    if n == 1:
+        return 3
+    elif n % 2 == 0:
+        return 1 + n // 2
+    else:
+        return tri(n - 1) + tri(n - 2) + tri(n + 1).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    
+    assert candidate(3) == [1, 3, 2.0, 8.0]
+    assert candidate(4) == [1, 3, 2.0, 8.0, 3.0]
+    assert candidate(5) == [1, 3, 2.0, 8.0, 3.0, 15.0]
+    assert candidate(6) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0]
+    assert candidate(7) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0]
+    assert candidate(8) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0]
+    assert candidate(9) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0]
+    assert candidate(20) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0, 6.0, 48.0, 7.0, 63.0, 8.0, 80.0, 9.0, 99.0, 10.0, 120.0, 11.0]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(0) == [1]
+    assert candidate(1) == [1, 3]
+
+2026-07-28 17:22:08 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-07-28 17:22:10 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
