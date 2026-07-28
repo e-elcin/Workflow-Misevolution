@@ -1,0 +1,66 @@
+{"task_id": "HumanEval/61", "entry_point": "correct_bracketing", "test": ["assert candidate(\"()\")", "assert candidate(\"(()())\")"]}
+{"task_id": "HumanEval/104", "entry_point": "unique_digits", "test": ["assert candidate([15, 33, 1422, 1]) == [1, 15, 33]", "assert candidate([152, 323, 1422, 10]) == []"]}
+{"task_id": "HumanEval/105", "entry_point": "by_length", "test": ["assert candidate([2, 1, 1, 4, 5, 8, 2, 3]) == [\"Eight\", \"Five\", \"Four\", \"Three\", \"Two\", \"Two\", \"One\", \"One\"], \"Error\"", "assert candidate([]) == [], \"Error\""]}
+{"task_id": "HumanEval/42", "entry_point": "incr_list", "test": ["assert candidate([]) == []", "assert candidate([3, 2, 1]) == [4, 3, 2]"]}
+{"task_id": "HumanEval/145", "entry_point": "order_by_points", "test": ["assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]", "assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]"]}
+{"task_id": "HumanEval/130", "entry_point": "tri", "test": ["assert candidate(3) == [1, 3, 2.0, 8.0]", "assert candidate(4) == [1, 3, 2.0, 8.0, 3.0]"]}
+{"task_id": "HumanEval/88", "entry_point": "sort_array", "test": ["assert candidate([]) == [], \"Error\"", "assert candidate([5]) == [5], \"Error\""]}
+{"task_id": "HumanEval/11", "entry_point": "string_xor", "test": ["assert candidate('111000', '101010') == '010010'", "assert candidate('1', '1') == '0'"]}
+{"task_id": "HumanEval/137", "entry_point": "compare_one", "test": ["assert candidate(1, 2) == 2", "assert candidate(1, 2.5) == 2.5"]}
+{"task_id": "HumanEval/66", "entry_point": "digitSum", "test": ["assert candidate(\"\") == 0, \"Error\"", "assert candidate(\"abAB\") == 131, \"Error\""]}
+{"task_id": "HumanEval/30", "entry_point": "get_positive", "test": ["assert candidate([-1, -2, 4, 5, 6]) == [4, 5, 6]", "assert candidate([5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10]) == [5, 3, 2, 3, 3, 9, 123, 1]"]}
+{"task_id": "HumanEval/124", "entry_point": "valid_date", "test": ["assert candidate('03-11-2000') == True", "assert candidate('15-01-2012') == False"]}
+{"task_id": "HumanEval/154", "entry_point": "cycpattern_check", "test": ["assert  candidate(\"xyzw\",\"xyw\") == False , \"test #0\"", "assert  candidate(\"yello\",\"ell\") == True , \"test #1\""]}
+{"task_id": "HumanEval/18", "entry_point": "how_many_times", "test": ["assert candidate('', 'x') == 0", "assert candidate('xyxyxyx', 'x') == 4"]}
+{"task_id": "HumanEval/127", "entry_point": "intersection", "test": ["assert candidate((1, 2), (2, 3)) == \"NO\"", "assert candidate((-1, 1), (0, 4)) == \"NO\""]}
+{"task_id": "HumanEval/121", "entry_point": "solution", "test": ["assert candidate([5, 8, 7, 1])    == 12", "assert candidate([3, 3, 3, 3, 3]) == 9"]}
+{"task_id": "HumanEval/0", "entry_point": "has_close_elements", "test": ["assert candidate([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.3) == True", "assert candidate([1.0, 2.0, 3.9, 4.0, 5.0, 2.2], 0.05) == False"]}
+{"task_id": "HumanEval/17", "entry_point": "parse_music", "test": ["assert candidate('') == []", "assert candidate('o o o o') == [4, 4, 4, 4]"]}
+{"task_id": "HumanEval/52", "entry_point": "below_threshold", "test": ["assert candidate([1, 2, 4, 10], 100)", "assert candidate([1, 20, 4, 10], 21)"]}
+{"task_id": "HumanEval/123", "entry_point": "get_odd_collatz", "test": ["assert candidate(14) == [1, 5, 7, 11, 13, 17]", "assert candidate(5) == [1, 5]"]}
+{"task_id": "HumanEval/38", "entry_point": "decode_cyclic", "test": ["assert candidate(encoded_str) == str"]}
+{"task_id": "HumanEval/72", "entry_point": "will_it_fly", "test": ["assert candidate([3, 2, 3], 9) is True", "assert candidate([1, 2], 5) is False"]}
+{"task_id": "HumanEval/132", "entry_point": "is_nested", "test": ["assert candidate('[[]]') == True, \"This prints if this assert fails 1 (good for debugging!)\"", "assert candidate('[]]]]]]][[[[[]') == False"]}
+{"task_id": "HumanEval/95", "entry_point": "check_dict_case", "test": ["assert candidate({\"p\":\"pineapple\", \"b\":\"banana\"}) == True, \"First test error: \" + str(candidate({\"p\":\"pineapple\", \"b\":\"banana\"}))", "assert candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}) == False, \"Second test error: \" + str(candidate({\"p\":\"pineapple\", \"A\":\"banana\", \"B\":\"banana\"}))"]}
+{"task_id": "HumanEval/2", "entry_point": "truncate_number", "test": ["assert candidate(3.5) == 0.5"]}
+{"task_id": "HumanEval/19", "entry_point": "sort_numbers", "test": ["assert candidate('') == ''", "assert candidate('three') == 'three'"]}
+{"task_id": "HumanEval/76", "entry_point": "is_simple_power", "test": ["assert candidate(16, 2)== True, \"This prints if this assert fails 1 (good for debugging!)\"", "assert candidate(143214, 16)== False, \"This prints if this assert fails 1 (good for debugging!)\""]}
+{"task_id": "HumanEval/109", "entry_point": "move_one_ball", "test": ["assert candidate([3, 4, 5, 1, 2])==True, \"This prints if this assert fails 1 (good for debugging!)\"", "assert candidate([3, 5, 10, 1, 2])==True"]}
+{"task_id": "HumanEval/67", "entry_point": "fruit_distribution", "test": ["assert candidate(\"5 apples and 6 oranges\",19) == 8", "assert candidate(\"5 apples and 6 oranges\",21) == 10"]}
+{"task_id": "HumanEval/159", "entry_point": "eat", "test": ["assert candidate(5, 6, 10) == [11, 4], \"Error\"", "assert candidate(4, 8, 9) == [12, 1], \"Error\""]}
+{"task_id": "HumanEval/158", "entry_point": "find_max", "test": ["assert (candidate([\"name\", \"of\", \"string\"]) == \"string\"), \"t1\"", "assert (candidate([\"name\", \"enam\", \"game\"]) == \"enam\"), 't2'"]}
+{"task_id": "HumanEval/144", "entry_point": "simplify", "test": ["assert candidate(\"1/5\", \"5/1\") == True, 'test1'", "assert candidate(\"1/6\", \"2/1\") == False, 'test2'"]}
+{"task_id": "HumanEval/112", "entry_point": "reverse_delete", "test": ["assert candidate(\"abcde\",\"ae\") == ('bcd',False)", "assert candidate(\"abcdef\", \"b\") == ('acdef',False)"]}
+{"task_id": "HumanEval/3", "entry_point": "below_zero", "test": ["assert candidate([]) == False", "assert candidate([1, 2, -3, 1, 2, -3]) == False"]}
+{"task_id": "HumanEval/102", "entry_point": "choose_num", "test": ["assert candidate(12, 15) == 14", "assert candidate(13, 12) == -1"]}
+{"task_id": "HumanEval/54", "entry_point": "same_chars", "test": ["assert candidate('eabcdzzzz', 'dddzzzzzzzddeddabc') == True", "assert candidate('abcd', 'dddddddabc') == True"]}
+{"task_id": "HumanEval/32", "entry_point": "find_zero", "test": ["assert math.fabs(poly(coeffs, solution)) < 1e-4"]}
+{"task_id": "HumanEval/75", "entry_point": "is_multiply_prime", "test": ["assert candidate(5) == False", "assert candidate(30) == True"]}
+{"task_id": "HumanEval/14", "entry_point": "all_prefixes", "test": ["assert candidate('') == []", "assert candidate('asdfgh') == ['a', 'as', 'asd', 'asdf', 'asdfg', 'asdfgh']"]}
+{"task_id": "HumanEval/128", "entry_point": "prod_signs", "test": ["assert candidate([1, 2, 2, -4]) == -9", "assert candidate([0, 1]) == 0"]}
+{"task_id": "HumanEval/53", "entry_point": "add", "test": ["assert candidate(0, 1) == 1", "assert candidate(1, 0) == 1"]}
+{"task_id": "HumanEval/43", "entry_point": "pairs_sum_to_zero", "test": ["assert candidate([1, 3, 5, 0]) == False", "assert candidate([1, 3, -2, 1]) == False"]}
+{"task_id": "HumanEval/63", "entry_point": "fibfib", "test": ["assert candidate(2) == 1", "assert candidate(1) == 0"]}
+{"task_id": "HumanEval/99", "entry_point": "closest_integer", "test": ["assert candidate(\"10\") == 10, \"Test 1\"", "assert candidate(\"14.5\") == 15, \"Test 2\""]}
+{"task_id": "HumanEval/49", "entry_point": "modp", "test": ["assert candidate(3, 5) == 3", "assert candidate(1101, 101) == 2"]}
+{"task_id": "HumanEval/65", "entry_point": "circular_shift", "test": ["assert candidate(100, 2) == \"001\"", "assert candidate(12, 2) == \"12\""]}
+{"task_id": "HumanEval/118", "entry_point": "get_closest_vowel", "test": ["assert candidate(\"yogurt\") == \"u\"", "assert candidate(\"full\") == \"u\""]}
+{"task_id": "HumanEval/115", "entry_point": "max_fill", "test": ["assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, \"Error\"", "assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, \"Error\""]}
+{"task_id": "HumanEval/64", "entry_point": "vowels_count", "test": ["assert candidate(\"abcde\") == 2, \"Test 1\"", "assert candidate(\"Alone\") == 3, \"Test 2\""]}
+{"task_id": "HumanEval/16", "entry_point": "count_distinct_characters", "test": ["assert candidate('') == 0", "assert candidate('abcde') == 5"]}
+{"task_id": "HumanEval/83", "entry_point": "starts_one_ends", "test": ["assert candidate(1) == 1", "assert candidate(2) == 18"]}
+{"task_id": "HumanEval/69", "entry_point": "search", "test": ["assert candidate([5, 5, 5, 5, 1]) == 1", "assert candidate([4, 1, 4, 1, 4, 4]) == 4"]}
+{"task_id": "HumanEval/131", "entry_point": "digits", "test": ["assert candidate(5) == 5", "assert candidate(54) == 5"]}
+{"task_id": "HumanEval/25", "entry_point": "factorize", "test": ["assert candidate(2) == [2]", "assert candidate(4) == [2, 2]"]}
+{"task_id": "HumanEval/78", "entry_point": "hex_key", "test": ["assert candidate(\"AB\") == 1, \"First test error: \" + str(candidate(\"AB\"))", "assert candidate(\"1077E\") == 2, \"Second test error: \" + str(candidate(\"1077E\"))"]}
+{"task_id": "HumanEval/110", "entry_point": "exchange", "test": ["assert candidate([1, 2, 3, 4], [1, 2, 3, 4]) == \"YES\"", "assert candidate([1, 2, 3, 4], [1, 5, 3, 4]) == \"NO\""]}
+{"task_id": "HumanEval/13", "entry_point": "greatest_common_divisor", "test": ["assert candidate(3, 7) == 1", "assert candidate(10, 15) == 5"]}
+{"task_id": "HumanEval/91", "entry_point": "is_bored", "test": ["assert candidate(\"Hello world\") == 0, \"Test 1\"", "assert candidate(\"Is the sky blue?\") == 0, \"Test 2\""]}
+{"task_id": "HumanEval/134", "entry_point": "check_if_last_char_is_a_letter", "test": ["assert candidate(\"apple\") == False", "assert candidate(\"apple pi e\") == True"]}
+{"task_id": "HumanEval/140", "entry_point": "fix_spaces", "test": ["assert candidate(\"Example\") == \"Example\", \"This prints if this assert fails 1 (good for debugging!)\"", "assert candidate(\"Mudasir Hanif \") == \"Mudasir_Hanif_\", \"This prints if this assert fails 2 (good for debugging!)\""]}
+{"task_id": "HumanEval/36", "entry_point": "fizz_buzz", "test": ["assert candidate(50) == 0", "assert candidate(78) == 2"]}
+{"task_id": "HumanEval/60", "entry_point": "sum_to_n", "test": ["assert candidate(1) == 1", "assert candidate(6) == 21"]}
+{"task_id": "HumanEval/92", "entry_point": "any_int", "test": ["assert candidate(2, 3, 1)==True, \"This prints if this assert fails 1 (good for debugging!)\"", "assert candidate(2.5, 2, 3)==False, \"This prints if this assert fails 2 (good for debugging!)\""]}
+{"task_id": "HumanEval/27", "entry_point": "flip_case", "test": ["assert candidate('') == ''", "assert candidate('Hello!') == 'hELLO!'"]}
+{"task_id": "HumanEval/120", "entry_point": "maximum", "test": ["assert candidate([-3, -4, 5], 3) == [-4, -3, 5]", "assert candidate([4, -4, 4], 2) == [4, 4]"]}
+{"task_id": "HumanEval/74", "entry_point": "total_match", "test": ["assert candidate([], []) == []", "assert candidate(['hi', 'admin'], ['hi', 'hi']) == ['hi', 'hi']"]}

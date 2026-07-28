@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=workflow_evolve
-#SBATCH --nodelist=adep2
+#SBATCH --nodelist=romer3
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=128G
