@@ -1,3 +1,5 @@
-"""
-Analyze the given problem to understand its complexity and type. Provide insights that can help in generating a more accurate solution.
-"""
+# XXX_PROMPT = """
+#
+# Generate a correct solution for the given problem.
+#
+# """

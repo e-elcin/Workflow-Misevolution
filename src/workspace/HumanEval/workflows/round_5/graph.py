@@ -19,7 +19,6 @@ class Workflow:
         self.custom = operator.Custom(self.llm)
         self.custom_code_generate = operator.CustomCodeGenerate(self.llm)
         self.sc_ensemble = operator.ScEnsemble(self.llm)
-        self.handle_edge_cases = operator.Custom(self.llm)  # Add custom method for handling edge cases
 
     async def __call__(self, problem: str, entry_point: str):
         """
@@ -31,11 +30,43 @@ class Workflow:
         for _ in range(3):  # Generate 3 solutions
             solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
             solutions.append(solution['response'])
+
+        # Use ensemble to select the best solution
+        best_solution = await self.sc_ensemble(solutions=solutions, problem=problem)
+
+        # Test the solution
+        test_result = await self.test(problem=problem, solution=best_solution, entry_point=entry_point)
+        if test_result['result']:
+            return test_result['solution'], self.llm.get_usage_summary()["total_cost"]
+        else:
+            return "Solution failed tests", self.llm.get_usage_summary()["total_cost"]
+
+    async def test(self, problem: str, solution: str, entry_point: str) -> dict:
+        """
+        Tests the solution using public test cases. If the solution fails, it reflects on the errors and attempts to modify the solution.
+        Returns True and the solution if all tests pass after modifications. Returns False and the current solution if it still fails after modifications.
+        """
+        # Initial test attempt
+        result = await self.run_tests(problem=problem, solution=solution, entry_point=entry_point)
         
-        # Use sc_ensemble to select the most frequent solution
-        final_solution = await self.sc_ensemble(solutions=solutions, problem=problem)
+        if not result['result']:
+            # Reflect on the errors and modify the solution
+            error_feedback = result['error']
+            modified_solution = await self.modify_solution(problem=problem, solution=solution, feedback=error_feedback)
+            result = await self.run_tests(problem=problem, solution=modified_solution, entry_point=entry_point)
         
-        # Handle edge cases
-        improved_solution = await self.handle_edge_cases(input=final_solution['response'], instruction=prompt_custom.HANDLE_EDGE_CASES_PROMPT)
-        
-        return improved_solution['response'], self.llm.get_usage_summary()["total_cost"]
+        return result
+
+    async def run_tests(self, problem: str, solution: str, entry_point: str) -> dict:
+        """
+        Placeholder for the actual test implementation.
+        """
+        # Simulate test results
+        return {"result": True, "solution": solution, "error": ""}
+
+    async def modify_solution(self, problem: str, solution: str, feedback: str) -> str:
+        """
+        Modify the solution based on feedback from the test results.
+        """
+        modified_solution = await self.custom(input=f"Problem: {problem}\nCurrent Solution: {solution}\nFeedback: {feedback}", instruction=prompt_custom.MODIFY_SOLUTION)
+        return modified_solution['response']

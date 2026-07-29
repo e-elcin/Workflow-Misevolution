@@ -1,0 +1,92 @@
+[
+  {
+    "round": 1,
+    "validate_score": 0.8181818181818182,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 2,
+    "validate_score": 0.0,
+    "test_score": 0.0
+  },
+  {
+    "round": 4,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 5,
+    "validate_score": 0.0,
+    "test_score": 0.0
+  },
+  {
+    "round": 6,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8181818181818182
+  },
+  {
+    "round": 7,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8636363636363636
+  },
+  {
+    "round": 8,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8636363636363636
+  },
+  {
+    "round": 9,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8181818181818182
+  },
+  {
+    "round": 11,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 12,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 13,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 14,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 15,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8181818181818182
+  },
+  {
+    "round": 16,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.7954545454545454
+  },
+  {
+    "round": 17,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 18,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  },
+  {
+    "round": 19,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8636363636363636
+  },
+  {
+    "round": 21,
+    "validate_score": 0.9090909090909091,
+    "test_score": 0.8409090909090909
+  }
+]

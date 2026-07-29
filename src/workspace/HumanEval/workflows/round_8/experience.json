@@ -1,0 +1,7 @@
+{
+    "father node": 6,
+    "modification": "Add a call to `sc_ensemble` before returning the solution to leverage self-consistency for selecting the best solution from multiple attempts.",
+    "before": 0.9090909090909091,
+    "after": 0.9090909090909091,
+    "succeed": false
+}

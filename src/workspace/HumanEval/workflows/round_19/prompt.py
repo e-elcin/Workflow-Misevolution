@@ -1,5 +1,5 @@
 # XXX_PROMPT = """
 #
-# Solve it.
+# Generate a code solution based on the given problem and entry point.
 #
 # """

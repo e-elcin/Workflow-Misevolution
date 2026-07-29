@@ -15,15 +15,15 @@ def correct_bracketing(brackets: str):
     False
     """"""
 ","def correct_bracketing(brackets: str) -> bool:
-    balance = 0
+    stack = []
     for bracket in brackets:
         if bracket == '(':
-            balance += 1
+            stack.append(bracket)
         elif bracket == ')':
-            balance -= 1
-        if balance < 0:
-            return False
-    return balance == 0","The solution passed all test cases.
+            if not stack:
+                return False
+            stack.pop()
+    return len(stack) == 0","The solution passed all test cases.
 Correct Solution:
 def correct_bracketing(params you should put here):
 
@@ -89,11 +89,11 @@ def by_length(arr):
       return = ['One']
     """"""
 ","def by_length(arr):
-    num_to_word = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine'}
-    filtered_arr = [num for num in arr if 1 <= num <= 9]
+    digit_names = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine'}
+    filtered_arr = [x for x in arr if 1 <= x <= 9]
     sorted_arr = sorted(filtered_arr)
     reversed_arr = sorted_arr[::-1]
-    result = [num_to_word[num] for num in reversed_arr]
+    result = [digit_names[x] for x in reversed_arr]
     return result","The solution passed all test cases.
 Correct Solution:
 def by_length(params you should put here):
@@ -127,7 +127,7 @@ def incr_list(l: list):
     >>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])
     [6, 4, 6, 3, 4, 4, 10, 1, 124]
     """"""
-","def incr_list(l: list) -> list:
+","def incr_list(l: list):
     return [x + 1 for x in l]","The solution passed all test cases.
 Correct Solution:
 def incr_list(params you should put here):
@@ -146,10 +146,8 @@ def order_by_points(nums):
     >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
     >>> order_by_points([]) == []
     """"""
-","def order_by_points(nums):
-    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x)))","Error: .
- Solution: def order_by_points(nums):
-    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+",Solution failed tests even after ensemble selection,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests even after ensemble selection.
  Test: def check(candidate):
 
     # Check some simple cases
@@ -194,20 +192,17 @@ def tri(n):
     tri(3) = [1, 3, 2, 8]
     """"""
 ","def tri(n):
-
-    def tribonacci(n, memo={}):
-        if n in memo:
-            return memo[n]
-        if n == 1:
-            return 3
-        if n % 2 == 0:
-            result = 1 + n // 2
+    if n == 0:
+        return [1]
+    elif n == 1:
+        return [1, 3]
+    result = [1, 3]
+    for i in range(2, n + 1):
+        if i % 2 == 0:
+            result.append(1 + i // 2)
         else:
-            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
-        memo[n] = result
-        return result
-    result = [tribonacci(i) for i in range(1, n + 1)]
-    return [1] + result","The solution passed all test cases.
+            result.append(result[i - 1] + result[i - 2] + (1 + (i + 1) // 2))
+    return result","The solution passed all test cases.
 Correct Solution:
 def tri(params you should put here):
 
@@ -259,7 +254,8 @@ def string_xor(a: str, b: str) -> str:
     >>> string_xor('010', '110')
     '100'
     """"""
-","def string_xor(a: str, b: str) -> str:
+","from typing import List
+def string_xor(a: str, b: str) -> str:
     result = ''
     for i in range(len(a)):
         if a[i] == b[i]:
@@ -378,27 +374,25 @@ def valid_date(date):
     valid_date('06/04/2020') => False
     """"""
 ","def valid_date(date):
-    if not date:
+    if not date or len(date) != 10 or date[2] != '-' or (date[5] != '-'):
         return False
-    if len(date) != 10 or date[2] != '-' or date[5] != '-':
+    (month, day, year) = date.split('-')
+    if not month.isdigit() or not day.isdigit() or (not year.isdigit()):
         return False
-    try:
-        (month, day, year) = map(int, date.split('-'))
-    except ValueError:
-        return False
+    (month, day, year) = (int(month), int(day), int(year))
     if month < 1 or month > 12:
         return False
+    if day < 1:
+        return False
     if month in [1, 3, 5, 7, 8, 10, 12]:
-        if day < 1 or day > 31:
+        if day > 31:
             return False
     elif month in [4, 6, 9, 11]:
-        if day < 1 or day > 30:
+        if day > 30:
             return False
     elif month == 2:
-        if day < 1 or day > 29:
+        if day > 29:
             return False
-    else:
-        return False
     return True","The solution passed all test cases.
 Correct Solution:
 def valid_date(params you should put here):
@@ -437,33 +431,9 @@ def cycpattern_check(a , b):
     extended_a = a * 2
     for i in range(len(b)):
         rotated_b = b[i:] + b[:i]
-        if rotated_b in extended_a:
+        if rotated_b in a:
             return True
-    return False","Error: test #0.
- Solution: def cycpattern_check(a, b):
-    if len(b) > len(a):
-        return False
-    extended_a = a * 2
-    for i in range(len(b)):
-        rotated_b = b[i:] + b[:i]
-        if rotated_b in extended_a:
-            return True
-    return False.
- Test: def check(candidate):
-
-    # Check some simple cases
-    #assert True, ""This prints if this assert fails 1 (good for debugging!)""
-
-    # Check some edge cases that are easy to work out by hand.
-    #assert True, ""This prints if this assert fails 2 (also good for debugging!)""
-    assert  candidate(""xyzw"",""xyw"") == False , ""test #0""
-    assert  candidate(""yello"",""ell"") == True , ""test #1""
-    assert  candidate(""whattup"",""ptut"") == False , ""test #2""
-    assert  candidate(""efef"",""fee"") == True , ""test #3""
-    assert  candidate(""abab"",""aabb"") == False , ""test #4""
-    assert  candidate(""winemtt"",""tinem"") == True , ""test #5""
-
-
+    return False","The solution passed all test cases.
 Correct Solution:
 def cycpattern_check(params you should put here):
 
@@ -474,7 +444,7 @@ def cycpattern_check(params you should put here):
             if a[i:i+l] == pat[j:j+l]:
                 return True
     return False
-",0.0,0.0
+",1.0,0.0
 "
 
 def how_many_times(string: str, substring: str) -> int:
@@ -489,10 +459,12 @@ def how_many_times(string: str, substring: str) -> int:
 ","def how_many_times(string: str, substring: str) -> int:
     count = 0
     start = 0
-    while start <= len(string) - len(substring):
-        if string[start:start + len(substring)] == substring:
+    while True:
+        start = string.find(substring, start) + 1
+        if start > 0:
             count += 1
-        start += 1
+        else:
+            break
     return count","The solution passed all test cases.
 Correct Solution:
 def how_many_times(params you should put here):
@@ -526,40 +498,8 @@ def intersection(interval1, interval2):
     intersection((-1, 1), (0, 4)) ==> ""NO""
     intersection((-3, -1), (-5, 5)) ==> ""YES""
     """"""
-","def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-def intersection(interval1, interval2):
-    start = max(interval1[0], interval2[0])
-    end = min(interval1[1], interval2[1])
-    if start > end:
-        return 'NO'
-    length = end - start + 1
-    if is_prime(length):
-        return 'YES'
-    else:
-        return 'NO'","Error: .
- Solution: def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-def intersection(interval1, interval2):
-    start = max(interval1[0], interval2[0])
-    end = min(interval1[1], interval2[1])
-    if start > end:
-        return 'NO'
-    length = end - start + 1
-    if is_prime(length):
-        return 'YES'
-    else:
-        return 'NO'.
+",Solution failed tests even after ensemble selection,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests even after ensemble selection.
  Test: def check(candidate):
 
     # Check some simple cases

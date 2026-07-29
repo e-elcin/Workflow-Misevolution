@@ -206,8 +206,44 @@ def tri(n):
             result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
         memo[n] = result
         return result
-    result = [tribonacci(i) for i in range(1, n + 1)]
-    return [1] + result","The solution passed all test cases.
+    result = []
+    for i in range(1, n + 1):
+        result.append(tribonacci(i))
+    return result","Error: .
+ Solution: def tri(n):
+
+    def tribonacci(n, memo={}):
+        if n in memo:
+            return memo[n]
+        if n == 1:
+            return 3
+        if n % 2 == 0:
+            result = 1 + n // 2
+        else:
+            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
+        memo[n] = result
+        return result
+    result = []
+    for i in range(1, n + 1):
+        result.append(tribonacci(i))
+    return result.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    
+    assert candidate(3) == [1, 3, 2.0, 8.0]
+    assert candidate(4) == [1, 3, 2.0, 8.0, 3.0]
+    assert candidate(5) == [1, 3, 2.0, 8.0, 3.0, 15.0]
+    assert candidate(6) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0]
+    assert candidate(7) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0]
+    assert candidate(8) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0]
+    assert candidate(9) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0]
+    assert candidate(20) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0, 6.0, 48.0, 7.0, 63.0, 8.0, 80.0, 9.0, 99.0, 10.0, 120.0, 11.0]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(0) == [1]
+    assert candidate(1) == [1, 3]
+
 Correct Solution:
 def tri(params you should put here):
 
@@ -220,7 +256,7 @@ def tri(params you should put here):
         else:
             my_tri.append(my_tri[i - 1] + my_tri[i - 2] + (i + 3) / 2)
     return my_tri
-",1.0,0.0
+",0.0,0.0
 "
 def sort_array(array):
     """"""
@@ -294,49 +330,21 @@ def compare_one(a, b):
 ","def compare_one(a, b):
 
     def parse_value(v):
-        try:
-            return float(v.replace(',', '.'))
-        except ValueError:
-            return v
-    parsed_a = parse_value(a)
-    parsed_b = parse_value(b)
-    if parsed_a == parsed_b:
+        if isinstance(v, str):
+            v = v.replace(',', '.')
+            try:
+                return float(v)
+            except ValueError:
+                return v
+        return v
+    a_parsed = parse_value(a)
+    b_parsed = parse_value(b)
+    if a_parsed == b_parsed:
         return None
-    elif parsed_a > parsed_b:
+    elif a_parsed > b_parsed:
         return a
     else:
-        return b","Error: 'int' object has no attribute 'replace'.
- Solution: def compare_one(a, b):
-
-    def parse_value(v):
-        try:
-            return float(v.replace(',', '.'))
-        except ValueError:
-            return v
-    parsed_a = parse_value(a)
-    parsed_b = parse_value(b)
-    if parsed_a == parsed_b:
-        return None
-    elif parsed_a > parsed_b:
-        return a
-    else:
-        return b.
- Test: def check(candidate):
-
-    # Check some simple cases
-    assert candidate(1, 2) == 2
-    assert candidate(1, 2.5) == 2.5
-    assert candidate(2, 3) == 3
-    assert candidate(5, 6) == 6
-    assert candidate(1, ""2,3"") == ""2,3""
-    assert candidate(""5,1"", ""6"") == ""6""
-    assert candidate(""1"", ""2"") == ""2""
-    assert candidate(""1"", 1) == None
-
-    # Check some edge cases that are easy to work out by hand.
-    assert True
-
-
+        return b","The solution passed all test cases.
 Correct Solution:
 def compare_one(params you should put here):
 
@@ -345,7 +353,7 @@ def compare_one(params you should put here):
     if isinstance(temp_b, str): temp_b = temp_b.replace(',','.')
     if float(temp_a) == float(temp_b): return None
     return a if float(temp_a) > float(temp_b) else b 
-",0.0,0.0
+",1.0,0.0
 "
 def digitSum(s):
     """"""Task

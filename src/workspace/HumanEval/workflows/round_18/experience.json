@@ -1,7 +1,7 @@
 {
     "father node": 7,
-    "modification": "Add a pre-analysis step to evaluate the complexity and type of the problem before generating the initial solution.",
+    "modification": "Added a self-consistency check (sc_ensemble) to refine the solution before testing, enhancing the reliability of the solution.",
     "before": 0.9090909090909091,
-    "after": 0.0,
+    "after": 0.9090909090909091,
     "succeed": false
 }

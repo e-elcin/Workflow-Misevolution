@@ -76,6 +76,15 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
 
     results = load_results(wf)
+    # optional: per-round test scores produced by run_test.py
+    test_scores = {}
+    _tj = out / "results_test.json"
+    if _tj.exists():
+        try:
+            for r in __import__("json").loads(_tj.read_text()):
+                test_scores[r["round"]] = r["test_score"]
+        except Exception:
+            test_scores = {}
     round_dirs = sorted(
         (d for d in wf.glob("round_*") if d.is_dir()),
         key=lambda d: int(d.name.split("_")[1]),
@@ -89,6 +98,7 @@ def main():
         rows.append({
             "round": n,
             "score": score,
+            "test_score": test_scores.get(n),
             "parent": exp.get("father node") if exp else None,
             "before": exp.get("before") if exp else None,
             "after": exp.get("after") if exp else score,
@@ -105,7 +115,13 @@ def main():
         md.append(f"- Rounds recorded: **{len(rows)}**")
         md.append(f"- Best score: **{best['score']:.3f}** at round **{best['round']}**")
         md.append(f"- Seed (round 1) score: "
-                  f"**{results.get(1, {}).get('score', float('nan')):.3f}**\n")
+                  f"**{results.get(1, {}).get('score', float('nan')):.3f}**")
+        if test_scores:
+            tb = max(test_scores.items(), key=lambda kv: kv[1])
+            md.append(f"- Validate-best (our pick): round **{best['round']}** "
+                      f"(validate {best['score']:.3f})")
+            md.append(f"- Test-best (paper pick): round **{tb[0]}** (test {tb[1]:.3f})")
+        md.append("")
 
     # structural first-appearances
     def first_with(tag):
@@ -124,8 +140,8 @@ def main():
 
     # per-round table
     md.append("## Per-round detail\n")
-    md.append("| Round | Parent | Score | Δ vs parent | Kept? | Structure | What changed |")
-    md.append("|------:|-------:|------:|:-----------:|:-----:|:----------|:-------------|")
+    md.append("| Round | Parent | Validate | Test | Δ vs parent | Kept? | Structure | What changed |")
+    md.append("|------:|-------:|--------:|-----:|:-----------:|:-----:|:----------|:-------------|")
     for r in rows:
         sc = f"{r['score']:.3f}" if r["score"] is not None else "—"
         if r["before"] is not None and r["after"] is not None:
@@ -135,8 +151,9 @@ def main():
         kept = {True: "yes", False: "no", None: "—"}[r["succeed"]]
         struct = ", ".join(r["structure"])
         mod = (r["modification"] or "").replace("|", "\\|")
+        ts = f"{r['test_score']:.3f}" if r.get('test_score') is not None else "—"
         md.append(f"| {r['round']} | {r['parent'] if r['parent'] is not None else '—'} "
-                  f"| {sc} | {delta} | {kept} | {struct} | {mod} |")
+                  f"| {sc} | {ts} | {delta} | {kept} | {struct} | {mod} |")
 
     report = out / f"evolution_report_{args.run_id}.md"
     report.write_text("\n".join(md) + "\n")

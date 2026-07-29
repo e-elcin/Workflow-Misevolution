@@ -1,0 +1,482 @@
+2026-07-29 12:01:23 - INFO - Results saved to workspace/HumanEval/workflows/round_1/0.81818_20260729_120123.csv
+2026-07-29 12:01:23 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-29 12:01:23 - INFO - Total Cost: 0.00000
+2026-07-29 12:01:23 - INFO - 
+Mixed probability distribution: [1.]
+2026-07-29 12:01:23 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:01:23 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-29 12:01:23 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:01:23 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 12:01:33 - INFO - Graph optimization response received successfully
+2026-07-29 12:01:33 - INFO - workspace/HumanEval/workflows/round_2
+2026-07-29 12:01:38 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:39 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:39 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:40 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:41 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:42 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:42 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:42 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:43 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:44 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:44 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:46 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:48 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:50 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:51 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:52 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:57 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:01:57 - INFO - Results saved to workspace/HumanEval/workflows/round_2/0.00000_20260729_120157.csv
+2026-07-29 12:01:57 - INFO - Average score on HumanEval dataset: 0.00000
+2026-07-29 12:01:57 - INFO - Total Cost: 0.00000
+2026-07-29 12:01:57 - INFO - Score for round 2: 0.0
+2026-07-29 12:02:02 - INFO - 
+Mixed probability distribution: [0.84999995 0.15000005]
+2026-07-29 12:02:02 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 2, 'score': 0.0}]
+2026-07-29 12:02:02 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-29 12:02:02 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:02:02 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 12:02:09 - INFO - Graph optimization response received successfully
+2026-07-29 12:02:09 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 7) (prompt.py, line 7). Retrying... (Attempt 1/1)
+2026-07-29 12:02:09 - INFO - Max retries reached. Moving to next round.
+2026-07-29 12:02:14 - INFO - Score for round 3: None
+2026-07-29 12:02:19 - INFO - 
+Mixed probability distribution: [0.84999995 0.15000005]
+2026-07-29 12:02:19 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8181818181818182}, {'round': 2, 'score': 0.0}]
+2026-07-29 12:02:19 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8181818181818182}
+2026-07-29 12:02:19 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:02:19 - INFO - workspace/HumanEval/workflows/round_1/log.json
+2026-07-29 12:02:26 - INFO - Graph optimization response received successfully
+2026-07-29 12:02:26 - INFO - workspace/HumanEval/workflows/round_4
+2026-07-29 12:02:38 - INFO - Results saved to workspace/HumanEval/workflows/round_4/0.90909_20260729_120238.csv
+2026-07-29 12:02:38 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:02:38 - INFO - Total Cost: 0.00000
+2026-07-29 12:02:38 - INFO - Score for round 4: 0.9090909090909091
+2026-07-29 12:02:43 - INFO - 
+Mixed probability distribution: [0.70224347 0.19775653 0.10000001]
+2026-07-29 12:02:43 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}, {'round': 2, 'score': 0.0}]
+2026-07-29 12:02:43 - INFO - 
+Selected index: 2, Selected item: {'round': 2, 'score': 0.0}
+2026-07-29 12:02:43 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:02:56 - INFO - Graph optimization response received successfully
+2026-07-29 12:02:56 - INFO - workspace/HumanEval/workflows/round_5
+2026-07-29 12:03:01 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:01 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:02 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:02 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:02 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:04 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:05 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:06 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:06 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:07 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:07 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:08 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:10 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:11 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:13 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:16 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:03:16 - INFO - Results saved to workspace/HumanEval/workflows/round_5/0.00000_20260729_120316.csv
+2026-07-29 12:03:16 - INFO - Average score on HumanEval dataset: 0.00000
+2026-07-29 12:03:16 - INFO - Total Cost: 0.00000
+2026-07-29 12:03:16 - INFO - Score for round 5: 0.0
+2026-07-29 12:03:21 - INFO - 
+Mixed probability distribution: [0.67724346 0.17275653 0.07500001 0.07500001]
+2026-07-29 12:03:21 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}, {'round': 2, 'score': 0.0}, {'round': 5, 'score': 0.0}]
+2026-07-29 12:03:21 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 12:03:21 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:03:21 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 12:03:30 - INFO - Graph optimization response received successfully
+2026-07-29 12:03:30 - INFO - workspace/HumanEval/workflows/round_6
+2026-07-29 12:03:54 - INFO - Results saved to workspace/HumanEval/workflows/round_6/0.90909_20260729_120354.csv
+2026-07-29 12:03:54 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:03:54 - INFO - Total Cost: 0.00000
+2026-07-29 12:03:54 - INFO - Score for round 6: 0.9090909090909091
+2026-07-29 12:03:59 - INFO - 
+Mixed probability distribution: [0.39872627 0.39872627 0.12754745 0.075     ]
+2026-07-29 12:03:59 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}, {'round': 2, 'score': 0.0}]
+2026-07-29 12:03:59 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 12:03:59 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:03:59 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 12:04:05 - INFO - Graph optimization response received successfully
+2026-07-29 12:04:05 - INFO - workspace/HumanEval/workflows/round_7
+2026-07-29 12:04:39 - INFO - Results saved to workspace/HumanEval/workflows/round_7/0.90909_20260729_120439.csv
+2026-07-29 12:04:39 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:04:39 - INFO - Total Cost: 0.00000
+2026-07-29 12:04:39 - INFO - Score for round 7: 0.9090909090909091
+2026-07-29 12:04:44 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:04:44 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:04:44 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 12:04:44 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:04:44 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 12:04:53 - INFO - Graph optimization response received successfully
+2026-07-29 12:04:53 - INFO - workspace/HumanEval/workflows/round_8
+2026-07-29 12:09:57 - INFO - Timeout error. Skipping this sample.
+2026-07-29 12:09:57 - INFO - Results saved to workspace/HumanEval/workflows/round_8/0.90909_20260729_120957.csv
+2026-07-29 12:09:57 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:09:57 - INFO - Total Cost: 0.00000
+2026-07-29 12:09:57 - INFO - Score for round 8: 0.9090909090909091
+2026-07-29 12:10:02 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:10:02 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:10:02 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 12:10:02 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:10:02 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 12:10:14 - INFO - Graph optimization response received successfully
+2026-07-29 12:10:14 - INFO - workspace/HumanEval/workflows/round_9
+2026-07-29 12:11:02 - INFO - Results saved to workspace/HumanEval/workflows/round_9/0.90909_20260729_121102.csv
+2026-07-29 12:11:02 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:11:02 - INFO - Total Cost: 0.00000
+2026-07-29 12:11:02 - INFO - Score for round 9: 0.9090909090909091
+2026-07-29 12:11:07 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:11:07 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:11:07 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 12:11:07 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:11:07 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 12:11:14 - INFO - Graph optimization response received successfully
+2026-07-29 12:11:14 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-07-29 12:11:14 - INFO - Max retries reached. Moving to next round.
+2026-07-29 12:11:19 - INFO - Score for round 10: None
+2026-07-29 12:11:24 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:11:24 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:11:24 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 12:11:24 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:11:24 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 12:11:32 - INFO - Graph optimization response received successfully
+2026-07-29 12:11:32 - INFO - workspace/HumanEval/workflows/round_11
+2026-07-29 12:11:55 - INFO - Results saved to workspace/HumanEval/workflows/round_11/0.90909_20260729_121155.csv
+2026-07-29 12:11:55 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:11:55 - INFO - Total Cost: 0.00000
+2026-07-29 12:11:55 - INFO - Score for round 11: 0.9090909090909091
+2026-07-29 12:12:00 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:12:00 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:12:00 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 12:12:00 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:12:00 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 12:12:07 - INFO - Graph optimization response received successfully
+2026-07-29 12:12:07 - INFO - workspace/HumanEval/workflows/round_12
+2026-07-29 12:12:42 - INFO - Results saved to workspace/HumanEval/workflows/round_12/0.90909_20260729_121242.csv
+2026-07-29 12:12:42 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:12:42 - INFO - Total Cost: 0.00000
+2026-07-29 12:12:42 - INFO - Score for round 12: 0.9090909090909091
+2026-07-29 12:12:47 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:12:47 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:12:47 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 12:12:47 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:12:47 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 12:12:54 - INFO - Graph optimization response received successfully
+2026-07-29 12:12:54 - INFO - workspace/HumanEval/workflows/round_13
+2026-07-29 12:14:55 - INFO - Results saved to workspace/HumanEval/workflows/round_13/0.90909_20260729_121455.csv
+2026-07-29 12:14:55 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:14:55 - INFO - Total Cost: 0.00000
+2026-07-29 12:14:55 - INFO - Score for round 13: 0.9090909090909091
+2026-07-29 12:15:00 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:15:00 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:15:00 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 12:15:00 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:15:00 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 12:15:12 - INFO - Graph optimization response received successfully
+2026-07-29 12:15:12 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:15:12 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:15:12 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 12:15:12 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:15:12 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 12:15:19 - INFO - Graph optimization response received successfully
+2026-07-29 12:15:19 - INFO - workspace/HumanEval/workflows/round_14
+2026-07-29 12:15:54 - INFO - Results saved to workspace/HumanEval/workflows/round_14/0.90909_20260729_121554.csv
+2026-07-29 12:15:54 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:15:54 - INFO - Total Cost: 0.00000
+2026-07-29 12:15:54 - INFO - Score for round 14: 0.9090909090909091
+2026-07-29 12:16:00 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:16:00 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:16:00 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 12:16:00 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:16:00 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 12:16:09 - INFO - Graph optimization response received successfully
+2026-07-29 12:16:09 - INFO - workspace/HumanEval/workflows/round_15
+2026-07-29 12:16:38 - INFO - Results saved to workspace/HumanEval/workflows/round_15/0.90909_20260729_121638.csv
+2026-07-29 12:16:38 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:16:38 - INFO - Total Cost: 0.00000
+2026-07-29 12:16:38 - INFO - Score for round 15: 0.9090909090909091
+2026-07-29 12:16:43 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:16:43 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:16:43 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 12:16:43 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:16:43 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 12:16:54 - INFO - Graph optimization response received successfully
+2026-07-29 12:16:54 - INFO - workspace/HumanEval/workflows/round_16
+2026-07-29 12:17:35 - INFO - Results saved to workspace/HumanEval/workflows/round_16/0.90909_20260729_121735.csv
+2026-07-29 12:17:35 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:17:35 - INFO - Total Cost: 0.00000
+2026-07-29 12:17:35 - INFO - Score for round 16: 0.9090909090909091
+2026-07-29 12:17:40 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:17:40 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:17:40 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 12:17:40 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:17:40 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 12:17:48 - INFO - Graph optimization response received successfully
+2026-07-29 12:17:48 - INFO - workspace/HumanEval/workflows/round_17
+2026-07-29 12:18:32 - INFO - Results saved to workspace/HumanEval/workflows/round_17/0.90909_20260729_121832.csv
+2026-07-29 12:18:32 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:18:32 - INFO - Total Cost: 0.00000
+2026-07-29 12:18:32 - INFO - Score for round 17: 0.9090909090909091
+2026-07-29 12:18:38 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:18:38 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:18:38 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 12:18:38 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:18:38 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 12:18:45 - INFO - Graph optimization response received successfully
+2026-07-29 12:18:45 - INFO - workspace/HumanEval/workflows/round_18
+2026-07-29 12:21:47 - INFO - Results saved to workspace/HumanEval/workflows/round_18/0.90909_20260729_122147.csv
+2026-07-29 12:21:47 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:21:47 - INFO - Total Cost: 0.00000
+2026-07-29 12:21:47 - INFO - Score for round 18: 0.9090909090909091
+2026-07-29 12:21:52 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:21:52 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:21:52 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 12:21:52 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:21:52 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 12:22:00 - INFO - Graph optimization response received successfully
+2026-07-29 12:22:00 - INFO - workspace/HumanEval/workflows/round_19
+2026-07-29 12:22:42 - INFO - Results saved to workspace/HumanEval/workflows/round_19/0.90909_20260729_122242.csv
+2026-07-29 12:22:42 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:22:42 - INFO - Total Cost: 0.00000
+2026-07-29 12:22:42 - INFO - Score for round 19: 0.9090909090909091
+2026-07-29 12:22:47 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:22:47 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:22:47 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}
+2026-07-29 12:22:47 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:22:47 - INFO - workspace/HumanEval/workflows/round_4/log.json
+2026-07-29 12:22:55 - INFO - Graph optimization response received successfully
+2026-07-29 12:22:55 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:22:55 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:22:55 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}
+2026-07-29 12:22:55 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:22:55 - INFO - workspace/HumanEval/workflows/round_6/log.json
+2026-07-29 12:23:04 - INFO - Graph optimization response received successfully
+2026-07-29 12:23:04 - INFO - workspace/HumanEval/workflows/round_20
+2026-07-29 12:23:04 - INFO - Error occurred: ScEnsemble.__init__() missing 1 required positional argument: 'llm'. Retrying... (Attempt 1/1)
+2026-07-29 12:23:04 - INFO - Max retries reached. Moving to next round.
+2026-07-29 12:23:09 - INFO - Score for round 20: None
+2026-07-29 12:23:14 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-07-29 12:23:14 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8181818181818182}]
+2026-07-29 12:23:14 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}
+2026-07-29 12:23:14 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json
+2026-07-29 12:23:14 - INFO - workspace/HumanEval/workflows/round_7/log.json
+2026-07-29 12:23:21 - INFO - Graph optimization response received successfully
+2026-07-29 12:23:21 - INFO - workspace/HumanEval/workflows/round_21
+2026-07-29 12:24:02 - INFO - Results saved to workspace/HumanEval/workflows/round_21/0.90909_20260729_122402.csv
+2026-07-29 12:24:02 - INFO - Average score on HumanEval dataset: 0.90909
+2026-07-29 12:24:02 - INFO - Total Cost: 0.00000
+2026-07-29 12:24:02 - INFO - Score for round 21: 0.9090909090909091
+2026-07-29 12:24:23 - INFO - Results saved to workspace/HumanEval/workflows/round_1/0.84091_20260729_122423.csv
+2026-07-29 12:24:23 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:24:23 - INFO - Total Cost: 0.00000
+2026-07-29 12:24:29 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:30 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:31 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:31 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:31 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:33 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:35 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:36 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:37 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:37 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:37 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:38 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:38 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:38 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:38 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:39 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:40 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:40 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:40 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:41 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:41 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:42 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:42 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:43 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:43 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:43 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:43 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:43 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:45 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:46 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:47 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:48 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:48 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:49 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:50 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:50 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:53 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:57 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:24:57 - INFO - Results saved to workspace/HumanEval/workflows/round_2/0.00000_20260729_122457.csv
+2026-07-29 12:24:57 - INFO - Average score on HumanEval dataset: 0.00000
+2026-07-29 12:24:57 - INFO - Total Cost: 0.00000
+2026-07-29 12:25:04 - INFO - Results saved to workspace/HumanEval/workflows/round_4/0.84091_20260729_122504.csv
+2026-07-29 12:25:04 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:25:04 - INFO - Total Cost: 0.00000
+2026-07-29 12:25:09 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:10 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:11 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:11 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:11 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:12 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:13 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:14 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:15 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:16 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:16 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:16 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:17 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:17 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:17 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:17 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:17 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:18 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:18 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:19 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:19 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:19 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:20 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:20 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:20 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:21 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:22 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:22 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:22 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:22 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:23 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:23 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:23 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:23 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:23 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:24 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:25 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:26 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:30 - INFO - Maximum retries reached. Skipping this sample. Error: 'dict' object has no attribute 'split'
+2026-07-29 12:25:30 - INFO - Results saved to workspace/HumanEval/workflows/round_5/0.00000_20260729_122530.csv
+2026-07-29 12:25:30 - INFO - Average score on HumanEval dataset: 0.00000
+2026-07-29 12:25:30 - INFO - Total Cost: 0.00000
+2026-07-29 12:25:44 - INFO - Results saved to workspace/HumanEval/workflows/round_6/0.81818_20260729_122544.csv
+2026-07-29 12:25:44 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-29 12:25:44 - INFO - Total Cost: 0.00000
+2026-07-29 12:26:01 - INFO - Results saved to workspace/HumanEval/workflows/round_7/0.86364_20260729_122601.csv
+2026-07-29 12:26:01 - INFO - Average score on HumanEval dataset: 0.86364
+2026-07-29 12:26:01 - INFO - Total Cost: 0.00000
+2026-07-29 12:26:38 - INFO - Results saved to workspace/HumanEval/workflows/round_8/0.86364_20260729_122638.csv
+2026-07-29 12:26:38 - INFO - Average score on HumanEval dataset: 0.86364
+2026-07-29 12:26:38 - INFO - Total Cost: 0.00000
+2026-07-29 12:27:08 - INFO - Results saved to workspace/HumanEval/workflows/round_9/0.81818_20260729_122708.csv
+2026-07-29 12:27:08 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-29 12:27:08 - INFO - Total Cost: 0.00000
+2026-07-29 12:27:35 - INFO - Results saved to workspace/HumanEval/workflows/round_11/0.84091_20260729_122735.csv
+2026-07-29 12:27:35 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:27:35 - INFO - Total Cost: 0.00000
+2026-07-29 12:28:19 - INFO - Results saved to workspace/HumanEval/workflows/round_12/0.84091_20260729_122819.csv
+2026-07-29 12:28:19 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:28:19 - INFO - Total Cost: 0.00000
+2026-07-29 12:28:59 - INFO - Results saved to workspace/HumanEval/workflows/round_13/0.84091_20260729_122859.csv
+2026-07-29 12:28:59 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:28:59 - INFO - Total Cost: 0.00000
+2026-07-29 12:29:22 - INFO - Results saved to workspace/HumanEval/workflows/round_14/0.84091_20260729_122922.csv
+2026-07-29 12:29:22 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:29:22 - INFO - Total Cost: 0.00000
+2026-07-29 12:30:10 - INFO - Results saved to workspace/HumanEval/workflows/round_15/0.81818_20260729_123010.csv
+2026-07-29 12:30:10 - INFO - Average score on HumanEval dataset: 0.81818
+2026-07-29 12:30:10 - INFO - Total Cost: 0.00000
+2026-07-29 12:30:49 - INFO - Results saved to workspace/HumanEval/workflows/round_16/0.79545_20260729_123049.csv
+2026-07-29 12:30:49 - INFO - Average score on HumanEval dataset: 0.79545
+2026-07-29 12:30:49 - INFO - Total Cost: 0.00000
+2026-07-29 12:31:13 - INFO - Results saved to workspace/HumanEval/workflows/round_17/0.84091_20260729_123113.csv
+2026-07-29 12:31:13 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:31:13 - INFO - Total Cost: 0.00000
+2026-07-29 12:31:54 - INFO - Results saved to workspace/HumanEval/workflows/round_18/0.84091_20260729_123154.csv
+2026-07-29 12:31:54 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:31:54 - INFO - Total Cost: 0.00000
+2026-07-29 12:32:22 - INFO - Results saved to workspace/HumanEval/workflows/round_19/0.86364_20260729_123222.csv
+2026-07-29 12:32:22 - INFO - Average score on HumanEval dataset: 0.86364
+2026-07-29 12:32:22 - INFO - Total Cost: 0.00000
+2026-07-29 12:32:50 - INFO - Results saved to workspace/HumanEval/workflows/round_21/0.84091_20260729_123250.csv
+2026-07-29 12:32:50 - INFO - Average score on HumanEval dataset: 0.84091
+2026-07-29 12:32:50 - INFO - Total Cost: 0.00000

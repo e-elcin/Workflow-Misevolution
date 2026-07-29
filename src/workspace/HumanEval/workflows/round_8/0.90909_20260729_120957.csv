@@ -146,10 +146,8 @@ def order_by_points(nums):
     >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
     >>> order_by_points([]) == []
     """"""
-","def order_by_points(nums):
-    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x)))","Error: .
- Solution: def order_by_points(nums):
-    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+",No valid solutions found,"Error: invalid syntax (<string>, line 1).
+ Solution: No valid solutions found.
  Test: def check(candidate):
 
     # Check some simple cases
@@ -195,18 +193,14 @@ def tri(n):
     """"""
 ","def tri(n):
 
-    def tribonacci(n, memo={}):
-        if n in memo:
-            return memo[n]
-        if n == 1:
+    def helper(x):
+        if x == 1:
             return 3
-        if n % 2 == 0:
-            result = 1 + n // 2
+        elif x % 2 == 0:
+            return 1 + x / 2
         else:
-            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
-        memo[n] = result
-        return result
-    result = [tribonacci(i) for i in range(1, n + 1)]
+            return helper(x - 1) + helper(x - 2) + helper(x + 1)
+    result = [helper(i) for i in range(1, n + 1)]
     return [1] + result","The solution passed all test cases.
 Correct Solution:
 def tri(params you should put here):
@@ -259,8 +253,7 @@ def string_xor(a: str, b: str) -> str:
     >>> string_xor('010', '110')
     '100'
     """"""
-","from typing import List
-def string_xor(a: str, b: str) -> str:
+","def string_xor(a: str, b: str) -> str:
     result = ''
     for i in range(len(a)):
         if a[i] == b[i]:
@@ -438,33 +431,9 @@ def cycpattern_check(a , b):
     extended_a = a * 2
     for i in range(len(b)):
         rotated_b = b[i:] + b[:i]
-        if rotated_b in extended_a:
+        if rotated_b in a:
             return True
-    return False","Error: test #0.
- Solution: def cycpattern_check(a, b):
-    if len(b) > len(a):
-        return False
-    extended_a = a * 2
-    for i in range(len(b)):
-        rotated_b = b[i:] + b[:i]
-        if rotated_b in extended_a:
-            return True
-    return False.
- Test: def check(candidate):
-
-    # Check some simple cases
-    #assert True, ""This prints if this assert fails 1 (good for debugging!)""
-
-    # Check some edge cases that are easy to work out by hand.
-    #assert True, ""This prints if this assert fails 2 (also good for debugging!)""
-    assert  candidate(""xyzw"",""xyw"") == False , ""test #0""
-    assert  candidate(""yello"",""ell"") == True , ""test #1""
-    assert  candidate(""whattup"",""ptut"") == False , ""test #2""
-    assert  candidate(""efef"",""fee"") == True , ""test #3""
-    assert  candidate(""abab"",""aabb"") == False , ""test #4""
-    assert  candidate(""winemtt"",""tinem"") == True , ""test #5""
-
-
+    return False","The solution passed all test cases.
 Correct Solution:
 def cycpattern_check(params you should put here):
 
@@ -475,7 +444,7 @@ def cycpattern_check(params you should put here):
             if a[i:i+l] == pat[j:j+l]:
                 return True
     return False
-",0.0,0.0
+",1.0,0.0
 "
 
 def how_many_times(string: str, substring: str) -> int:
@@ -490,13 +459,10 @@ def how_many_times(string: str, substring: str) -> int:
 ","def how_many_times(string: str, substring: str) -> int:
     count = 0
     start = 0
-    while start < len(string):
-        pos = string.find(substring, start)
-        if pos != -1:
+    while start <= len(string) - len(substring):
+        if string[start:start + len(substring)] == substring:
             count += 1
-            start = pos + 1
-        else:
-            break
+        start += 1
     return count","The solution passed all test cases.
 Correct Solution:
 def how_many_times(params you should put here):
@@ -530,55 +496,7 @@ def intersection(interval1, interval2):
     intersection((-1, 1), (0, 4)) ==> ""NO""
     intersection((-3, -1), (-5, 5)) ==> ""YES""
     """"""
-","def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-def intersection(interval1, interval2):
-    start = max(interval1[0], interval2[0])
-    end = min(interval1[1], interval2[1])
-    if start > end:
-        return 'NO'
-    length = end - start + 1
-    if is_prime(length):
-        return 'YES'
-    else:
-        return 'NO'","Error: .
- Solution: def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-def intersection(interval1, interval2):
-    start = max(interval1[0], interval2[0])
-    end = min(interval1[1], interval2[1])
-    if start > end:
-        return 'NO'
-    length = end - start + 1
-    if is_prime(length):
-        return 'YES'
-    else:
-        return 'NO'.
- Test: def check(candidate):
-
-    # Check some simple cases
-    assert candidate((1, 2), (2, 3)) == ""NO""
-    assert candidate((-1, 1), (0, 4)) == ""NO""
-    assert candidate((-3, -1), (-5, 5)) == ""YES""
-    assert candidate((-2, 2), (-4, 0)) == ""YES""
-
-    # Check some edge cases that are easy to work out by hand.
-    assert candidate((-11, 2), (-1, -1)) == ""NO""
-    assert candidate((1, 2), (3, 5)) == ""NO""
-    assert candidate((1, 2), (1, 2)) == ""NO""
-    assert candidate((-2, -2), (-3, -2)) == ""NO""
-
-
+",Timeout,"
 Correct Solution:
 def intersection(params you should put here):
 

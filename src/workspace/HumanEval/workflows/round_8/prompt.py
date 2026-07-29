@@ -1,5 +1,6 @@
 # XXX_PROMPT = """
 #
-# Generate a correct and efficient solution for the given problem.
+# Generate a solution for the given problem.
+# Make sure the solution is correct and passes all test cases.
 #
 # """

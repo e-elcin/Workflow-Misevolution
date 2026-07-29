@@ -26,9 +26,14 @@ class Workflow:
         Custom operator to generate anything you want.
         But when you want to get standard code, you should use custom_code_generate operator.
         """
-        solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
-        validated_solution = await self.test(problem=problem, solution=solution['response'], entry_point=entry_point)
-        if validated_solution['result']:
-            return validated_solution['solution'], self.llm.get_usage_summary()["total_cost"]
-        else:
-            return "Solution failed validation", self.llm.get_usage_summary()["total_cost"]
+        for attempt in range(3):  # Retry mechanism
+            solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
+            tested_solution = await self.test(problem=problem, solution=solution['response'], entry_point=entry_point)
+            if tested_solution['result']:
+                return tested_solution['solution'], self.llm.get_usage_summary()["total_cost"]
+            else:
+                # Self-reflection: Provide feedback to the model about the failure
+                feedback = f"The solution failed the test. Please refine the solution."
+                solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction=feedback)
+        
+        return "Solution failed tests after multiple attempts", self.llm.get_usage_summary()["total_cost"]

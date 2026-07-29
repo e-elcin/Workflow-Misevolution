@@ -146,7 +146,22 @@ def order_by_points(nums):
     >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
     >>> order_by_points([]) == []
     """"""
-",module 'workspace.HumanEval.workflows.round_11.prompt' has no attribute 'REFLECTION_PROMPT',"
+",Solution failed tests after multiple retries,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests after multiple retries.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, ""This prints if this assert fails 2 (also good for debugging!)""
+
+
 Correct Solution:
 def order_by_points(params you should put here):
 
@@ -244,7 +259,8 @@ def string_xor(a: str, b: str) -> str:
     >>> string_xor('010', '110')
     '100'
     """"""
-","def string_xor(a: str, b: str) -> str:
+","from typing import List
+def string_xor(a: str, b: str) -> str:
     result = ''
     for i in range(len(a)):
         if a[i] == b[i]:
@@ -280,17 +296,13 @@ def compare_one(a, b):
 
     def parse_value(v):
         if isinstance(v, str):
-            v = v.replace(',', '.')
-            try:
-                return float(v)
-            except ValueError:
-                return v
+            return float(v.replace(',', '.'))
         return v
-    a_parsed = parse_value(a)
-    b_parsed = parse_value(b)
-    if a_parsed == b_parsed:
+    parsed_a = parse_value(a)
+    parsed_b = parse_value(b)
+    if parsed_a == parsed_b:
         return None
-    elif a_parsed > b_parsed:
+    elif parsed_a > parsed_b:
         return a
     else:
         return b","The solution passed all test cases.
@@ -363,7 +375,9 @@ def valid_date(date):
     valid_date('06/04/2020') => False
     """"""
 ","def valid_date(date):
-    if not date or len(date) != 10 or date[2] != '-' or (date[5] != '-'):
+    if not date:
+        return False
+    if len(date) != 10 or date[2] != '-' or date[5] != '-':
         return False
     try:
         (month, day, year) = map(int, date.split('-'))
@@ -448,10 +462,13 @@ def how_many_times(string: str, substring: str) -> int:
 ","def how_many_times(string: str, substring: str) -> int:
     count = 0
     start = 0
-    while start <= len(string) - len(substring):
-        if string[start:start + len(substring)] == substring:
+    while start < len(string):
+        pos = string.find(substring, start)
+        if pos != -1:
             count += 1
-        start += 1
+            start = pos + 1
+        else:
+            break
     return count","The solution passed all test cases.
 Correct Solution:
 def how_many_times(params you should put here):
@@ -485,7 +502,23 @@ def intersection(interval1, interval2):
     intersection((-1, 1), (0, 4)) ==> ""NO""
     intersection((-3, -1), (-5, 5)) ==> ""YES""
     """"""
-",module 'workspace.HumanEval.workflows.round_11.prompt' has no attribute 'REFLECTION_PROMPT',"
+",Solution failed tests after multiple retries,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests after multiple retries.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == ""NO""
+    assert candidate((-1, 1), (0, 4)) == ""NO""
+    assert candidate((-3, -1), (-5, 5)) == ""YES""
+    assert candidate((-2, 2), (-4, 0)) == ""YES""
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == ""NO""
+    assert candidate((1, 2), (3, 5)) == ""NO""
+    assert candidate((1, 2), (1, 2)) == ""NO""
+    assert candidate((-2, -2), (-3, -2)) == ""NO""
+
+
 Correct Solution:
 def intersection(params you should put here):
 

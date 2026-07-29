@@ -1,3 +1,6 @@
 # XXX_PROMPT = """
-Ensure the solution is syntactically correct and handles edge cases.
-"""
+#
+# Generate a solution for the given problem.
+# Make sure the solution is correct and passes all test cases.
+#
+# """

@@ -14,7 +14,16 @@ def correct_bracketing(brackets: str):
     >>> correct_bracketing("")(()"")
     False
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def correct_bracketing(brackets: str) -> bool:
+    balance = 0
+    for bracket in brackets:
+        if bracket == '(':
+            balance += 1
+        elif bracket == ')':
+            balance -= 1
+        if balance < 0:
+            return False
+    return balance == 0","The solution passed all test cases.
 Correct Solution:
 def correct_bracketing(params you should put here):
 
@@ -27,7 +36,7 @@ def correct_bracketing(params you should put here):
         if depth < 0:
             return False
     return depth == 0
-",0.0,0.0
+",1.0,0.0
 "
 def unique_digits(x):
     """"""Given a list of positive integers x. return a sorted list of all 
@@ -41,7 +50,12 @@ def unique_digits(x):
     >>> unique_digits([152, 323, 1422, 10])
     []
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def unique_digits(x):
+
+    def has_even_digit(n):
+        return any((int(digit) % 2 == 0 for digit in str(n)))
+    result = [num for num in x if not has_even_digit(num)]
+    return sorted(result)","The solution passed all test cases.
 Correct Solution:
 def unique_digits(params you should put here):
 
@@ -50,7 +64,7 @@ def unique_digits(params you should put here):
         if all (int(c) % 2 == 1 for c in str(i)):
             odd_digit_elements.append(i)
     return sorted(odd_digit_elements)
-",0.0,0.0
+",1.0,0.0
 "
 def by_length(arr):
     """"""
@@ -74,7 +88,13 @@ def by_length(arr):
             -> reverse arr -> [55, 1, -1]
       return = ['One']
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def by_length(arr):
+    number_names = {1: 'One', 2: 'Two', 3: 'Three', 4: 'Four', 5: 'Five', 6: 'Six', 7: 'Seven', 8: 'Eight', 9: 'Nine'}
+    filtered_arr = [num for num in arr if 1 <= num <= 9]
+    sorted_arr = sorted(filtered_arr)
+    reversed_arr = sorted_arr[::-1]
+    result = [number_names[num] for num in reversed_arr]
+    return result","The solution passed all test cases.
 Correct Solution:
 def by_length(params you should put here):
 
@@ -97,7 +117,7 @@ def by_length(params you should put here):
         except:
             pass
     return new_arr
-",0.0,0.0
+",1.0,0.0
 "
 
 def incr_list(l: list):
@@ -107,12 +127,13 @@ def incr_list(l: list):
     >>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])
     [6, 4, 6, 3, 4, 4, 10, 1, 124]
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def incr_list(l: list):
+    return [x + 1 for x in l]","The solution passed all test cases.
 Correct Solution:
 def incr_list(params you should put here):
 
     return [(e + 1) for e in l]
-",0.0,0.0
+",1.0,0.0
 "
 def order_by_points(nums):
     """"""
@@ -125,7 +146,22 @@ def order_by_points(nums):
     >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
     >>> order_by_points([]) == []
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+",Solution failed tests after multiple retries,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests after multiple retries.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, ""This prints if this assert fails 2 (also good for debugging!)""
+
+
 Correct Solution:
 def order_by_points(params you should put here):
 
@@ -155,7 +191,21 @@ def tri(n):
     Examples:
     tri(3) = [1, 3, 2, 8]
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def tri(n):
+
+    def tribonacci(n, memo={}):
+        if n in memo:
+            return memo[n]
+        if n == 1:
+            return 3
+        if n % 2 == 0:
+            result = 1 + n // 2
+        else:
+            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
+        memo[n] = result
+        return result
+    result = [tribonacci(i) for i in range(1, n + 1)]
+    return [1] + result","The solution passed all test cases.
 Correct Solution:
 def tri(params you should put here):
 
@@ -168,7 +218,7 @@ def tri(params you should put here):
         else:
             my_tri.append(my_tri[i - 1] + my_tri[i - 2] + (i + 3) / 2)
     return my_tri
-",0.0,0.0
+",1.0,0.0
 "
 def sort_array(array):
     """"""
@@ -185,12 +235,19 @@ def sort_array(array):
     * sort_array([2, 4, 3, 0, 1, 5]) => [0, 1, 2, 3, 4, 5]
     * sort_array([2, 4, 3, 0, 1, 5, 6]) => [6, 5, 4, 3, 2, 1, 0]
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def sort_array(array):
+    if not array:
+        return []
+    first_last_sum = array[0] + array[-1]
+    if first_last_sum % 2 == 0:
+        return sorted(array, reverse=True)
+    else:
+        return sorted(array)","The solution passed all test cases.
 Correct Solution:
 def sort_array(params you should put here):
 
     return [] if len(array) == 0 else sorted(array, reverse= (array[0]+array[-1]) % 2 == 0) 
-",0.0,0.0
+",1.0,0.0
 "from typing import List
 
 
@@ -200,7 +257,14 @@ def string_xor(a: str, b: str) -> str:
     >>> string_xor('010', '110')
     '100'
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def string_xor(a: str, b: str) -> str:
+    result = ''
+    for i in range(len(a)):
+        if a[i] == b[i]:
+            result += '0'
+        else:
+            result += '1'
+    return result","The solution passed all test cases.
 Correct Solution:
 def string_xor(params you should put here):
 
@@ -211,7 +275,7 @@ def string_xor(params you should put here):
             return '1'
 
     return ''.join(xor(x, y) for x, y in zip(a, b))
-",0.0,0.0
+",1.0,0.0
 "
 def compare_one(a, b):
     """"""
@@ -225,7 +289,20 @@ def compare_one(a, b):
     compare_one(""5,1"", ""6"") ➞ ""6""
     compare_one(""1"", 1) ➞ None
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def compare_one(a, b):
+
+    def parse_value(v):
+        if isinstance(v, str):
+            return float(v.replace(',', '.'))
+        return v
+    parsed_a = parse_value(a)
+    parsed_b = parse_value(b)
+    if parsed_a == parsed_b:
+        return None
+    elif parsed_a > parsed_b:
+        return a
+    else:
+        return b","The solution passed all test cases.
 Correct Solution:
 def compare_one(params you should put here):
 
@@ -234,7 +311,7 @@ def compare_one(params you should put here):
     if isinstance(temp_b, str): temp_b = temp_b.replace(',','.')
     if float(temp_a) == float(temp_b): return None
     return a if float(temp_a) > float(temp_b) else b 
-",0.0,0.0
+",1.0,0.0
 "
 def digitSum(s):
     """"""Task
@@ -249,13 +326,14 @@ def digitSum(s):
         digitSum(""woArBld"") => 131
         digitSum(""aAaaaXa"") => 153
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def digitSum(s):
+    return sum((ord(c) for c in s if c.isupper()))","The solution passed all test cases.
 Correct Solution:
 def digitSum(params you should put here):
 
     if s == """": return 0
     return sum(ord(char) if char.isupper() else 0 for char in s)
-",0.0,0.0
+",1.0,0.0
 "
 
 def get_positive(l: list):
@@ -265,12 +343,13 @@ def get_positive(l: list):
     >>> get_positive([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])
     [5, 3, 2, 3, 9, 123, 1]
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def get_positive(l: list):
+    return [num for num in l if num > 0]","The solution passed all test cases.
 Correct Solution:
 def get_positive(params you should put here):
 
     return [e for e in l if e > 0]
-",0.0,0.0
+",1.0,0.0
 "
 def valid_date(date):
     """"""You have to write a function which validates a given date string and
@@ -292,7 +371,29 @@ def valid_date(date):
 
     valid_date('06/04/2020') => False
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def valid_date(date):
+    if not date:
+        return False
+    if len(date) != 10 or date[2] != '-' or date[5] != '-':
+        return False
+    try:
+        month = int(date[:2])
+        day = int(date[3:5])
+        year = int(date[6:])
+    except ValueError:
+        return False
+    if month < 1 or month > 12:
+        return False
+    if month in [1, 3, 5, 7, 8, 10, 12]:
+        if day < 1 or day > 31:
+            return False
+    elif month in [4, 6, 9, 11]:
+        if day < 1 or day > 30:
+            return False
+    elif month == 2:
+        if day < 1 or day > 29:
+            return False
+    return True","The solution passed all test cases.
 Correct Solution:
 def valid_date(params you should put here):
 
@@ -312,7 +413,7 @@ def valid_date(params you should put here):
         return False
 
     return True
-",0.0,0.0
+",1.0,0.0
 "
 def cycpattern_check(a , b):
     """"""You are given 2 words. You need to return True if the second word or any of its rotations is a substring in the first word
@@ -324,7 +425,15 @@ def cycpattern_check(a , b):
     cycpattern_check(""himenss"",""simen"") => True
 
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in a:
+            return True
+    return False","The solution passed all test cases.
 Correct Solution:
 def cycpattern_check(params you should put here):
 
@@ -335,7 +444,7 @@ def cycpattern_check(params you should put here):
             if a[i:i+l] == pat[j:j+l]:
                 return True
     return False
-",0.0,0.0
+",1.0,0.0
 "
 
 def how_many_times(string: str, substring: str) -> int:
@@ -347,7 +456,17 @@ def how_many_times(string: str, substring: str) -> int:
     >>> how_many_times('aaaa', 'aa')
     3
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def how_many_times(string: str, substring: str) -> int:
+    count = 0
+    start = 0
+    while start < len(string):
+        pos = string.find(substring, start)
+        if pos != -1:
+            count += 1
+            start = pos + 1
+        else:
+            break
+    return count","The solution passed all test cases.
 Correct Solution:
 def how_many_times(params you should put here):
 
@@ -358,7 +477,7 @@ def how_many_times(params you should put here):
             times += 1
 
     return times
-",0.0,0.0
+",1.0,0.0
 "
 def intersection(interval1, interval2):
     """"""You are given two intervals,
@@ -380,7 +499,23 @@ def intersection(interval1, interval2):
     intersection((-1, 1), (0, 4)) ==> ""NO""
     intersection((-3, -1), (-5, 5)) ==> ""YES""
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+",Solution failed tests after multiple retries,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests after multiple retries.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == ""NO""
+    assert candidate((-1, 1), (0, 4)) == ""NO""
+    assert candidate((-3, -1), (-5, 5)) == ""YES""
+    assert candidate((-2, 2), (-4, 0)) == ""YES""
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == ""NO""
+    assert candidate((1, 2), (3, 5)) == ""NO""
+    assert candidate((1, 2), (1, 2)) == ""NO""
+    assert candidate((-2, -2), (-3, -2)) == ""NO""
+
+
 Correct Solution:
 def intersection(params you should put here):
 
@@ -411,12 +546,13 @@ def solution(lst):
     solution([3, 3, 3, 3, 3]) ==> 9
     solution([30, 13, 24, 321]) ==>0
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def solution(lst):
+    return sum((lst[i] for i in range(0, len(lst), 2) if lst[i] % 2 != 0))","The solution passed all test cases.
 Correct Solution:
 def solution(params you should put here):
 
     return sum([x for idx, x in enumerate(lst) if idx%2==0 and x%2==1])
-",0.0,0.0
+",1.0,0.0
 "from typing import List
 
 
@@ -428,7 +564,13 @@ def has_close_elements(numbers: List[float], threshold: float) -> bool:
     >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)
     True
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","from typing import List
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False","The solution passed all test cases.
 Correct Solution:
 def has_close_elements(params you should put here):
 
@@ -440,7 +582,7 @@ def has_close_elements(params you should put here):
                     return True
 
     return False
-",0.0,0.0
+",1.0,0.0
 "from typing import List
 
 
@@ -457,13 +599,24 @@ def parse_music(music_string: str) -> List[int]:
     >>> parse_music('o o| .| o| o| .| .| .| .| o o')
     [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","from typing import List
+def parse_music(music_string: str) -> List[int]:
+    notes = music_string.split()
+    beats = []
+    for note in notes:
+        if note == 'o':
+            beats.append(4)
+        elif note == 'o|':
+            beats.append(2)
+        elif note == '.|':
+            beats.append(1)
+    return beats","The solution passed all test cases.
 Correct Solution:
 def parse_music(params you should put here):
 
     note_map = {'o': 4, 'o|': 2, '.|': 1}
     return [note_map[x] for x in music_string.split(' ') if x]
-",0.0,0.0
+",1.0,0.0
 "
 
 def below_threshold(l: list, t: int):
@@ -473,7 +626,8 @@ def below_threshold(l: list, t: int):
     >>> below_threshold([1, 20, 4, 10], 5)
     False
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def below_threshold(l: list, t: int) -> bool:
+    return all((x < t for x in l))","The solution passed all test cases.
 Correct Solution:
 def below_threshold(params you should put here):
 
@@ -481,7 +635,7 @@ def below_threshold(params you should put here):
         if e >= t:
             return False
     return True
-",0.0,0.0
+",1.0,0.0
 "
 def get_odd_collatz(n):
     """"""
@@ -500,7 +654,21 @@ def get_odd_collatz(n):
     For example:
     get_odd_collatz(5) returns [1, 5] # The collatz sequence for 5 is [5, 16, 8, 4, 2, 1], so the odd numbers are only 1, and 5.
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def get_odd_collatz(n):
+
+    def collatz_sequence(n):
+        sequence = []
+        while n != 1:
+            sequence.append(n)
+            if n % 2 == 0:
+                n = n // 2
+            else:
+                n = 3 * n + 1
+        sequence.append(1)
+        return sequence
+    sequence = collatz_sequence(n)
+    odd_numbers = [num for num in sequence if num % 2 != 0]
+    return sorted(odd_numbers)","The solution passed all test cases.
 Correct Solution:
 def get_odd_collatz(params you should put here):
 
@@ -518,7 +686,7 @@ def get_odd_collatz(params you should put here):
             odd_collatz.append(int(n))
 
     return sorted(odd_collatz)
-",0.0,0.0
+",1.0,0.0
 "
 
 def encode_cyclic(s: str):
@@ -536,12 +704,15 @@ def decode_cyclic(s: str):
     """"""
     takes as input string encoded with encode_cyclic function. Returns decoded string.
     """"""
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def decode_cyclic(s: str):
+    groups = [s[3 * i:min(3 * i + 3, len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [group[-1] + group[:-1] if len(group) == 3 else group for group in groups]
+    return ''.join(groups)","The solution passed all test cases.
 Correct Solution:
 def decode_cyclic(params you should put here):
 
     return encode_cyclic(encode_cyclic(s))
-",0.0,0.0
+",1.0,0.0
 "
 def will_it_fly(q,w):
     '''
@@ -561,7 +732,12 @@ def will_it_fly(q,w):
     will_it_fly([3], 5) ➞ True
     # 3 is less than the maximum possible weight, and it's balanced.
     '''
-",module 'workspace.HumanEval.workflows.round_18.prompt' has no attribute 'ANALYZE_PROBLEM',"
+","def will_it_fly(q, w):
+    if q != q[::-1]:
+        return False
+    if sum(q) > w:
+        return False
+    return True","The solution passed all test cases.
 Correct Solution:
 def will_it_fly(params you should put here):
 
@@ -575,4 +751,4 @@ def will_it_fly(params you should put here):
         i+=1
         j-=1
     return True
-",0.0,0.0
+",1.0,0.0

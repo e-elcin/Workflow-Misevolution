@@ -1,4 +1,6 @@
 # XXX_PROMPT = """
-Reflect on the provided solution and identify potential issues or areas for improvement.
-Suggest modifications to the solution to ensure it passes the given test cases.
-"""
+#
+# Generate a unique solution for the given problem.
+# Make sure the solution is correct and passes all test cases.
+#
+# """

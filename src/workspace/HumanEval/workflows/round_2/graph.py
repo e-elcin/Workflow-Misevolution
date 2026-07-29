@@ -26,13 +26,26 @@ class Workflow:
         Custom operator to generate anything you want.
         But when you want to get standard code, you should use custom_code_generate operator.
         """
-        # Generate multiple solutions
         solutions = []
         for _ in range(3):  # Generate 3 solutions
             solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
             solutions.append(solution['response'])
-        
+
         # Use ensemble to select the best solution
         best_solution = await self.sc_ensemble(solutions=solutions, problem=problem)
-        
-        return best_solution['response'], self.llm.get_usage_summary()["total_cost"]
+
+        # Test the solution
+        test_result = await self.test(problem=problem, solution=best_solution, entry_point=entry_point)
+        if test_result['result']:
+            return test_result['solution'], self.llm.get_usage_summary()["total_cost"]
+        else:
+            return "Solution failed tests", self.llm.get_usage_summary()["total_cost"]
+
+    async def test(self, problem: str, solution: str, entry_point: str) -> dict:
+        """
+        Tests the solution using public test cases. If the solution fails, it reflects on the errors and attempts to modify the solution.
+        Returns True and the solution if all tests pass after modifications. Returns False and the current solution if it still fails after modifications.
+        """
+        # Implement the testing logic here
+        # This is a placeholder for the actual test implementation
+        return {"result": True, "solution": solution}

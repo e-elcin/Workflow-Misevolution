@@ -1,3 +1,5 @@
-"""
-Analyze the problem and provide a specific instruction for generating the solution.
-"""
+# XXX_PROMPT = """
+#
+# Generate a solution for the given problem.
+#
+# """

@@ -127,7 +127,7 @@ def incr_list(l: list):
     >>> incr_list([5, 3, 5, 2, 3, 3, 9, 0, 123])
     [6, 4, 6, 3, 4, 4, 10, 1, 124]
     """"""
-","def incr_list(l: list) -> list:
+","def incr_list(l: list):
     return [x + 1 for x in l]","The solution passed all test cases.
 Correct Solution:
 def incr_list(params you should put here):
@@ -146,8 +146,8 @@ def order_by_points(nums):
     >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
     >>> order_by_points([]) == []
     """"""
-",Solution failed tests,"Error: invalid syntax (<string>, line 1).
- Solution: Solution failed tests.
+",Solution failed tests even after refinement,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests even after refinement.
  Test: def check(candidate):
 
     # Check some simple cases
@@ -193,15 +193,21 @@ def tri(n):
     """"""
 ","def tri(n):
 
-    def helper(x):
-        if x == 1:
+    def tribonacci(n, memo={}):
+        if n in memo:
+            return memo[n]
+        if n == 1:
             return 3
-        elif x % 2 == 0:
-            return 1 + x / 2
+        if n % 2 == 0:
+            result = 1 + n // 2
         else:
-            return helper(x - 1) + helper(x - 2) + helper(x + 1)
-    result = [helper(i) for i in range(1, n + 1)]
-    return [1] + result","The solution passed all test cases.
+            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
+        memo[n] = result
+        return result
+    result = [1]
+    for i in range(1, n + 1):
+        result.append(tribonacci(i))
+    return result","The solution passed all test cases.
 Correct Solution:
 def tri(params you should put here):
 
@@ -253,8 +259,7 @@ def string_xor(a: str, b: str) -> str:
     >>> string_xor('010', '110')
     '100'
     """"""
-","from typing import List
-def string_xor(a: str, b: str) -> str:
+","def string_xor(a: str, b: str) -> str:
     result = ''
     for i in range(len(a)):
         if a[i] == b[i]:
@@ -500,8 +505,8 @@ def intersection(interval1, interval2):
     intersection((-1, 1), (0, 4)) ==> ""NO""
     intersection((-3, -1), (-5, 5)) ==> ""YES""
     """"""
-",Solution failed tests,"Error: invalid syntax (<string>, line 1).
- Solution: Solution failed tests.
+",Solution failed tests even after refinement,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests even after refinement.
  Test: def check(candidate):
 
     # Check some simple cases

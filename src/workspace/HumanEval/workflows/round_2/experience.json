@@ -1,7 +1,7 @@
 {
     "father node": 1,
-    "modification": "Add the `sc_ensemble` operator to enhance the solution selection process, ensuring the best possible solution is chosen by voting among multiple solutions.",
-    "before": 0.8636363636363636,
-    "after": 0.8636363636363636,
+    "modification": "Add the `sc_ensemble` operator to the workflow to improve the robustness of the selected solution.",
+    "before": 0.8181818181818182,
+    "after": 0.0,
     "succeed": false
 }

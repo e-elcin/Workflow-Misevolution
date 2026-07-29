@@ -1,6 +1,6 @@
 {
     "father node": 7,
-    "modification": "Add a pre-processing step to analyze the problem and generate a more specific instruction for the `custom_code_generate` method.",
+    "modification": "Added a self-consistency check (sc_ensemble) to refine the solution before testing.",
     "before": 0.9090909090909091,
     "after": 0.9090909090909091,
     "succeed": false

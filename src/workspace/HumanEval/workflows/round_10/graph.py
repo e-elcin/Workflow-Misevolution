@@ -19,16 +19,17 @@ class Workflow:
         self.custom = operator.Custom(self.llm)
         self.custom_code_generate = operator.CustomCodeGenerate(self.llm)
         self.test = operator.Test(self.llm)
+        self.reflect = operator.Reflect(self.llm)  # Added reflection operator
 
     async def __call__(self, problem: str, entry_point: str):
-        """
-        Implementation of the workflow
-        Custom operator to generate anything you want.
-        But when you want to get standard code, you should use custom_code_generate operator.
-        """
-        solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
-        validated_solution = await self.test(problem=problem, solution=solution['response'], entry_point=entry_point)
-        if validated_solution['result']:
-            return validated_solution['solution'], self.llm.get_usage_summary()["total_cost"]
-        else:
-            return "Solution failed validation", self.llm.get_usage_summary()["total_cost"]
+        max_retries = 3
+        for _ in range(max_retries):
+            solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
+            tested_solution = await self.test(problem=problem, solution=solution['response'], entry_point=entry_point)
+            if tested_solution['result']:
+                return tested_solution['solution'], self.llm.get_usage_summary()["total_cost"]
+            else:
+                # Reflect on the failed solution to improve it
+                improved_solution = await self.reflect(problem=problem, solution=tested_solution['solution'], entry_point=entry_point)
+                solution = {"response": improved_solution['response']}
+        return "Solution failed tests after multiple retries", self.llm.get_usage_summary()["total_cost"]

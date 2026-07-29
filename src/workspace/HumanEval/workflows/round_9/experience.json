@@ -1,0 +1,7 @@
+{
+    "father node": 6,
+    "modification": "Add a step to generate multiple solutions and then use the `sc_ensemble` operator to select the best solution based on the self-consistency method.",
+    "before": 0.9090909090909091,
+    "after": 0.9090909090909091,
+    "succeed": false
+}

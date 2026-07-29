@@ -18,30 +18,37 @@ class Workflow:
         self.llm = create_llm_instance(llm_config)
         self.custom = operator.Custom(self.llm)
         self.custom_code_generate = operator.CustomCodeGenerate(self.llm)
-        self.sc_ensemble = operator.ScEnsemble(self.llm)
         self.test = operator.Test(self.llm)
+        self.sc_ensemble = operator.ScEnsemble(self.llm)
 
     async def __call__(self, problem: str, entry_point: str):
         """
-        Enhanced implementation of the workflow
-        Adds a pre-processing step to clean and prepare the problem statement.
+        Implementation of the workflow
+        Custom operator to generate anything you want.
+        But when you want to get standard code, you should use custom_code_generate operator.
+        Added retry mechanism for better solution generation.
         """
-        # Pre-process the problem statement
-        cleaned_problem = await self.custom(input=problem, instruction=prompt_custom.PRE_PROCESSING_PROMPT)
-        
-        # Generate multiple solutions
         solutions = []
         for _ in range(3):  # Generate 3 solutions
-            solution = await self.custom_code_generate(problem=cleaned_problem['response'], entry_point=entry_point, instruction="")
+            solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
             solutions.append(solution['response'])
         
-        # Use ensemble to select the best solution
-        best_solution = await self.sc_ensemble(solutions=solutions, problem=cleaned_problem['response'])
+        best_solution = await self.sc_ensemble(solutions=solutions, problem=problem)
         
-        # Validate the best solution using test cases
-        test_result = await self.test(problem=cleaned_problem['response'], solution=best_solution['response'], entry_point=entry_point)
-        
-        if test_result['result']:
-            return test_result['solution'], self.llm.get_usage_summary()["total_cost"]
+        tested_solution = await self.test(problem=problem, solution=best_solution['response'], entry_point=entry_point)
+        if tested_solution['result']:
+            return tested_solution['solution'], self.llm.get_usage_summary()["total_cost"]
         else:
-            return "Solution failed test cases", self.llm.get_usage_summary()["total_cost"]
+            # Retry with a refined prompt
+            refined_solutions = []
+            for _ in range(3):  # Generate 3 refined solutions
+                refined_solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="The previous solution failed. Please refine your solution.")
+                refined_solutions.append(refined_solution['response'])
+            
+            best_refined_solution = await self.sc_ensemble(solutions=refined_solutions, problem=problem)
+            
+            refined_tested_solution = await self.test(problem=problem, solution=best_refined_solution['response'], entry_point=entry_point)
+            if refined_tested_solution['result']:
+                return refined_tested_solution['solution'], self.llm.get_usage_summary()["total_cost"]
+            else:
+                return "Solution failed tests even after refinement", self.llm.get_usage_summary()["total_cost"]

@@ -146,8 +146,8 @@ def order_by_points(nums):
     >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
     >>> order_by_points([]) == []
     """"""
-",Solution failed tests even after refinement,"Error: invalid syntax (<string>, line 1).
- Solution: Solution failed tests even after refinement.
+",Solution failed tests,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests.
  Test: def check(candidate):
 
     # Check some simple cases
@@ -193,18 +193,14 @@ def tri(n):
     """"""
 ","def tri(n):
 
-    def tribonacci(n, memo={}):
-        if n in memo:
-            return memo[n]
-        if n == 1:
+    def helper(x):
+        if x == 1:
             return 3
-        if n % 2 == 0:
-            result = 1 + n // 2
+        elif x % 2 == 0:
+            return 1 + x // 2
         else:
-            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
-        memo[n] = result
-        return result
-    result = [tribonacci(i) for i in range(1, n + 1)]
+            return helper(x - 1) + helper(x - 2) + helper(x + 1)
+    result = [helper(i) for i in range(1, n + 1)]
     return [1] + result","The solution passed all test cases.
 Correct Solution:
 def tri(params you should put here):
@@ -376,10 +372,14 @@ def valid_date(date):
     valid_date('06/04/2020') => False
     """"""
 ","def valid_date(date):
-    if not date or len(date) != 10 or date[2] != '-' or (date[5] != '-'):
+    if not date:
+        return False
+    if len(date) != 10 or date[2] != '-' or date[5] != '-':
         return False
     try:
-        (month, day, year) = map(int, date.split('-'))
+        month = int(date[:2])
+        day = int(date[3:5])
+        year = int(date[6:])
     except ValueError:
         return False
     if month < 1 or month > 12:
@@ -393,8 +393,6 @@ def valid_date(date):
     elif month == 2:
         if day < 1 or day > 29:
             return False
-    else:
-        return False
     return True","The solution passed all test cases.
 Correct Solution:
 def valid_date(params you should put here):
@@ -501,8 +499,8 @@ def intersection(interval1, interval2):
     intersection((-1, 1), (0, 4)) ==> ""NO""
     intersection((-3, -1), (-5, 5)) ==> ""YES""
     """"""
-",Solution failed tests even after refinement,"Error: invalid syntax (<string>, line 1).
- Solution: Solution failed tests even after refinement.
+",Solution failed tests,"Error: invalid syntax (<string>, line 1).
+ Solution: Solution failed tests.
  Test: def check(candidate):
 
     # Check some simple cases

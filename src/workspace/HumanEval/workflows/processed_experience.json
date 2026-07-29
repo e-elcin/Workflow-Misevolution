@@ -4,70 +4,20 @@
         "success": {},
         "failure": {
             "14": {
-                "modification": "Add a pre-reflection step before the initial solution generation to ensure the problem is well understood and the initial instructions are more directed.",
-                "score": 0.0
+                "modification": "Added a self-consistency ensemble check before returning the final solution to enhance reliability.",
+                "score": 0.9090909090909091
             },
             "18": {
-                "modification": "Add a pre-analysis step to evaluate the complexity and type of the problem before generating the initial solution.",
-                "score": 0.0
-            },
-            "13": {
-                "modification": "Add a pre-processing step to analyze the problem and generate a more specific instruction for the `custom_code_generate` method.",
+                "modification": "Added a self-consistency check (sc_ensemble) to refine the solution before testing, enhancing the reliability of the solution.",
                 "score": 0.9090909090909091
-            },
-            "11": {
-                "modification": "Add a reflection step before attempting to refine the solution to ensure that the reflection is based on a more informed analysis of the initial failure.",
-                "score": 0.9090909090909091
-            }
-        }
-    },
-    "1": {
-        "score": 0.8636363636363636,
-        "success": {},
-        "failure": {
-            "2": {
-                "modification": "Add the `sc_ensemble` operator to enhance the solution selection process, ensuring the best possible solution is chosen by voting among multiple solutions.",
-                "score": 0.8636363636363636
-            },
-            "15": {
-                "modification": "Introduce the `sc_ensemble` operator to aggregate multiple solutions and select the most frequent one, enhancing the robustness of the solution selection process. Modify the `__call__` method to include the `sc_ensemble` step before returning the final solution.",
-                "score": 0.8636363636363636
-            },
-            "3": {
-                "modification": "Added the `sc_ensemble` operator to aggregate multiple solutions and select the most frequent one, enhancing the robustness of the solution selection process.",
-                "score": 0.8181818181818182
-            },
-            "12": {
-                "modification": "- Added the `sc_ensemble` operator to the workflow to enhance the robustness of the solution selection process.\n    - Modified the `__call__` method to include the `sc_ensemble` step before returning the final solution.",
-                "score": 0.8636363636363636
             },
             "19": {
-                "modification": "- Introduce the `sc_ensemble` operator to aggregate multiple solutions and select the most frequent one, enhancing the robustness of the solution selection process.\n- Modify the `__call__` method to include the `sc_ensemble` step before returning the final solution.",
-                "score": 0.8181818181818182
-            }
-        }
-    },
-    "2": {
-        "score": 0.8636363636363636,
-        "success": {
-            "4": {
-                "modification": "Add a test operator call to validate the generated solution against provided test cases before returning the final result.",
+                "modification": "Added a self-consistency ensemble check after generating the initial solution to refine the solution and ensure better reliability.",
                 "score": 0.9090909090909091
             },
-            "6": {
-                "modification": "Added a test operator call to validate the generated solution against provided test cases before returning the final result.",
+            "13": {
+                "modification": "Added a self-consistency check (sc_ensemble) to refine the solution before testing.",
                 "score": 0.9090909090909091
-            }
-        },
-        "failure": {}
-    },
-    "3": {
-        "score": 0.8181818181818182,
-        "success": {},
-        "failure": {
-            "5": {
-                "modification": "Add a custom method to handle edge cases and improve the accuracy of the generated code.",
-                "score": 0.0
             }
         }
     },
@@ -75,9 +25,72 @@
         "score": 0.9090909090909091,
         "success": {},
         "failure": {
-            "7": {
-                "modification": "Modify the CustomCodeGenerate operator to include a reflection step if the initial solution fails testing. This step will attempt to identify the error and refine the solution before final testing.",
+            "17": {
+                "modification": "Modify the `__call__` method to include a retry mechanism with self-reflection to refine the solution if it fails the initial test. This approach leverages the existing operators without changing the overall structure significantly.",
                 "score": 0.9090909090909091
+            },
+            "6": {
+                "modification": "Added a retry mechanism in case the initial solution fails the test. This is done by calling the `custom_code_generate` operator again with a refined prompt if the first attempt fails.",
+                "score": 0.9090909090909091
+            },
+            "12": {
+                "modification": "Introduce a self-consistency ensemble method to generate multiple solutions and use the `sc_ensemble` operator to select the most frequent one as the final solution. This will help in improving the robustness of the solution generation process.",
+                "score": 0.9090909090909091
+            },
+            "7": {
+                "modification": "Added a retry mechanism with a maximum of 3 retries to ensure the solution passes the tests. This is implemented by wrapping the existing logic in a loop.",
+                "score": 0.9090909090909091
+            },
+            "11": {
+                "modification": "Introduce a self-consistency ensemble method to generate multiple solutions and select the most frequent one as the final solution.",
+                "score": 0.9090909090909091
+            }
+        }
+    },
+    "1": {
+        "score": 0.8181818181818182,
+        "success": {
+            "4": {
+                "modification": "Added the `test` operator to validate the generated solution and ensure correctness before returning the final result.",
+                "score": 0.9090909090909091
+            }
+        },
+        "failure": {
+            "2": {
+                "modification": "Add the `sc_ensemble` operator to the workflow to improve the robustness of the selected solution.",
+                "score": 0.0
+            }
+        }
+    },
+    "6": {
+        "score": 0.9090909090909091,
+        "success": {},
+        "failure": {
+            "15": {
+                "modification": "Add a step to generate multiple solutions and then use the `sc_ensemble` operator to select the best solution based on the self-consistency method, but this time, ensure that the solutions are generated with a slight variation in the prompt to encourage diversity.",
+                "score": 0.9090909090909091
+            },
+            "16": {
+                "modification": "Add a step to generate a diverse set of initial solutions and use the `sc_ensemble` operator to select the best solution from these diverse attempts.",
+                "score": 0.9090909090909091
+            },
+            "9": {
+                "modification": "Add a step to generate multiple solutions and then use the `sc_ensemble` operator to select the best solution based on the self-consistency method.",
+                "score": 0.9090909090909091
+            },
+            "8": {
+                "modification": "Add a call to `sc_ensemble` before returning the solution to leverage self-consistency for selecting the best solution from multiple attempts.",
+                "score": 0.9090909090909091
+            }
+        }
+    },
+    "2": {
+        "score": 0.0,
+        "success": {},
+        "failure": {
+            "5": {
+                "modification": "Added a reflection mechanism in the `test` method to attempt modifications if the initial solution fails the tests.",
+                "score": 0.0
             }
         }
     }

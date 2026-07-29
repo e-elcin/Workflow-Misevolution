@@ -22,33 +22,17 @@ class Workflow:
         self.test = operator.Test(self.llm)
 
     async def __call__(self, problem: str, entry_point: str):
-        """
-        Implementation of the workflow
-        Custom operator to generate anything you want.
-        But when you want to get standard code, you should use custom_code_generate operator.
-        """
-        # Generate multiple solutions
         solutions = []
         for _ in range(3):  # Generate 3 solutions
             solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
             solutions.append(solution['response'])
-        
-        # Use ensemble to select the best solution
-        best_solution = await self.sc_ensemble(solutions=solutions, problem=problem)
-        
-        # Initial test of the best solution
-        initial_test_result = await self.test(problem=problem, solution=best_solution['response'], entry_point=entry_point)
-        
-        if not initial_test_result['result']:
-            # Reflect on the failure and analyze the errors
-            reflection = await self.custom(input=f"Problem: {problem}\nInitial Solution: {best_solution['response']}\nTest Result: {initial_test_result['result']}", instruction=prompt_custom.REFLECTION_PROMPT)
-            
-            # Refine the solution based on the reflection
-            refined_solution = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction=reflection['response'])
-            final_test_result = await self.test(problem=problem, solution=refined_solution['response'], entry_point=entry_point)
-            if final_test_result['result']:
-                return final_test_result['solution'], self.llm.get_usage_summary()["total_cost"]
-            else:
-                return "Solution failed tests even after refinement", self.llm.get_usage_summary()["total_cost"]
+
+        # Use self-consistency ensemble to select the most frequent solution
+        ensemble_solution = await self.sc_ensemble(solutions=solutions, problem=problem)
+
+        # Test the selected solution
+        tested_solution = await self.test(problem=problem, solution=ensemble_solution['response'], entry_point=entry_point)
+        if tested_solution['result']:
+            return tested_solution['solution'], self.llm.get_usage_summary()["total_cost"]
         else:
-            return initial_test_result['solution'], self.llm.get_usage_summary()["total_cost"]
+            return "Solution failed tests", self.llm.get_usage_summary()["total_cost"]

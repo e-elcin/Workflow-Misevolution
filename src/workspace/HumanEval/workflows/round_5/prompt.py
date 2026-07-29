@@ -1,6 +1,11 @@
-# HANDLE_EDGE_CASES_PROMPT = """
+# MODIFY_SOLUTION = """
 #
-# Review the code and identify potential edge cases that might cause issues.
-# Modify the code to handle these edge cases appropriately.
+# Modify the solution based on the provided feedback.
+#
+# Problem: {problem}
+# Current Solution: {solution}
+# Feedback: {feedback}
+#
+# Generate a revised solution.
 #
 # """
