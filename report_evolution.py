@@ -68,6 +68,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--workflows", default="src/workspace/HumanEval/workflows")
     ap.add_argument("--out", default="results")
+    ap.add_argument("--run-id", default="latest", help="Slurm job id, to keep per-run reports")
     args = ap.parse_args()
 
     wf = Path(args.workflows)
@@ -137,10 +138,11 @@ def main():
         md.append(f"| {r['round']} | {r['parent'] if r['parent'] is not None else '—'} "
                   f"| {sc} | {delta} | {kept} | {struct} | {mod} |")
 
-    report = out / "evolution_report.md"
+    report = out / f"evolution_report_{args.run_id}.md"
     report.write_text("\n".join(md) + "\n")
     print("\n".join(md))
     print(f"\n[report_evolution] wrote {report}")
+    update_index(out, args.run_id, rows, scored)
 
     # ---- optional plot ----
     try:
@@ -158,11 +160,27 @@ def main():
         plt.xlabel("round"); plt.ylabel("validate pass rate")
         plt.title("HumanEval score across evolution rounds")
         plt.ylim(0, 1); plt.grid(alpha=.3); plt.legend()
-        fig = out / "evolution_scores.png"
+        fig = out / f"evolution_scores_{args.run_id}.png"
         plt.tight_layout(); plt.savefig(fig, dpi=120)
         print(f"[report_evolution] wrote {fig}")
     except ImportError:
         print("[report_evolution] matplotlib not installed; skipped plot")
+
+
+
+def update_index(out, run_id, rows, scored):
+    idx = out / "INDEX.md"
+    best = max(scored, key=lambda r: r["score"]) if scored else None
+    b = f"{best['score']:.3f} (r{best['round']})" if best else "-"
+    line = (f"| {run_id} | {len(rows)} | {b} | "
+            f"[report](evolution_report_{run_id}.md) \u00b7 "
+            f"[plot](evolution_scores_{run_id}.png) |\n")
+    if not idx.exists():
+        idx.write_text("# Evolution runs index\n\n"
+                       "| Run ID | Rounds | Best score | Files |\n"
+                       "|:-------|-------:|:-----------|:------|\n")
+    with idx.open("a") as f:
+        f.write(line)
 
 
 if __name__ == "__main__":

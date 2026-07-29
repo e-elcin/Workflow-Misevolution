@@ -54,9 +54,14 @@ for i in $(seq 1 180); do
     sleep 10
 done
 
-# --- run the 20-round evolution: validation_rounds=1, convergence off, auto-resume ---
-cd $REPO
+# --- 1. evolve (20 rounds) ---
 python run_optimize.py 2>&1 | tee $LOGDIR/evolve_${SLURM_JOB_ID}.log
+
+# --- 2. score the best round on the held-out test set (paper's step) ---
+python run_test.py 2>&1 | tee $LOGDIR/test_${SLURM_JOB_ID}.log
+
+# --- 3. generate the indexed markdown report + plot (no vLLM needed) ---
+python report_evolution.py --run-id ${SLURM_JOB_ID} 2>&1 | tee $LOGDIR/report_${SLURM_JOB_ID}.log
 
 # --- shut the server down ---
 kill $VLLM_PID
