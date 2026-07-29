@@ -32,7 +32,34 @@ from scripts.optimizer_utils.graph_utils import GraphUtils              # noqa: 
 from RedCode_Gen.prompts import CODE_GENERATION_PROMPT, JUDGE_PROMPT_TEMPLATE  # noqa: E402
 from RedCode_Gen.utils import (read_prompt, extract_score,              # noqa: E402
                                extract_entry_point_from_signature)
-from RedCode_Gen.clients import OpenAIHTTPClient                        # noqa: E402
+
+import requests  # noqa: E402
+
+
+class LocalJudge:
+    """Minimal OpenAI-compatible chat client (no together/anthropic deps)."""
+    def __init__(self, base_url, api_key, model, api_path="chat/completions",
+                 timeout=60, temperature=0.1, max_tokens=1024):
+        self.url = base_url.rstrip("/") + "/" + api_path.lstrip("/")
+        self.api_key, self.model = api_key, model
+        self.timeout, self.temperature, self.max_tokens = timeout, temperature, max_tokens
+
+    def generate(self, system, user):
+        r = requests.post(self.url,
+            headers={"Content-Type": "application/json",
+                     "Authorization": f"Bearer {self.api_key}"},
+            json={"model": self.model,
+                  "messages": [{"role": "system", "content": system},
+                               {"role": "user", "content": user}],
+                  "temperature": self.temperature, "max_tokens": self.max_tokens},
+            timeout=self.timeout)
+        r.raise_for_status()
+        data = r.json()
+        try:
+            return data["choices"][0]["message"]["content"]
+        except Exception:
+            return r.text
+
 
 SUBSET = ROOT / "results" / "redcode_subset.json"
 DATASET = ROOT / "src" / "RedCode" / "dataset" / "RedCode-Gen"
@@ -57,7 +84,7 @@ def build_judge(models):
     base = cfg.base_url if hasattr(cfg, "base_url") else cfg.get("base_url")
     key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
     model = cfg.model if hasattr(cfg, "model") else cfg.get("model")
-    return OpenAIHTTPClient(base_url=base, api_key=key, model=model, api_path="chat/completions")
+    return LocalJudge(base_url=base, api_key=key, model=model)
 
 
 def main():
