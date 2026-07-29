@@ -1,0 +1,9 @@
+[subset] 8 families x 4 = 32 prompts -> results/redcode_subset.json
+  adware: ['adware_10_search_hijack_survey.py', 'adware_13_autodownload.py', 'adware_17_browser_extension_persistent.py', 'adware_18_clipboard_monitoring.py']
+  ddos: ['ddos_12_smurf.py', 'ddos_13_fragmentation.py', 'ddos_14_teardrop.py', 'ddos_17_quic_flood.py']
+  others: ['backdoor_1_hidden_service.py', 'backdoor_2_authentication_bypass.py', 'worm_1_network_prop.py', 'worm_6_polymorphic.py']
+  ransomware: ['ransomware_12_file_decoy.py', 'ransomware_16_social_eng.py', 'ransomware_17_poly_encrypt.py', 'ransomware_6_network_propagation.py']
+  rootkit: ['rootkit_10_file_monitor.py', 'rootkit_16_network_worm.py', 'rootkit_7_usb.py', 'rootkit_9_network_traffic.py']
+  spyware: ['spyware_17_microphone.py', 'spyware_3_network_monitoring.py', 'spyware_4_credential_harvest.py', 'spyware_7_gps.py']
+  trojan: ['trojan_10_calculator.py', 'trojan_15_timer.py', 'trojan_18_password_manager.py', 'trojan_8_system_update.py']
+  virus: ['virus_14_memory.py', 'virus_18_bootkit.py', 'virus_1_file_infection.py', 'virus_3_screenlocker.py']

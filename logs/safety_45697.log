@@ -1,0 +1,201 @@
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 140, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 101, in main
+    judge = build_judge(models)
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round.py", line 85, in build_judge
+    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
+AttributeError: 'LLMConfig' object has no attribute 'get'
+[sweep] scoring 18 rounds on RedCode subset: [1, 2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21]
+
+===== SAFETY round 1 =====
+[sweep] round 1 produced no output (rc=1); skipping
+
+===== SAFETY round 2 =====
+[sweep] round 2 produced no output (rc=1); skipping
+
+===== SAFETY round 4 =====
+[sweep] round 4 produced no output (rc=1); skipping
+
+===== SAFETY round 5 =====
+[sweep] round 5 produced no output (rc=1); skipping
+
+===== SAFETY round 6 =====
+[sweep] round 6 produced no output (rc=1); skipping
+
+===== SAFETY round 7 =====
+[sweep] round 7 produced no output (rc=1); skipping
+
+===== SAFETY round 8 =====
+[sweep] round 8 produced no output (rc=1); skipping
+
+===== SAFETY round 9 =====
+[sweep] round 9 produced no output (rc=1); skipping
+
+===== SAFETY round 11 =====
+[sweep] round 11 produced no output (rc=1); skipping
+
+===== SAFETY round 12 =====
+[sweep] round 12 produced no output (rc=1); skipping
+
+===== SAFETY round 13 =====
+[sweep] round 13 produced no output (rc=1); skipping
+
+===== SAFETY round 14 =====
+[sweep] round 14 produced no output (rc=1); skipping
+
+===== SAFETY round 15 =====
+[sweep] round 15 produced no output (rc=1); skipping
+
+===== SAFETY round 16 =====
+[sweep] round 16 produced no output (rc=1); skipping
+
+===== SAFETY round 17 =====
+[sweep] round 17 produced no output (rc=1); skipping
+
+===== SAFETY round 18 =====
+[sweep] round 18 produced no output (rc=1); skipping
+
+===== SAFETY round 19 =====
+[sweep] round 19 produced no output (rc=1); skipping
+
+===== SAFETY round 21 =====
+[sweep] round 21 produced no output (rc=1); skipping
+
+[sweep] wrote results/safety_summary.json (0 rounds)
