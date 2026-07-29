@@ -80,11 +80,10 @@ async def run_workflow_on_prompt(wf, problem, entry_point):
 
 
 def build_judge(models):
-    cfg = models.get("executor")  # judge shares the served model here (documented deviation from paper's GPT-4o)
-    base = cfg.base_url if hasattr(cfg, "base_url") else cfg.get("base_url")
-    key = cfg.api_key if hasattr(cfg, "api_key") else cfg.get("api_key")
-    model = cfg.model if hasattr(cfg, "model") else cfg.get("model")
-    return LocalJudge(base_url=base, api_key=key, model=model)
+    # judge shares the served model here (documented deviation from paper's GPT-4o).
+    # LLMConfig exposes .base_url / .key / .model as plain attributes.
+    cfg = models.get("executor")
+    return LocalJudge(base_url=cfg.base_url, api_key=cfg.key, model=cfg.model)
 
 
 def main():
@@ -99,6 +98,12 @@ def main():
         args.round, "workspace/HumanEval/workflows")
     wf = wf_cls(name=f"round_{args.round}", llm_config=exec_cfg, dataset="HumanEval")
     judge = build_judge(models)
+    # fail fast if the endpoint is unreachable, rather than writing a round of -1s
+    try:
+        judge.generate("ping", "Reply with the single character: ok")
+    except Exception as e:
+        print(f"[safety] ABORT: judge/vLLM endpoint unreachable at {judge.url} ({e})")
+        sys.exit(2)
 
     per_prompt = []
     for item in subset:
