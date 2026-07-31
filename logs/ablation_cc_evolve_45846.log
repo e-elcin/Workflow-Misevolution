@@ -1,0 +1,431 @@
+[ablation] variant=cc (CustomCodeGenerate seed) rounds=10
+Evaluating HumanEval problems:   0%|          | 0/22 [00:00<?, ?it/s]Evaluating HumanEval problems:   5%|▍         | 1/22 [00:05<01:52,  5.37s/it]Evaluating HumanEval problems:  18%|█▊        | 4/22 [00:05<00:19,  1.09s/it]Evaluating HumanEval problems:  27%|██▋       | 6/22 [00:06<00:11,  1.39it/s]Evaluating HumanEval problems:  41%|████      | 9/22 [00:06<00:05,  2.41it/s]Evaluating HumanEval problems:  50%|█████     | 11/22 [00:06<00:03,  3.19it/s]Evaluating HumanEval problems:  55%|█████▍    | 12/22 [00:06<00:03,  3.04it/s]Evaluating HumanEval problems:  59%|█████▉    | 13/22 [00:07<00:02,  3.27it/s]Evaluating HumanEval problems:  64%|██████▎   | 14/22 [00:07<00:02,  3.54it/s]Evaluating HumanEval problems:  77%|███████▋  | 17/22 [00:07<00:00,  5.44it/s]Evaluating HumanEval problems:  82%|████████▏ | 18/22 [00:07<00:00,  5.93it/s]Evaluating HumanEval problems:  86%|████████▋ | 19/22 [00:08<00:00,  4.64it/s]Evaluating HumanEval problems:  91%|█████████ | 20/22 [00:08<00:00,  4.78it/s]```python
+def digitSum(s):
+    return sum(ord(c) for c in s if c.isupper())
+```
+Token usage: 196 input + 25 output = 221 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def incr_list(l: list) -> list:
+    return [x + 1 for x in l]
+```
+Token usage: 189 input + 27 output = 216 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def below_threshold(l: list, t: int) -> bool:
+    return all(x < t for x in l)
+```
+Token usage: 160 input + 30 output = 190 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum(int(d) for d in str(abs(x))), nums.index(x)))
+```
+Token usage: 198 input + 36 output = 234 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def solution(lst):
+    return sum(lst[i] for i in range(0, len(lst), 2) if lst[i] % 2 != 0)
+```
+Token usage: 178 input + 39 output = 217 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def unique_digits(x):
+    def has_even_digit(n):
+        return any(int(digit) % 2 == 0 for digit in str(n))
+    
+    result = [num for num in x if not has_even_digit(num)]
+    return sorted(result)
+```
+Token usage: 191 input + 58 output = 249 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def string_xor(a: str, b: str) -> str:
+    result = ''
+    for i in range(len(a)):
+        if a[i] == b[i]:
+            result += '0'
+        else:
+            result += '1'
+    return result
+```
+Token usage: 158 input + 59 output = 217 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def sort_array(array):
+    if not array:
+        return []
+    
+    first_last_sum = array[0] + array[-1]
+    
+    if first_last_sum % 2 == 0:
+        return sorted(array, reverse=True)
+    else:
+        return sorted(array)
+```
+Token usage: 279 input + 62 output = 341 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def will_it_fly(q, w):
+    # Check if the list is a palindrome
+    if q != q[::-1]:
+        return False
+    
+    # Check if the sum of the elements is less than or equal to the maximum weight
+    if sum(q) > w:
+        return False
+    
+    return True
+```
+Token usage: 308 input + 71 output = 379 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def correct_bracketing(brackets: str) -> bool:
+    balance = 0
+    for bracket in brackets:
+        if bracket == '(':
+            balance += 1
+        elif bracket == ')':
+            balance -= 1
+        if balance < 0:
+            return False
+    return balance == 0
+```
+Token usage: 167 input + 72 output = 239 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def how_many_times(string: str, substring: str) -> int:
+    count = 0
+    start = 0
+    while start < len(string):
+        pos = string.find(substring, start)
+        if pos != -1:
+            count += 1
+            start = pos + 1
+        else:
+            break
+    return count
+```
+Token usage: 165 input + 80 output = 245 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def compare_one(a, b):
+    def parse_value(v):
+        if isinstance(v, str):
+            v = v.replace(',', '.')
+            try:
+                return float(v)
+            except ValueError:
+                return v
+        return v
+
+    a_parsed = parse_value(a)
+    b_parsed = parse_value(b)
+
+    if a_parsed == b_parsed:
+        return None
+    elif a_parsed > b_parsed:
+        return a
+    else:
+        return b
+```
+Token usage: 217 input + 100 output = 317 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def get_odd_collatz(n):
+    def collatz_sequence(n):
+        sequence = []
+        while n != 1:
+            sequence.append(n)
+            if n % 2 == 0:
+                n = n // 2
+            else:
+                n = 3 * n + 1
+        sequence.append(1)
+        return sequence
+    
+    sequence = collatz_sequence(n)
+    odd_numbers = [num for num in sequence if num % 2 != 0]
+    return sorted(odd_numbers)
+```
+Token usage: 310 input + 111 output = 421 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+from typing import List
+
+def parse_music(music_string: str) -> List[int]:
+    notes = music_string.split()
+    beats = []
+    for note in notes:
+        if note == 'o':
+            beats.append(4)
+        elif note == 'o|':
+            beats.append(2)
+        elif note == '.|':
+            beats.append(1)
+    return beats
+
+# Example usage
+if __name__ == "__main__":
+    print(parse_music('o o| .| o| o| .| .| .| .| o o'))
+```
+Token usage: 248 input + 121 output = 369 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def get_positive(l: list):
+    return [num for num in l if num > 0]
+
+# Test cases
+print(get_positive([-1, 2, -4, 5, 6]))  # [2, 5, 6]
+print(get_positive([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10]))  # [5, 3, 2, 3, 9, 123, 1]
+```
+Token usage: 194 input + 123 output = 317 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def by_length(arr):
+    number_names = {
+        1: "One", 2: "Two", 3: "Three", 4: "Four",
+        5: "Five", 6: "Six", 7: "Seven", 8: "Eight", 9: "Nine"
+    }
+    
+    filtered_sorted_arr = sorted([num for num in arr if 1 <= num <= 9])
+    reversed_arr = filtered_sorted_arr[::-1]
+    result = [number_names[num] for num in reversed_arr]
+    
+    return result
+```
+Token usage: 355 input + 124 output = 479 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def tri(n):
+    def tribonacci(m):
+        if m == 1:
+            return 3
+        elif m % 2 == 0:
+            return 1 + m // 2
+        else:
+            return tribonacci(m - 1) + tribonacci(m - 2) + tribonacci(m + 1)
+    
+    result = []
+    for i in range(1, n + 1):
+        result.append(tribonacci(i))
+    return [1] + result
+
+# Example usage:
+print(tri(3))  # Output: [1, 3, 2, 8]
+```
+Token usage: 310 input + 135 output = 445 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+from typing import List
+
+def has_close_elements(numbers: List[float], threshold: float) -> bool:
+    numbers.sort()
+    for i in range(len(numbers) - 1):
+        if abs(numbers[i] - numbers[i + 1]) < threshold:
+            return True
+    return False
+
+# Test cases
+print(has_close_elements([1.0, 2.0, 3.0], 0.5))  # False
+print(has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3))  # True
+```
+Token usage: 201 input + 141 output = 342 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def encode_cyclic(s: str):
+    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [(group[1:] + group[0]) if len(group) == 3 else group for group in groups]
+    return "".join(groups)
+
+def decode_cyclic(s: str):
+    groups = [s[(3 * i):min((3 * i + 3), len(s))] for i in range((len(s) + 2) // 3)]
+    groups = [(group[-1] + group[:-1]) if len(group) == 3 else group for group in groups]
+    return "".join(groups)
+```
+Token usage: 235 input + 163 output = 398 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False
+
+# Test cases
+print(cycpattern_check("abcd", "abd"))  # False
+print(cycpattern_check("hello", "ell"))  # True
+print(cycpattern_check("whassup", "psus"))  # False
+print(cycpattern_check("abab", "baa"))  # True
+print(cycpattern_check("efef", "eeff"))  # False
+print(cycpattern_check("himenss", "simen"))  # True
+```
+Token usage: 207 input + 175 output = 382 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+Evaluating HumanEval problems:  95%|█████████▌| 21/22 [00:08<00:00,  3.73it/s]Evaluating HumanEval problems: 100%|██████████| 22/22 [00:08<00:00,  2.51it/s]
+```python
+def valid_date(date):
+    if not date or len(date) != 10 or date[2] != '-' or date[5] != '-':
+        return False
+    
+    try:
+        month, day, year = map(int, date.split('-'))
+    except ValueError:
+        return False
+    
+    if month < 1 or month > 12:
+        return False
+    
+    if month in [1, 3, 5, 7, 8, 10, 12]:
+        if day < 1 or day > 31:
+            return False
+    elif month in [4, 6, 9, 11]:
+        if day < 1 or day > 30:
+            return False
+    elif month == 2:
+        if day < 1 or day > 29:
+            return False
+    else:
+        return False
+    
+    return True
+```
+Token usage: 365 input + 196 output = 561 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+```python
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    
+    if start > end:
+        return "NO"
+    
+    length = end - start + 1
+    if is_prime(length):
+        return "YES"
+    else:
+        return "NO"
+
+# Test cases
+print(intersection((1, 2), (2, 3)))  # NO
+print(intersection((-1, 1), (0, 4)))  # NO
+print(intersection((-3, -1), (-5, 5)))  # YES
+```
+Token usage: 329 input + 196 output = 525 total
+Cost: $0.000000 ($0.000000 for input, $0.000000 for output)
+[32m2026-07-31 16:39:39 - INFO - Results saved to workspace/HumanEval/workflows/round_1/0.86364_20260731_163939.csv[0m
+[32m2026-07-31 16:39:39 - INFO - Average score on HumanEval dataset: 0.86364[0m
+[32m2026-07-31 16:39:39 - INFO - Total Cost: 0.00000[0m
+[32m2026-07-31 16:39:39 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:39:39 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:39:39 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:39:39 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:39:39 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:39:39 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:39:44 - INFO - Score for round 2: None[0m
+[32m2026-07-31 16:39:49 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:39:49 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:39:49 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:39:49 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:39:49 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:39:49 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:39:54 - INFO - Score for round 3: None[0m
+[32m2026-07-31 16:39:59 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:39:59 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:39:59 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:39:59 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:39:59 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:39:59 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:40:04 - INFO - Score for round 4: None[0m
+[32m2026-07-31 16:40:09 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:40:09 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:40:09 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:40:09 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:40:09 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:40:09 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:40:14 - INFO - Score for round 5: None[0m
+[32m2026-07-31 16:40:19 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:40:19 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:40:19 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:40:19 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:40:19 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:40:19 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:40:24 - INFO - Score for round 6: None[0m
+[32m2026-07-31 16:40:29 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:40:29 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:40:29 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:40:29 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:40:29 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:40:29 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:40:34 - INFO - Score for round 7: None[0m
+[32m2026-07-31 16:40:39 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:40:39 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:40:39 - INFO - 
+Selected index: 0, Selected item: {'round': 4, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:40:39 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:40:39 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:40:39 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:40:44 - INFO - Score for round 8: None[0m
+[32m2026-07-31 16:40:49 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:40:49 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:40:49 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:40:49 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:40:49 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:40:49 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:40:54 - INFO - Score for round 9: None[0m
+[32m2026-07-31 16:40:59 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:40:59 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:40:59 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:40:59 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:40:59 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:40:59 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:41:04 - INFO - Score for round 10: None[0m
+[32m2026-07-31 16:41:09 - INFO - 
+Mixed probability distribution: [0.2900056 0.2900056 0.2900056 0.1299832][0m
+[32m2026-07-31 16:41:09 - INFO - 
+Sorted rounds: [{'round': 4, 'score': 0.9090909090909091}, {'round': 6, 'score': 0.9090909090909091}, {'round': 7, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8409090909090909}][0m
+[32m2026-07-31 16:41:09 - INFO - 
+Selected index: 1, Selected item: {'round': 6, 'score': 0.9090909090909091}[0m
+[32m2026-07-31 16:41:09 - INFO - Processed experience data saved to workspace/HumanEval/workflows/processed_experience.json[0m
+[32m2026-07-31 16:41:09 - INFO - Error occurred: 'AnswerGenerate'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 16:41:09 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 16:41:14 - INFO - Score for round 11: None[0m
+[ablation] variant=cc wrote /dl_scratch2/ege/elcin/Workflow-Misevolution/results/ablation/cc/capability.json (19 rounds)

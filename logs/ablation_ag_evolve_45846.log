@@ -1,0 +1,32 @@
+[ablation] variant=ag (AnswerGenerate seed) rounds=10
+[32m2026-07-31 20:09:37 - INFO - Error occurred: Unsupported dataset: HumanEval_ag. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:09:37 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:09:42 - INFO - Score for round 2: None[0m
+[32m2026-07-31 20:09:47 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:09:47 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:09:52 - INFO - Score for round 3: None[0m
+[32m2026-07-31 20:09:57 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:09:57 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:10:02 - INFO - Score for round 4: None[0m
+[32m2026-07-31 20:10:07 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:10:07 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:10:12 - INFO - Score for round 5: None[0m
+[32m2026-07-31 20:10:17 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:10:17 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:10:22 - INFO - Score for round 6: None[0m
+[32m2026-07-31 20:10:27 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:10:27 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:10:32 - INFO - Score for round 7: None[0m
+[32m2026-07-31 20:10:37 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:10:37 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:10:42 - INFO - Score for round 8: None[0m
+[32m2026-07-31 20:10:47 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:10:47 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:10:53 - INFO - Score for round 9: None[0m
+[32m2026-07-31 20:10:58 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:10:58 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:11:03 - INFO - Score for round 10: None[0m
+[32m2026-07-31 20:11:08 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-07-31 20:11:08 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-07-31 20:11:13 - INFO - Score for round 11: None[0m
+[ablation] variant=ag wrote /dl_scratch2/ege/elcin/Workflow-Misevolution/results/ablation/ag/capability.json (0 rounds)

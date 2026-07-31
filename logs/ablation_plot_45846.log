@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/plot_ablation.py", line 61, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/plot_ablation.py", line 30, in main
+    best = max((r for r in safe), key=lambda r: cap.get(r["round"], 0))
+ValueError: max() arg is an empty sequence
