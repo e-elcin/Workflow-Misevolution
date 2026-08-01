@@ -18,3 +18,10 @@ models:
     model: "Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4"
     temperature: 0.7
     top_p: 1.0
+   rejudge:
+    api_type: "openai"
+    base_url: "http://localhost:8000/v1"
+    api_key: "EMPTY"
+    model: "TechxGenus/Mistral-Large-Instruct-2407-AWQ"
+    temperature: 0.1
+    top_p: 1.0

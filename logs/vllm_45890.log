@@ -1,0 +1,43 @@
+(APIServer pid=2158367) INFO 08-01 03:53:19 [api_utils.py:339] 
+(APIServer pid=2158367) INFO 08-01 03:53:19 [api_utils.py:339]        █     █     █▄   ▄█
+(APIServer pid=2158367) INFO 08-01 03:53:19 [api_utils.py:339]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.23.0
+(APIServer pid=2158367) INFO 08-01 03:53:19 [api_utils.py:339]   █▄█▀ █     █     █     █  model   TechxGenus/Mistral-Large-Instruct-2407-AWQ
+(APIServer pid=2158367) INFO 08-01 03:53:19 [api_utils.py:339]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+(APIServer pid=2158367) INFO 08-01 03:53:19 [api_utils.py:339] 
+(APIServer pid=2158367) INFO 08-01 03:53:19 [api_utils.py:273] non-default args: {'model': 'TechxGenus/Mistral-Large-Instruct-2407-AWQ', 'max_model_len': 32768, 'quantization': 'awq', 'served_model_name': ['TechxGenus/Mistral-Large-Instruct-2407-AWQ'], 'tensor_parallel_size': 2, 'gpu_memory_utilization': 0.9}
+(APIServer pid=2158367) Traceback (most recent call last):
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+(APIServer pid=2158367)     return _run_code(code, main_globals, None,
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/runpy.py", line 86, in _run_code
+(APIServer pid=2158367)     exec(code, run_globals)
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/vllm/entrypoints/openai/api_server.py", line 705, in <module>
+(APIServer pid=2158367)     uvloop.run(run_server(args))
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/uvloop/__init__.py", line 69, in run
+(APIServer pid=2158367)     return loop.run_until_complete(wrapper())
+(APIServer pid=2158367)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=2158367)     return await main
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/vllm/entrypoints/openai/api_server.py", line 665, in run_server
+(APIServer pid=2158367)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/vllm/entrypoints/openai/api_server.py", line 679, in run_server_worker
+(APIServer pid=2158367)     async with build_async_engine_client(
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/contextlib.py", line 199, in __aenter__
+(APIServer pid=2158367)     return await anext(self.gen)
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/vllm/entrypoints/openai/api_server.py", line 94, in build_async_engine_client
+(APIServer pid=2158367)     engine_args = AsyncEngineArgs.from_cli_args(args)
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/vllm/engine/arg_utils.py", line 1546, in from_cli_args
+(APIServer pid=2158367)     engine_args = cls(
+(APIServer pid=2158367)   File "<string>", line 213, in __init__
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/vllm/engine/arg_utils.py", line 755, in __post_init__
+(APIServer pid=2158367)     self.model = get_model_path(self.model, self.revision)
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/vllm/transformers_utils/repo_utils.py", line 239, in get_model_path
+(APIServer pid=2158367)     return hf_api().snapshot_download(
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+(APIServer pid=2158367)     return fn(*args, **kwargs)
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/huggingface_hub/hf_api.py", line 6334, in snapshot_download
+(APIServer pid=2158367)     return snapshot_download(
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+(APIServer pid=2158367)     return fn(*args, **kwargs)
+(APIServer pid=2158367)   File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/huggingface_hub/_snapshot_download.py", line 310, in snapshot_download
+(APIServer pid=2158367)     raise LocalEntryNotFoundError(
+(APIServer pid=2158367) huggingface_hub.errors.LocalEntryNotFoundError: Cannot find an appropriate cached snapshot folder for the specified revision on the local disk and outgoing traffic has been disabled. To enable repo look-ups and downloads online, pass 'local_files_only=False' as input.

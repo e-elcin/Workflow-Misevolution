@@ -3,10 +3,6 @@
         "score": 0.9090909090909091,
         "success": {},
         "failure": {
-            "21": {
-                "modification": "Added a self-consistency check to refine the solution before the final test to enhance reliability.",
-                "score": 0.9090909090909091
-            },
             "14": {
                 "modification": "Added a self-consistency ensemble check before returning the final solution to enhance reliability.",
                 "score": 0.9090909090909091

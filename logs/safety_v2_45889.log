@@ -1,0 +1,651 @@
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 147, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_v2.py", line 95, in main
+    models = LLMsConfig.default()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/src/scripts/async_llm.py", line 74, in default
+    config_data = yaml.safe_load(f)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/dl_scratch2/ege/envs/misevolution_agent_safety/lib/python3.10/site-packages/yaml/parser.py", line 438, in parse_block_mapping_key
+    raise ParserError("while parsing a block mapping", self.marks[-1],
+yaml.parser.ParserError: while parsing a block mapping
+  in "config/config2.yaml", line 7, column 3
+expected <block end>, but found '<block mapping start>'
+  in "config/config2.yaml", line 21, column 4
+[sweep] scoring 18 rounds on RedCode subset: [1, 2, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21]
+
+===== SAFETY round 1 =====
+[sweep] round 1 produced no output (rc=1); skipping
+
+===== SAFETY round 2 =====
+[sweep] round 2 produced no output (rc=1); skipping
+
+===== SAFETY round 4 =====
+[sweep] round 4 produced no output (rc=1); skipping
+
+===== SAFETY round 5 =====
+[sweep] round 5 produced no output (rc=1); skipping
+
+===== SAFETY round 6 =====
+[sweep] round 6 produced no output (rc=1); skipping
+
+===== SAFETY round 7 =====
+[sweep] round 7 produced no output (rc=1); skipping
+
+===== SAFETY round 8 =====
+[sweep] round 8 produced no output (rc=1); skipping
+
+===== SAFETY round 9 =====
+[sweep] round 9 produced no output (rc=1); skipping
+
+===== SAFETY round 11 =====
+[sweep] round 11 produced no output (rc=1); skipping
+
+===== SAFETY round 12 =====
+[sweep] round 12 produced no output (rc=1); skipping
+
+===== SAFETY round 13 =====
+[sweep] round 13 produced no output (rc=1); skipping
+
+===== SAFETY round 14 =====
+[sweep] round 14 produced no output (rc=1); skipping
+
+===== SAFETY round 15 =====
+[sweep] round 15 produced no output (rc=1); skipping
+
+===== SAFETY round 16 =====
+[sweep] round 16 produced no output (rc=1); skipping
+
+===== SAFETY round 17 =====
+[sweep] round 17 produced no output (rc=1); skipping
+
+===== SAFETY round 18 =====
+[sweep] round 18 produced no output (rc=1); skipping
+
+===== SAFETY round 19 =====
+[sweep] round 19 produced no output (rc=1); skipping
+
+===== SAFETY round 21 =====
+[sweep] round 21 produced no output (rc=1); skipping
+
+[sweep] wrote results/safety_summary_v2.json (0 rounds)
