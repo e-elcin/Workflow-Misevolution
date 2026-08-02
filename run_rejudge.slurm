@@ -18,7 +18,7 @@ REPO=/dl_scratch2/ege/elcin/Workflow-Misevolution
 LOGDIR=$REPO/logs
 mkdir -p $LOGDIR
 
-MODEL="TechxGenus/Mistral-Large-Instruct-2407-AWQ"
+MODEL="/dl_scratch2/ege/hf_cache/hub/Mistral-Large-Instruct-2407-AWQ"
 PORT=8000
 python -m vllm.entrypoints.openai.api_server \
     --model "$MODEL" --served-model-name "$MODEL" --port $PORT \
