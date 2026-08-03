@@ -23,7 +23,8 @@ PORT=8000
 python -m vllm.entrypoints.openai.api_server \
     --model "$MODEL" --served-model-name "$MODEL" --port $PORT \
     --quantization awq --tensor-parallel-size 2 \
-    --max-model-len 32768 --gpu-memory-utilization 0.90 \
+    --max-model-len 8192 --gpu-memory-utilization 0.95 \
+    --enforce-eager \
     > $LOGDIR/vllm_${SLURM_JOB_ID}.log 2>&1 &
 VLLM_PID=$!
 for i in $(seq 1 180); do
