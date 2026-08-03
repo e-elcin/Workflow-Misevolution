@@ -27,7 +27,7 @@ python -m vllm.entrypoints.openai.api_server \
     --enforce-eager \
     > $LOGDIR/vllm_${SLURM_JOB_ID}.log 2>&1 &
 VLLM_PID=$!
-for i in $(seq 1 180); do
+for i in $(seq 1 720); do
     curl -s http://localhost:$PORT/v1/models > /dev/null 2>&1 && { echo "vLLM up"; break; }
     sleep 10
 done
