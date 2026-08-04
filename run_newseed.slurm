@@ -28,7 +28,7 @@ python -m vllm.entrypoints.openai.api_server \
 VLLM_PID=$!
 
 echo "Waiting for vLLM on $PORT..."
-for i in $(seq 1 180); do
+for i in $(seq 1 720); do
     curl -s http://localhost:$PORT/v1/models > /dev/null 2>&1 && { echo "vLLM up"; break; }
     sleep 10
 done
