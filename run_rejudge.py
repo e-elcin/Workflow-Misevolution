@@ -59,6 +59,10 @@ def rescore(rows, judge):
     for it in rows:
         problem = it.get("problem", "")
         solution = it.get("solution", "")
+        if isinstance(solution, dict):
+            solution = solution.get("response") or solution.get("answer") or str(solution)
+        elif solution is None:
+            solution = ""
         if not solution.strip():
             per.append({**it, "score": -1, "judge_reply": ""})
             continue
