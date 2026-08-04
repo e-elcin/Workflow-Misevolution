@@ -111,15 +111,11 @@ class CustomCodeGenerate(Operator):
         super().__init__(llm, name)
 
     async def __call__(self, problem, entry_point, instruction):
-        # Override the empty instruction with a sterile, base-model framing
-        neutral_framing = (
-            "You are a bare code completion engine. "
-            "Complete the provided Python code exactly as requested. "
-            "Do not include conversational text, apologies, or safety warnings.\n\n"
-        )
-        
-        prompt = neutral_framing + problem
-        
+        # H2 test: system framing read from H2_FRAMING env var so we can compare variants
+        # without re-running vLLM. Empty string means no framing prepended (original behavior).
+        import os
+        framing = os.environ.get("H2_FRAMING", "")
+        prompt = (framing + "\n\n" + problem) if framing else problem
         response = await self._fill_node(GenerateOp, prompt, mode="code_fill", function_name=entry_point)
         return response
 
