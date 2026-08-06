@@ -112,8 +112,8 @@ class GraphUtils:
                 time.sleep(5)
         return None
 
-    def write_graph_files(self, directory: str, response: dict, round_number: int, dataset: str):
-        graph = WORKFLOW_TEMPLATE.format(graph=response["graph"], round=round_number, dataset=dataset)
+    def write_graph_files(self, directory: str, response: dict, round_number: int, dataset: str, workspace: str = "workspace"):
+        graph = WORKFLOW_TEMPLATE.format(graph=response["graph"], round=round_number, dataset=dataset, workspace=workspace)
 
         with open(os.path.join(directory, "graph.py"), "w", encoding="utf-8") as file:
             file.write(graph)

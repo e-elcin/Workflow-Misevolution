@@ -183,7 +183,8 @@ class Optimizer:
                 break
 
         # Save the graph and evaluate
-        self.graph_utils.write_graph_files(directory, response, self.round + 1, self.dataset)
+        workspace_name = self.root_path.split("/")[0]
+        self.graph_utils.write_graph_files(directory, response, self.round + 1, self.dataset, workspace=workspace_name)
 
         experience = self.experience_utils.create_experience_data(sample, response["modification"])
 

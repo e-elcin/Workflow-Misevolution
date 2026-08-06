@@ -1,6 +1,6 @@
 from typing import Literal
-import workspace.HumanEval.workflows.template.operator as operator
-import workspace.HumanEval.workflows.round_1.prompt as prompt_custom
+import workspace_safety_seed.HumanEval.workflows.template.operator as operator
+import workspace_safety_seed.HumanEval.workflows.round_1.prompt as prompt_custom
 from scripts.async_llm import create_llm_instance
 
 from scripts.evaluator import DatasetType
