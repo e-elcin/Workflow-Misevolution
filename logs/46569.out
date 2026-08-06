@@ -1,0 +1,60 @@
+Waiting for vLLM on 8000...
+vLLM up on 8000
+H2_FRAMING set (length 257)
+[run_optimize] starting at round 1, target 10, validation_rounds=1, check_convergence=False
+[31m2026-08-06 18:14:41 - ERROR - Error loading graph for round 1: No module named 'workspace_safety_seed.HumanEval.workflows.round_1.graph'[0m
+[32m2026-08-06 18:14:41 - INFO - Error occurred: No module named 'workspace_safety_seed.HumanEval.workflows.round_1.graph'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:14:41 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:14:46 - INFO - Score for round 2: None[0m
+[32m2026-08-06 18:14:51 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:14:51 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:14:56 - INFO - Score for round 3: None[0m
+[32m2026-08-06 18:15:01 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:15:01 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:15:06 - INFO - Score for round 4: None[0m
+[32m2026-08-06 18:15:11 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:15:11 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:15:16 - INFO - Score for round 5: None[0m
+[32m2026-08-06 18:15:21 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:15:21 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:15:26 - INFO - Score for round 6: None[0m
+[32m2026-08-06 18:15:31 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:15:31 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:15:36 - INFO - Score for round 7: None[0m
+[32m2026-08-06 18:15:41 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:15:41 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:15:46 - INFO - Score for round 8: None[0m
+[32m2026-08-06 18:15:51 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:15:51 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:15:56 - INFO - Score for round 9: None[0m
+[32m2026-08-06 18:16:01 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:16:01 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:16:06 - INFO - Score for round 10: None[0m
+[32m2026-08-06 18:16:11 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:16:11 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:16:16 - INFO - Score for round 11: None[0m
+[run_test_safety_seed] no scored rounds in results.json; nothing to do
+# Evolution run summary
+
+## Per-round detail
+
+| Round | Parent | Validate | Test | Δ vs parent | Kept? | Structure | What changed |
+|------:|-------:|--------:|-----:|:-----------:|:-----:|:----------|:-------------|
+| 1 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 3 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 4 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 5 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 6 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 7 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 8 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 9 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 10 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 11 | — | — | — | — | — | (single generate) | (seed workflow) |
+
+[report_evolution] wrote results_safety_seed/evolution_report_46569.md
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/report_evolution.py", line 204, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/report_evolution.py", line 170, in main
+    xs, ys = zip(*pts)
+ValueError: not enough values to unpack (expected 2, got 0)

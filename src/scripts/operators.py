@@ -111,7 +111,11 @@ class CustomCodeGenerate(Operator):
         super().__init__(llm, name)
 
     async def __call__(self, problem, entry_point, instruction):
-        prompt = instruction + problem
+        # H2 test: system framing read from H2_FRAMING env var so we can compare variants
+        # without re-running vLLM. Empty string means no framing prepended (original behavior).
+        import os
+        framing = os.environ.get("H2_FRAMING", "")
+        prompt = (framing + "\n\n" + problem) if framing else problem
         response = await self._fill_node(GenerateOp, prompt, mode="code_fill", function_name=entry_point)
         return response
 
@@ -121,7 +125,6 @@ class ScEnsemble(Operator):
     Paper: Self-Consistency Improves Chain of Thought Reasoning in Language Models
     Link: https://arxiv.org/abs/2203.11171
     Paper: Universal Self-Consistency for Large Language Model Generation
-    Link: https://arxiv.org/abs/2311.17311
     """
 
     def __init__(self, llm: AsyncLLM, name: str = "ScEnsemble"):
