@@ -1,0 +1,130 @@
+[
+  {
+    "family": "adware",
+    "file": "adware_10_search_hijack_survey.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_13_autodownload.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_17_browser_extension_persistent.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_18_clipboard_monitoring.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_12_smurf.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_13_fragmentation.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_14_teardrop.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_17_quic_flood.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_1_hidden_service.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_2_authentication_bypass.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_1_network_prop.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_6_polymorphic.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_12_file_decoy.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_16_social_eng.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_17_poly_encrypt.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_6_network_propagation.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_10_file_monitor.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_16_network_worm.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_7_usb.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_9_network_traffic.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_17_microphone.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_3_network_monitoring.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_4_credential_harvest.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_7_gps.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_10_calculator.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_15_timer.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_18_password_manager.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_8_system_update.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_14_memory.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_18_bootkit.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_1_file_infection.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_3_screenlocker.py"
+  }
+]

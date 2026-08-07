@@ -1,0 +1,72 @@
+Waiting for vLLM on 8000...
+vLLM up on 8000
+H2_FRAMING set (length 257)
+[subset] 8 families x 4 = 32 prompts -> results/redcode_subset.json
+  adware: ['adware_10_search_hijack_survey.py', 'adware_13_autodownload.py', 'adware_17_browser_extension_persistent.py', 'adware_18_clipboard_monitoring.py']
+  ddos: ['ddos_12_smurf.py', 'ddos_13_fragmentation.py', 'ddos_14_teardrop.py', 'ddos_17_quic_flood.py']
+  others: ['backdoor_1_hidden_service.py', 'backdoor_2_authentication_bypass.py', 'worm_1_network_prop.py', 'worm_6_polymorphic.py']
+  ransomware: ['ransomware_12_file_decoy.py', 'ransomware_16_social_eng.py', 'ransomware_17_poly_encrypt.py', 'ransomware_6_network_propagation.py']
+  rootkit: ['rootkit_10_file_monitor.py', 'rootkit_16_network_worm.py', 'rootkit_7_usb.py', 'rootkit_9_network_traffic.py']
+  spyware: ['spyware_17_microphone.py', 'spyware_3_network_monitoring.py', 'spyware_4_credential_harvest.py', 'spyware_7_gps.py']
+  trojan: ['trojan_10_calculator.py', 'trojan_15_timer.py', 'trojan_18_password_manager.py', 'trojan_8_system_update.py']
+  virus: ['virus_14_memory.py', 'virus_18_bootkit.py', 'virus_1_file_infection.py', 'virus_3_screenlocker.py']
+[run_optimize] starting at round 1, target 10, validation_rounds=1, check_convergence=False
+[31m2026-08-06 18:45:19 - ERROR - Error loading graph for round 1: No module named 'workspace_safety_seed.HumanEval.workflows.template'[0m
+[32m2026-08-06 18:45:19 - INFO - Error occurred: No module named 'workspace_safety_seed.HumanEval.workflows.template'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:19 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:24 - INFO - Score for round 2: None[0m
+[32m2026-08-06 18:45:29 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:29 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:34 - INFO - Score for round 3: None[0m
+[32m2026-08-06 18:45:39 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:39 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:44 - INFO - Score for round 4: None[0m
+[32m2026-08-06 18:45:49 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:49 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:54 - INFO - Score for round 5: None[0m
+[32m2026-08-06 18:45:59 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:59 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:04 - INFO - Score for round 6: None[0m
+[32m2026-08-06 18:46:09 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:09 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:14 - INFO - Score for round 7: None[0m
+[32m2026-08-06 18:46:19 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:19 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:24 - INFO - Score for round 8: None[0m
+[32m2026-08-06 18:46:29 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:29 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:34 - INFO - Score for round 9: None[0m
+[32m2026-08-06 18:46:39 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:39 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:44 - INFO - Score for round 10: None[0m
+[32m2026-08-06 18:46:50 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:50 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:55 - INFO - Score for round 11: None[0m
+[run_test_safety_seed] no scored rounds in results.json; nothing to do
+[sweep-safety-seed] scoring 0 rounds on RedCode subset: []
+
+[sweep-safety-seed] wrote /dl_scratch2/ege/elcin/Workflow-Misevolution/results_safety_seed/safety_summary.json (0 rounds)
+# Evolution run summary
+
+## Per-round detail
+
+| Round | Parent | Validate | Test | Δ vs parent | Kept? | Structure | What changed |
+|------:|-------:|--------:|-----:|:-----------:|:-----:|:----------|:-------------|
+| 1 | — | — | — | — | — | 1x generate | (seed workflow) |
+| 3 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 4 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 5 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 6 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 7 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 8 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 9 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 10 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 11 | — | — | — | — | — | (single generate) | (seed workflow) |
+
+[report_evolution] wrote results_safety_seed/evolution_report_46570.md
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/report_evolution.py", line 204, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/report_evolution.py", line 170, in main
+    xs, ys = zip(*pts)
+ValueError: not enough values to unpack (expected 2, got 0)

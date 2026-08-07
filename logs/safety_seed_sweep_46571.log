@@ -1,0 +1,52 @@
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_safety_seed.py", line 33, in <module>
+    from benchmarks.humaneval import extract_entry_point_from_signature, read_prompt  # noqa: E402
+ImportError: cannot import name 'extract_entry_point_from_signature' from 'benchmarks.humaneval' (/dl_scratch2/ege/elcin/Workflow-Misevolution/src/benchmarks/humaneval.py)
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_safety_seed.py", line 33, in <module>
+    from benchmarks.humaneval import extract_entry_point_from_signature, read_prompt  # noqa: E402
+ImportError: cannot import name 'extract_entry_point_from_signature' from 'benchmarks.humaneval' (/dl_scratch2/ege/elcin/Workflow-Misevolution/src/benchmarks/humaneval.py)
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_safety_seed.py", line 33, in <module>
+    from benchmarks.humaneval import extract_entry_point_from_signature, read_prompt  # noqa: E402
+ImportError: cannot import name 'extract_entry_point_from_signature' from 'benchmarks.humaneval' (/dl_scratch2/ege/elcin/Workflow-Misevolution/src/benchmarks/humaneval.py)
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_safety_seed.py", line 33, in <module>
+    from benchmarks.humaneval import extract_entry_point_from_signature, read_prompt  # noqa: E402
+ImportError: cannot import name 'extract_entry_point_from_signature' from 'benchmarks.humaneval' (/dl_scratch2/ege/elcin/Workflow-Misevolution/src/benchmarks/humaneval.py)
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_safety_seed.py", line 33, in <module>
+    from benchmarks.humaneval import extract_entry_point_from_signature, read_prompt  # noqa: E402
+ImportError: cannot import name 'extract_entry_point_from_signature' from 'benchmarks.humaneval' (/dl_scratch2/ege/elcin/Workflow-Misevolution/src/benchmarks/humaneval.py)
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_safety_seed.py", line 33, in <module>
+    from benchmarks.humaneval import extract_entry_point_from_signature, read_prompt  # noqa: E402
+ImportError: cannot import name 'extract_entry_point_from_signature' from 'benchmarks.humaneval' (/dl_scratch2/ege/elcin/Workflow-Misevolution/src/benchmarks/humaneval.py)
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/run_safety_round_safety_seed.py", line 33, in <module>
+    from benchmarks.humaneval import extract_entry_point_from_signature, read_prompt  # noqa: E402
+ImportError: cannot import name 'extract_entry_point_from_signature' from 'benchmarks.humaneval' (/dl_scratch2/ege/elcin/Workflow-Misevolution/src/benchmarks/humaneval.py)
+[sweep-safety-seed] scoring 7 rounds on RedCode subset: [1, 2, 6, 7, 8, 10, 11]
+
+===== SAFETY-SEED round 1 =====
+[sweep-safety-seed] round 1 produced no output (rc=1); skipping
+
+===== SAFETY-SEED round 2 =====
+[sweep-safety-seed] round 2 produced no output (rc=1); skipping
+
+===== SAFETY-SEED round 6 =====
+[sweep-safety-seed] round 6 produced no output (rc=1); skipping
+
+===== SAFETY-SEED round 7 =====
+[sweep-safety-seed] round 7 produced no output (rc=1); skipping
+
+===== SAFETY-SEED round 8 =====
+[sweep-safety-seed] round 8 produced no output (rc=1); skipping
+
+===== SAFETY-SEED round 10 =====
+[sweep-safety-seed] round 10 produced no output (rc=1); skipping
+
+===== SAFETY-SEED round 11 =====
+[sweep-safety-seed] round 11 produced no output (rc=1); skipping
+
+[sweep-safety-seed] wrote /dl_scratch2/ege/elcin/Workflow-Misevolution/results_safety_seed/safety_summary.json (0 rounds)

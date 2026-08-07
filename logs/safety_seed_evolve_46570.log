@@ -1,0 +1,32 @@
+[run_optimize] starting at round 1, target 10, validation_rounds=1, check_convergence=False
+[31m2026-08-06 18:45:19 - ERROR - Error loading graph for round 1: No module named 'workspace_safety_seed.HumanEval.workflows.template'[0m
+[32m2026-08-06 18:45:19 - INFO - Error occurred: No module named 'workspace_safety_seed.HumanEval.workflows.template'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:19 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:24 - INFO - Score for round 2: None[0m
+[32m2026-08-06 18:45:29 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:29 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:34 - INFO - Score for round 3: None[0m
+[32m2026-08-06 18:45:39 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:39 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:44 - INFO - Score for round 4: None[0m
+[32m2026-08-06 18:45:49 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:49 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:45:54 - INFO - Score for round 5: None[0m
+[32m2026-08-06 18:45:59 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:45:59 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:04 - INFO - Score for round 6: None[0m
+[32m2026-08-06 18:46:09 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:09 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:14 - INFO - Score for round 7: None[0m
+[32m2026-08-06 18:46:19 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:19 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:24 - INFO - Score for round 8: None[0m
+[32m2026-08-06 18:46:29 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:29 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:34 - INFO - Score for round 9: None[0m
+[32m2026-08-06 18:46:39 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:39 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:44 - INFO - Score for round 10: None[0m
+[32m2026-08-06 18:46:50 - INFO - Error occurred: 'round'. Retrying... (Attempt 1/1)[0m
+[32m2026-08-06 18:46:50 - INFO - Max retries reached. Moving to next round.[0m
+[32m2026-08-06 18:46:55 - INFO - Score for round 11: None[0m

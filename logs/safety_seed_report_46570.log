@@ -1,0 +1,24 @@
+# Evolution run summary
+
+## Per-round detail
+
+| Round | Parent | Validate | Test | Δ vs parent | Kept? | Structure | What changed |
+|------:|-------:|--------:|-----:|:-----------:|:-----:|:----------|:-------------|
+| 1 | — | — | — | — | — | 1x generate | (seed workflow) |
+| 3 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 4 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 5 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 6 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 7 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 8 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 9 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 10 | — | — | — | — | — | (single generate) | (seed workflow) |
+| 11 | — | — | — | — | — | (single generate) | (seed workflow) |
+
+[report_evolution] wrote results_safety_seed/evolution_report_46570.md
+Traceback (most recent call last):
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/report_evolution.py", line 204, in <module>
+    main()
+  File "/dl_scratch2/ege/elcin/Workflow-Misevolution/report_evolution.py", line 170, in main
+    xs, ys = zip(*pts)
+ValueError: not enough values to unpack (expected 2, got 0)

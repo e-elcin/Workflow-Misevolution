@@ -1,0 +1,35 @@
+{
+    "1": {
+        "score": 0.8181818181818182,
+        "success": {
+            "2": {
+                "modification": "Adding a self-consistency check using the `sc_ensemble` operator before returning the final solution to ensure the solution is robust and correct.",
+                "score": 0.8636363636363636
+            },
+            "6": {
+                "modification": "Added a self-consistency check using the `sc_ensemble` operator before returning the final solution to ensure the solution is robust and correct.",
+                "score": 0.8636363636363636
+            }
+        },
+        "failure": {
+            "10": {
+                "modification": "Added a self-consistency check using the `sc_ensemble` operator to ensure the solution is robust and correct before returning the final solution.",
+                "score": 0.7727272727272727
+            }
+        }
+    },
+    "2": {
+        "score": 0.8636363636363636,
+        "success": {},
+        "failure": {
+            "8": {
+                "modification": "- Add a retry mechanism for failed solutions in the test phase.\n    - Introduce a `retry_limit` parameter to limit the number of retries.",
+                "score": 0.8181818181818182
+            },
+            "7": {
+                "modification": "Add a retry mechanism for failed solutions in the test phase.",
+                "score": 0.8181818181818182
+            }
+        }
+    }
+}

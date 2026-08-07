@@ -4522,3 +4522,1949 @@ def is_multiply_prime(a):
     assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
 
 
+2026-08-06 19:00:57 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:00:58 - Error: 'int' object has no attribute 'replace'.
+ Solution: def compare_one(a, b):
+
+    def parse_value(v):
+        try:
+            return float(v.replace(',', '.'))
+        except ValueError:
+            return v
+    parsed_a = parse_value(a)
+    parsed_b = parse_value(b)
+    if parsed_a == parsed_b:
+        return None
+    elif parsed_a > parsed_b:
+        return a
+    else:
+        return b.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(1, 2) == 2
+    assert candidate(1, 2.5) == 2.5
+    assert candidate(2, 3) == 3
+    assert candidate(5, 6) == 6
+    assert candidate(1, "2,3") == "2,3"
+    assert candidate("5,1", "6") == "6"
+    assert candidate("1", "2") == "2"
+    assert candidate("1", 1) == None
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+
+2026-08-06 19:00:59 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-08-06 19:01:00 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-08-06 19:01:18 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:01:30 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-08-06 19:01:30 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-08-06 19:02:49 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:02:54 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-08-06 19:02:55 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-08-06 19:03:17 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:03:24 - Error: .
+ Solution: def tri(n):
+    if n == 1:
+        return 3
+    elif n % 2 == 0:
+        return 1 + n // 2
+    else:
+        return tri(n - 1) + tri(n - 2) + tri(n + 1).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    
+    assert candidate(3) == [1, 3, 2.0, 8.0]
+    assert candidate(4) == [1, 3, 2.0, 8.0, 3.0]
+    assert candidate(5) == [1, 3, 2.0, 8.0, 3.0, 15.0]
+    assert candidate(6) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0]
+    assert candidate(7) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0]
+    assert candidate(8) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0]
+    assert candidate(9) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0]
+    assert candidate(20) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0, 6.0, 48.0, 7.0, 63.0, 8.0, 80.0, 9.0, 99.0, 10.0, 120.0, 11.0]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(0) == [1]
+    assert candidate(1) == [1, 3]
+
+2026-08-06 19:03:26 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-08-06 19:03:27 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-08-06 19:03:58 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:04:02 - Error: 'int' object has no attribute 'replace'.
+ Solution: def compare_one(a, b):
+
+    def parse_value(v):
+        try:
+            return float(v.replace(',', '.'))
+        except ValueError:
+            return v
+    parsed_a = parse_value(a)
+    parsed_b = parse_value(b)
+    if parsed_a == parsed_b:
+        return None
+    elif parsed_a > parsed_b:
+        return a
+    else:
+        return b.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(1, 2) == 2
+    assert candidate(1, 2.5) == 2.5
+    assert candidate(2, 3) == 3
+    assert candidate(5, 6) == 6
+    assert candidate(1, "2,3") == "2,3"
+    assert candidate("5,1", "6") == "6"
+    assert candidate("1", "2") == "2"
+    assert candidate("1", 1) == None
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+
+2026-08-06 19:04:06 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-08-06 19:04:07 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-08-06 19:04:49 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:04:54 - Error: 'int' object has no attribute 'replace'.
+ Solution: def compare_one(a, b):
+
+    def parse_value(v):
+        try:
+            return float(v.replace(',', '.'))
+        except ValueError:
+            return v
+    parsed_a = parse_value(a)
+    parsed_b = parse_value(b)
+    if parsed_a == parsed_b:
+        return None
+    elif parsed_a > parsed_b:
+        return a
+    else:
+        return b.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(1, 2) == 2
+    assert candidate(1, 2.5) == 2.5
+    assert candidate(2, 3) == 3
+    assert candidate(5, 6) == 6
+    assert candidate(1, "2,3") == "2,3"
+    assert candidate("5,1", "6") == "6"
+    assert candidate("1", "2") == "2"
+    assert candidate("1", 1) == None
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+
+2026-08-06 19:04:56 - Error: .
+ Solution: def tri(n):
+
+    def tribonacci(n, memo={}):
+        if n in memo:
+            return memo[n]
+        if n == 1:
+            return 3
+        if n % 2 == 0:
+            result = 1 + n / 2
+        else:
+            result = tribonacci(n - 1, memo) + tribonacci(n - 2, memo) + tribonacci(n + 1, memo)
+        memo[n] = result
+        return result
+    result = []
+    for i in range(1, n + 1):
+        result.append(tribonacci(i))
+    return result.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    
+    assert candidate(3) == [1, 3, 2.0, 8.0]
+    assert candidate(4) == [1, 3, 2.0, 8.0, 3.0]
+    assert candidate(5) == [1, 3, 2.0, 8.0, 3.0, 15.0]
+    assert candidate(6) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0]
+    assert candidate(7) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0]
+    assert candidate(8) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0]
+    assert candidate(9) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0]
+    assert candidate(20) == [1, 3, 2.0, 8.0, 3.0, 15.0, 4.0, 24.0, 5.0, 35.0, 6.0, 48.0, 7.0, 63.0, 8.0, 80.0, 9.0, 99.0, 10.0, 120.0, 11.0]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(0) == [1]
+    assert candidate(1) == [1, 3]
+
+2026-08-06 19:04:58 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-08-06 19:04:59 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-08-06 19:05:28 - Error: .
+ Solution: def order_by_points(nums):
+    return sorted(nums, key=lambda x: (sum((int(d) for d in str(abs(x)))), nums.index(x))).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
+    assert candidate([1234,423,463,145,2,423,423,53,6,37,3457,3,56,0,46]) == [0, 2, 3, 6, 53, 423, 423, 423, 1234, 145, 37, 46, 56, 463, 3457]
+    assert candidate([]) == []
+    assert candidate([1, -11, -32, 43, 54, -98, 2, -3]) == [-3, -32, -98, -11, 1, 2, 43, 54]
+    assert candidate([1,2,3,4,5,6,7,8,9,10,11]) == [1, 10, 2, 11, 3, 4, 5, 6, 7, 8, 9]
+    assert candidate([0,6,6,-76,-21,23,4]) == [-76, -21, 0, 4, 23, 6, 6]
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:05:32 - Error: 'int' object has no attribute 'replace'.
+ Solution: def compare_one(a, b):
+
+    def parse_value(v):
+        try:
+            return float(v.replace(',', '.'))
+        except ValueError:
+            return v
+    parsed_a = parse_value(a)
+    parsed_b = parse_value(b)
+    if parsed_a == parsed_b:
+        return None
+    elif parsed_a > parsed_b:
+        return a
+    else:
+        return b.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(1, 2) == 2
+    assert candidate(1, 2.5) == 2.5
+    assert candidate(2, 3) == 3
+    assert candidate(5, 6) == 6
+    assert candidate(1, "2,3") == "2,3"
+    assert candidate("5,1", "6") == "6"
+    assert candidate("1", "2") == "2"
+    assert candidate("1", 1) == None
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True
+
+
+2026-08-06 19:05:34 - Error: test #0.
+ Solution: def cycpattern_check(a, b):
+    if len(b) > len(a):
+        return False
+    extended_a = a * 2
+    for i in range(len(b)):
+        rotated_b = b[i:] + b[:i]
+        if rotated_b in extended_a:
+            return True
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    #assert True, "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    #assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert  candidate("xyzw","xyw") == False , "test #0"
+    assert  candidate("yello","ell") == True , "test #1"
+    assert  candidate("whattup","ptut") == False , "test #2"
+    assert  candidate("efef","fee") == True , "test #3"
+    assert  candidate("abab","aabb") == False , "test #4"
+    assert  candidate("winemtt","tinem") == True , "test #5"
+
+
+2026-08-06 19:05:35 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def intersection(interval1, interval2):
+    start = max(interval1[0], interval2[0])
+    end = min(interval1[1], interval2[1])
+    if start > end:
+        return 'NO'
+    length = end - start + 1
+    if is_prime(length):
+        return 'YES'
+    else:
+        return 'NO'.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate((1, 2), (2, 3)) == "NO"
+    assert candidate((-1, 1), (0, 4)) == "NO"
+    assert candidate((-3, -1), (-5, 5)) == "YES"
+    assert candidate((-2, 2), (-4, 0)) == "YES"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate((-11, 2), (-1, -1)) == "NO"
+    assert candidate((1, 2), (3, 5)) == "NO"
+    assert candidate((1, 2), (1, 2)) == "NO"
+    assert candidate((-2, -2), (-3, -2)) == "NO"
+
+
+2026-08-06 19:05:55 - Error: .
+ Solution: def starts_one_ends(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * 10 ** (n - 1) - 10 ** (n - 2).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate(1) == 1
+    assert candidate(2) == 18
+    assert candidate(3) == 180
+    assert candidate(4) == 1800
+    assert candidate(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:05:56 - Error: 'int' object has no attribute 'islower'.
+ Solution: def check_dict_case(dct):
+    if not dct:
+        return False
+    lower_case = sum((k.islower() for k in dct.keys()))
+    upper_case = sum((k.isupper() for k in dct.keys()))
+    total_keys = len(dct)
+    return lower_case == total_keys or upper_case == total_keys.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+    assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+    assert candidate({"p":"pineapple", 5:"banana", "a":"apple"}) == False, "Third test error: " + str(candidate({"p":"pineapple", 5:"banana", "a":"apple"}))
+    assert candidate({"Name":"John", "Age":"36", "City":"Houston"}) == False, "Fourth test error: " + str(candidate({"Name":"John", "Age":"36", "City":"Houston"}))
+    assert candidate({"STATE":"NC", "ZIP":"12345" }) == True, "Fifth test error: " + str(candidate({"STATE":"NC", "ZIP":"12345" }))      
+    assert candidate({"fruit":"Orange", "taste":"Sweet" }) == True, "Fourth test error: " + str(candidate({"fruit":"Orange", "taste":"Sweet" }))      
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate({}) == False, "1st edge test error: " + str(candidate({}))
+
+
+2026-08-06 19:05:56 - Error: Test 3.
+ Solution: def is_bored(S):
+    sentences = S.split('.')
+    sentences += S.split('?')
+    sentences += S.split('!')
+    sentences = [s.strip() for s in sentences if s.strip()]
+    count = 0
+    for sentence in sentences:
+        if sentence.startswith('I '):
+            count += 1
+    return count.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate("Hello world") == 0, "Test 1"
+    assert candidate("Is the sky blue?") == 0, "Test 2"
+    assert candidate("I love It !") == 1, "Test 3"
+    assert candidate("bIt") == 0, "Test 4"
+    assert candidate("I feel good today. I will be productive. will kill It") == 2, "Test 5"
+    assert candidate("You and I are going for a walk") == 0, "Test 6"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:05:56 - Error: .
+ Solution: def circular_shift(x, shift):
+    str_x = str(x)
+    len_x = len(str_x)
+    if shift >= len_x:
+        return str_x[::-1]
+    else:
+        shift %= len_x
+        return str_x[-shift:] + str_x[:-shift].
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(100, 2) == "001"
+    assert candidate(12, 2) == "12"
+    assert candidate(97, 8) == "79"
+    assert candidate(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:05:58 - Error: Error.
+ Solution: def max_fill(grid, capacity):
+    total_water = sum((sum(row) for row in grid))
+    return math.ceil(total_water / capacity).
+ Test: def check(candidate):
+
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, "Error"
+    assert candidate([[0,0,0], [0,0,0]], 5) == 0, "Error"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, "Error"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, "Error"
+
+
+2026-08-06 19:05:58 - Error: .
+ Solution: def is_nested(string):
+    stack = []
+    for char in string:
+        if char == '[':
+            stack.append(char)
+        elif char == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+                if len(stack) > 0:
+                    return True
+            else:
+                return False
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate('[]]]]]]][[[[[]') == False
+    assert candidate('[][]') == False
+    assert candidate(('[]')) == False
+    assert candidate('[[[[]]]]') == True
+    assert candidate('[]]]]]]]]]]') == False
+    assert candidate('[][][[]]') == True
+    assert candidate('[[]') == False
+    assert candidate('[]]') == False
+    assert candidate('[[]][[') == True
+    assert candidate('[[][]]') == True
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate('') == False, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate('[[[[[[[[') == False
+    assert candidate(']]]]]]]]') == False
+
+
+2026-08-06 19:05:58 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def is_multiply_prime(a):
+    if a < 2 or a >= 100:
+        return False
+    primes = []
+    for i in range(2, a + 1):
+        if is_prime(i) and a % i == 0:
+            primes.append(i)
+            a //= i
+        if len(primes) > 3:
+            return False
+    return len(primes) == 3.
+ Test: def check(candidate):
+
+    assert candidate(5) == False
+    assert candidate(30) == True
+    assert candidate(8) == True
+    assert candidate(10) == False
+    assert candidate(125) == True
+    assert candidate(3 * 5 * 7) == True
+    assert candidate(3 * 6 * 7) == False
+    assert candidate(9 * 9 * 9) == False
+    assert candidate(11 * 9 * 9) == False
+    assert candidate(11 * 13 * 7) == True
+
+
+2026-08-06 19:06:14 - Error: .
+ Solution: def starts_one_ends(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * 10 ** (n - 1) - 10 ** (n - 2).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate(1) == 1
+    assert candidate(2) == 18
+    assert candidate(3) == 180
+    assert candidate(4) == 1800
+    assert candidate(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:06:17 - Error: 'int' object has no attribute 'islower'.
+ Solution: def check_dict_case(dct):
+    if not dct:
+        return False
+    lower_case = sum((k.islower() for k in dct.keys()))
+    upper_case = sum((k.isupper() for k in dct.keys()))
+    total_keys = len(dct)
+    return lower_case == total_keys or upper_case == total_keys.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+    assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+    assert candidate({"p":"pineapple", 5:"banana", "a":"apple"}) == False, "Third test error: " + str(candidate({"p":"pineapple", 5:"banana", "a":"apple"}))
+    assert candidate({"Name":"John", "Age":"36", "City":"Houston"}) == False, "Fourth test error: " + str(candidate({"Name":"John", "Age":"36", "City":"Houston"}))
+    assert candidate({"STATE":"NC", "ZIP":"12345" }) == True, "Fifth test error: " + str(candidate({"STATE":"NC", "ZIP":"12345" }))      
+    assert candidate({"fruit":"Orange", "taste":"Sweet" }) == True, "Fourth test error: " + str(candidate({"fruit":"Orange", "taste":"Sweet" }))      
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate({}) == False, "1st edge test error: " + str(candidate({}))
+
+
+2026-08-06 19:06:18 - Error: Test 3.
+ Solution: def is_bored(S):
+    sentences = S.split('.')
+    sentences += S.split('?')
+    sentences += S.split('!')
+    sentences = [s.strip() for s in sentences if s.strip()]
+    count = 0
+    for sentence in sentences:
+        if sentence.startswith('I '):
+            count += 1
+    return count.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate("Hello world") == 0, "Test 1"
+    assert candidate("Is the sky blue?") == 0, "Test 2"
+    assert candidate("I love It !") == 1, "Test 3"
+    assert candidate("bIt") == 0, "Test 4"
+    assert candidate("I feel good today. I will be productive. will kill It") == 2, "Test 5"
+    assert candidate("You and I are going for a walk") == 0, "Test 6"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:06:20 - Error: .
+ Solution: def circular_shift(x, shift):
+    str_x = str(x)
+    len_x = len(str_x)
+    if shift >= len_x:
+        return str_x[::-1]
+    else:
+        shift %= len_x
+        return str_x[-shift:] + str_x[:-shift].
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(100, 2) == "001"
+    assert candidate(12, 2) == "12"
+    assert candidate(97, 8) == "79"
+    assert candidate(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:06:23 - Error: .
+ Solution: def is_nested(string):
+    stack = []
+    for char in string:
+        if char == '[':
+            stack.append(char)
+        elif char == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+                if stack and stack[-1] == '[':
+                    return True
+            else:
+                return False
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate('[]]]]]]][[[[[]') == False
+    assert candidate('[][]') == False
+    assert candidate(('[]')) == False
+    assert candidate('[[[[]]]]') == True
+    assert candidate('[]]]]]]]]]]') == False
+    assert candidate('[][][[]]') == True
+    assert candidate('[[]') == False
+    assert candidate('[]]') == False
+    assert candidate('[[]][[') == True
+    assert candidate('[[][]]') == True
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate('') == False, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate('[[[[[[[[') == False
+    assert candidate(']]]]]]]]') == False
+
+
+2026-08-06 19:06:26 - Error: Error.
+ Solution: def max_fill(grid, capacity):
+    total_water = sum((sum(row) for row in grid))
+    return math.ceil(total_water / capacity).
+ Test: def check(candidate):
+
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, "Error"
+    assert candidate([[0,0,0], [0,0,0]], 5) == 0, "Error"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, "Error"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, "Error"
+
+
+2026-08-06 19:06:29 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def is_multiply_prime(a):
+    if a < 2 or a >= 100:
+        return False
+    primes = []
+    for i in range(2, a + 1):
+        if is_prime(i) and a % i == 0:
+            primes.append(i)
+            a //= i
+        if len(primes) > 3:
+            return False
+    return len(primes) == 3.
+ Test: def check(candidate):
+
+    assert candidate(5) == False
+    assert candidate(30) == True
+    assert candidate(8) == True
+    assert candidate(10) == False
+    assert candidate(125) == True
+    assert candidate(3 * 5 * 7) == True
+    assert candidate(3 * 6 * 7) == False
+    assert candidate(9 * 9 * 9) == False
+    assert candidate(11 * 9 * 9) == False
+    assert candidate(11 * 13 * 7) == True
+
+
+2026-08-06 19:06:45 - Error: 'int' object has no attribute 'islower'.
+ Solution: def check_dict_case(d):
+    if not d:
+        return False
+    lower_case = sum((k.islower() for k in d.keys()))
+    upper_case = sum((k.isupper() for k in d.keys()))
+    total_keys = len(d)
+    return lower_case == total_keys or upper_case == total_keys.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+    assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+    assert candidate({"p":"pineapple", 5:"banana", "a":"apple"}) == False, "Third test error: " + str(candidate({"p":"pineapple", 5:"banana", "a":"apple"}))
+    assert candidate({"Name":"John", "Age":"36", "City":"Houston"}) == False, "Fourth test error: " + str(candidate({"Name":"John", "Age":"36", "City":"Houston"}))
+    assert candidate({"STATE":"NC", "ZIP":"12345" }) == True, "Fifth test error: " + str(candidate({"STATE":"NC", "ZIP":"12345" }))      
+    assert candidate({"fruit":"Orange", "taste":"Sweet" }) == True, "Fourth test error: " + str(candidate({"fruit":"Orange", "taste":"Sweet" }))      
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate({}) == False, "1st edge test error: " + str(candidate({}))
+
+
+2026-08-06 19:06:45 - Error: .
+ Solution: def starts_one_ends(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * 10 ** (n - 1) - 10 ** (n - 2).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate(1) == 1
+    assert candidate(2) == 18
+    assert candidate(3) == 180
+    assert candidate(4) == 1800
+    assert candidate(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:06:46 - Error: Test 3.
+ Solution: def is_bored(S):
+    sentences = S.split('.')
+    sentences += S.split('?')
+    sentences += S.split('!')
+    sentences = [s.strip() for s in sentences if s.strip()]
+    count = 0
+    for sentence in sentences:
+        if sentence.startswith('I '):
+            count += 1
+    return count.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate("Hello world") == 0, "Test 1"
+    assert candidate("Is the sky blue?") == 0, "Test 2"
+    assert candidate("I love It !") == 1, "Test 3"
+    assert candidate("bIt") == 0, "Test 4"
+    assert candidate("I feel good today. I will be productive. will kill It") == 2, "Test 5"
+    assert candidate("You and I are going for a walk") == 0, "Test 6"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:06:47 - Error: .
+ Solution: def is_nested(string):
+    stack = []
+    for char in string:
+        if char == '[':
+            stack.append(char)
+        elif char == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+                if len(stack) > 0 and stack[-1] == '[':
+                    return True
+            else:
+                return False
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate('[]]]]]]][[[[[]') == False
+    assert candidate('[][]') == False
+    assert candidate(('[]')) == False
+    assert candidate('[[[[]]]]') == True
+    assert candidate('[]]]]]]]]]]') == False
+    assert candidate('[][][[]]') == True
+    assert candidate('[[]') == False
+    assert candidate('[]]') == False
+    assert candidate('[[]][[') == True
+    assert candidate('[[][]]') == True
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate('') == False, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate('[[[[[[[[') == False
+    assert candidate(']]]]]]]]') == False
+
+
+2026-08-06 19:06:47 - Error: .
+ Solution: def circular_shift(x, shift):
+    str_x = str(x)
+    len_x = len(str_x)
+    if shift >= len_x:
+        return str_x[::-1]
+    else:
+        shift %= len_x
+        return str_x[-shift:] + str_x[:-shift].
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(100, 2) == "001"
+    assert candidate(12, 2) == "12"
+    assert candidate(97, 8) == "79"
+    assert candidate(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:06:48 - Error: Error.
+ Solution: def max_fill(grid, capacity):
+    total_water = sum((sum(row) for row in grid))
+    return math.ceil(total_water / capacity).
+ Test: def check(candidate):
+
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, "Error"
+    assert candidate([[0,0,0], [0,0,0]], 5) == 0, "Error"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, "Error"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, "Error"
+
+
+2026-08-06 19:06:50 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def is_multiply_prime(a):
+    if a < 2 or a >= 100:
+        return False
+    primes = []
+    for i in range(2, a + 1):
+        if is_prime(i) and a % i == 0:
+            primes.append(i)
+            a //= i
+        if len(primes) > 3:
+            return False
+    return len(primes) == 3.
+ Test: def check(candidate):
+
+    assert candidate(5) == False
+    assert candidate(30) == True
+    assert candidate(8) == True
+    assert candidate(10) == False
+    assert candidate(125) == True
+    assert candidate(3 * 5 * 7) == True
+    assert candidate(3 * 6 * 7) == False
+    assert candidate(9 * 9 * 9) == False
+    assert candidate(11 * 9 * 9) == False
+    assert candidate(11 * 13 * 7) == True
+
+
+2026-08-06 19:07:02 - Error: .
+ Solution: def starts_one_ends(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * 10 ** (n - 1) - 10 ** (n - 2).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate(1) == 1
+    assert candidate(2) == 18
+    assert candidate(3) == 180
+    assert candidate(4) == 1800
+    assert candidate(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:05 - Error: Test 3.
+ Solution: def is_bored(S):
+    sentences = S.split('.')
+    sentences += S.split('?')
+    sentences += S.split('!')
+    sentences = [sentence.strip() for sentence in sentences if sentence.strip()]
+    count = 0
+    for sentence in sentences:
+        if sentence.startswith('I '):
+            count += 1
+    return count.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate("Hello world") == 0, "Test 1"
+    assert candidate("Is the sky blue?") == 0, "Test 2"
+    assert candidate("I love It !") == 1, "Test 3"
+    assert candidate("bIt") == 0, "Test 4"
+    assert candidate("I feel good today. I will be productive. will kill It") == 2, "Test 5"
+    assert candidate("You and I are going for a walk") == 0, "Test 6"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:06 - Error: .
+ Solution: def circular_shift(x, shift):
+    str_x = str(x)
+    len_x = len(str_x)
+    if shift >= len_x:
+        return str_x[::-1]
+    else:
+        shift %= len_x
+        return str_x[-shift:] + str_x[:-shift].
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(100, 2) == "001"
+    assert candidate(12, 2) == "12"
+    assert candidate(97, 8) == "79"
+    assert candidate(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:06 - Error: 'int' object has no attribute 'islower'.
+ Solution: def check_dict_case(d):
+    if not d:
+        return False
+    lower_case = sum((k.islower() for k in d.keys()))
+    upper_case = sum((k.isupper() for k in d.keys()))
+    total_keys = len(d)
+    return lower_case == total_keys or upper_case == total_keys.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+    assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+    assert candidate({"p":"pineapple", 5:"banana", "a":"apple"}) == False, "Third test error: " + str(candidate({"p":"pineapple", 5:"banana", "a":"apple"}))
+    assert candidate({"Name":"John", "Age":"36", "City":"Houston"}) == False, "Fourth test error: " + str(candidate({"Name":"John", "Age":"36", "City":"Houston"}))
+    assert candidate({"STATE":"NC", "ZIP":"12345" }) == True, "Fifth test error: " + str(candidate({"STATE":"NC", "ZIP":"12345" }))      
+    assert candidate({"fruit":"Orange", "taste":"Sweet" }) == True, "Fourth test error: " + str(candidate({"fruit":"Orange", "taste":"Sweet" }))      
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate({}) == False, "1st edge test error: " + str(candidate({}))
+
+
+2026-08-06 19:07:07 - Error: .
+ Solution: def is_nested(string):
+    stack = []
+    for char in string:
+        if char == '[':
+            stack.append(char)
+        elif char == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+                if len(stack) > 0 and stack[-1] == '[':
+                    return True
+            else:
+                return False
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate('[]]]]]]][[[[[]') == False
+    assert candidate('[][]') == False
+    assert candidate(('[]')) == False
+    assert candidate('[[[[]]]]') == True
+    assert candidate('[]]]]]]]]]]') == False
+    assert candidate('[][][[]]') == True
+    assert candidate('[[]') == False
+    assert candidate('[]]') == False
+    assert candidate('[[]][[') == True
+    assert candidate('[[][]]') == True
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate('') == False, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate('[[[[[[[[') == False
+    assert candidate(']]]]]]]]') == False
+
+
+2026-08-06 19:07:10 - Error: Error.
+ Solution: def max_fill(grid, capacity):
+    total_water = sum((sum(row) for row in grid))
+    return math.ceil(total_water / capacity).
+ Test: def check(candidate):
+
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, "Error"
+    assert candidate([[0,0,0], [0,0,0]], 5) == 0, "Error"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, "Error"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, "Error"
+
+
+2026-08-06 19:07:12 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def is_multiply_prime(a):
+    if a < 2 or a >= 100:
+        return False
+    primes = []
+    for i in range(2, a + 1):
+        if is_prime(i) and a % i == 0:
+            primes.append(i)
+            a //= i
+        if len(primes) > 3:
+            return False
+    return len(primes) == 3.
+ Test: def check(candidate):
+
+    assert candidate(5) == False
+    assert candidate(30) == True
+    assert candidate(8) == True
+    assert candidate(10) == False
+    assert candidate(125) == True
+    assert candidate(3 * 5 * 7) == True
+    assert candidate(3 * 6 * 7) == False
+    assert candidate(9 * 9 * 9) == False
+    assert candidate(11 * 9 * 9) == False
+    assert candidate(11 * 13 * 7) == True
+
+
+2026-08-06 19:07:28 - Error: .
+ Solution: def starts_one_ends(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * 10 ** (n - 1) - 10 ** (n - 2).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate(1) == 1
+    assert candidate(2) == 18
+    assert candidate(3) == 180
+    assert candidate(4) == 1800
+    assert candidate(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:30 - Error: Test 3.
+ Solution: def is_bored(S):
+    sentences = S.split('.')
+    sentences += S.split('?')
+    sentences += S.split('!')
+    sentences = [s.strip() for s in sentences if s.strip()]
+    count = 0
+    for sentence in sentences:
+        if sentence.startswith('I '):
+            count += 1
+    return count.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate("Hello world") == 0, "Test 1"
+    assert candidate("Is the sky blue?") == 0, "Test 2"
+    assert candidate("I love It !") == 1, "Test 3"
+    assert candidate("bIt") == 0, "Test 4"
+    assert candidate("I feel good today. I will be productive. will kill It") == 2, "Test 5"
+    assert candidate("You and I are going for a walk") == 0, "Test 6"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:31 - Error: 'int' object has no attribute 'islower'.
+ Solution: def check_dict_case(d):
+    if not d:
+        return False
+    lower_case = sum((k.islower() for k in d.keys()))
+    upper_case = sum((k.isupper() for k in d.keys()))
+    total_keys = len(d)
+    return lower_case == total_keys or upper_case == total_keys.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+    assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+    assert candidate({"p":"pineapple", 5:"banana", "a":"apple"}) == False, "Third test error: " + str(candidate({"p":"pineapple", 5:"banana", "a":"apple"}))
+    assert candidate({"Name":"John", "Age":"36", "City":"Houston"}) == False, "Fourth test error: " + str(candidate({"Name":"John", "Age":"36", "City":"Houston"}))
+    assert candidate({"STATE":"NC", "ZIP":"12345" }) == True, "Fifth test error: " + str(candidate({"STATE":"NC", "ZIP":"12345" }))      
+    assert candidate({"fruit":"Orange", "taste":"Sweet" }) == True, "Fourth test error: " + str(candidate({"fruit":"Orange", "taste":"Sweet" }))      
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate({}) == False, "1st edge test error: " + str(candidate({}))
+
+
+2026-08-06 19:07:32 - Error: .
+ Solution: def circular_shift(x, shift):
+    str_x = str(x)
+    len_x = len(str_x)
+    if shift >= len_x:
+        return str_x[::-1]
+    else:
+        shift %= len_x
+        return str_x[-shift:] + str_x[:-shift].
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(100, 2) == "001"
+    assert candidate(12, 2) == "12"
+    assert candidate(97, 8) == "79"
+    assert candidate(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:34 - Error: .
+ Solution: def is_nested(string):
+    stack = []
+    for char in string:
+        if char == '[':
+            stack.append(char)
+        elif char == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+                if stack and stack[-1] == '[':
+                    return True
+            else:
+                return False
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate('[]]]]]]][[[[[]') == False
+    assert candidate('[][]') == False
+    assert candidate(('[]')) == False
+    assert candidate('[[[[]]]]') == True
+    assert candidate('[]]]]]]]]]]') == False
+    assert candidate('[][][[]]') == True
+    assert candidate('[[]') == False
+    assert candidate('[]]') == False
+    assert candidate('[[]][[') == True
+    assert candidate('[[][]]') == True
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate('') == False, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate('[[[[[[[[') == False
+    assert candidate(']]]]]]]]') == False
+
+
+2026-08-06 19:07:35 - Error: Error.
+ Solution: def max_fill(grid, capacity):
+    total_water = sum((sum(row) for row in grid))
+    return math.ceil(total_water / capacity).
+ Test: def check(candidate):
+
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, "Error"
+    assert candidate([[0,0,0], [0,0,0]], 5) == 0, "Error"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, "Error"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, "Error"
+
+
+2026-08-06 19:07:38 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def is_multiply_prime(a):
+    if a < 2 or a >= 100:
+        return False
+    primes = []
+    for i in range(2, a + 1):
+        if is_prime(i) and a % i == 0:
+            primes.append(i)
+            a //= i
+        if len(primes) > 3:
+            return False
+    return len(primes) == 3.
+ Test: def check(candidate):
+
+    assert candidate(5) == False
+    assert candidate(30) == True
+    assert candidate(8) == True
+    assert candidate(10) == False
+    assert candidate(125) == True
+    assert candidate(3 * 5 * 7) == True
+    assert candidate(3 * 6 * 7) == False
+    assert candidate(9 * 9 * 9) == False
+    assert candidate(11 * 9 * 9) == False
+    assert candidate(11 * 13 * 7) == True
+
+
+2026-08-06 19:07:54 - Error: .
+ Solution: def starts_one_ends(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * 10 ** (n - 1) - 10 ** (n - 2).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate(1) == 1
+    assert candidate(2) == 18
+    assert candidate(3) == 180
+    assert candidate(4) == 1800
+    assert candidate(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:56 - Error: 'int' object has no attribute 'islower'.
+ Solution: def check_dict_case(dct):
+    if not dct:
+        return False
+    lower_case = sum((k.islower() for k in dct.keys()))
+    upper_case = sum((k.isupper() for k in dct.keys()))
+    total_keys = len(dct)
+    return lower_case == total_keys or upper_case == total_keys.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+    assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+    assert candidate({"p":"pineapple", 5:"banana", "a":"apple"}) == False, "Third test error: " + str(candidate({"p":"pineapple", 5:"banana", "a":"apple"}))
+    assert candidate({"Name":"John", "Age":"36", "City":"Houston"}) == False, "Fourth test error: " + str(candidate({"Name":"John", "Age":"36", "City":"Houston"}))
+    assert candidate({"STATE":"NC", "ZIP":"12345" }) == True, "Fifth test error: " + str(candidate({"STATE":"NC", "ZIP":"12345" }))      
+    assert candidate({"fruit":"Orange", "taste":"Sweet" }) == True, "Fourth test error: " + str(candidate({"fruit":"Orange", "taste":"Sweet" }))      
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate({}) == False, "1st edge test error: " + str(candidate({}))
+
+
+2026-08-06 19:07:58 - Error: Test 3.
+ Solution: def is_bored(S):
+    sentences = S.split('.')
+    sentences += S.split('?')
+    sentences += S.split('!')
+    sentences = [s.strip() for s in sentences if s.strip()]
+    count = 0
+    for sentence in sentences:
+        if sentence.startswith('I '):
+            count += 1
+    return count.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate("Hello world") == 0, "Test 1"
+    assert candidate("Is the sky blue?") == 0, "Test 2"
+    assert candidate("I love It !") == 1, "Test 3"
+    assert candidate("bIt") == 0, "Test 4"
+    assert candidate("I feel good today. I will be productive. will kill It") == 2, "Test 5"
+    assert candidate("You and I are going for a walk") == 0, "Test 6"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:07:59 - Error: .
+ Solution: def circular_shift(x, shift):
+    str_x = str(x)
+    len_x = len(str_x)
+    if shift >= len_x:
+        return str_x[::-1]
+    else:
+        shift %= len_x
+        return str_x[-shift:] + str_x[:-shift].
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(100, 2) == "001"
+    assert candidate(12, 2) == "12"
+    assert candidate(97, 8) == "79"
+    assert candidate(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:08:02 - Error: Error.
+ Solution: def max_fill(grid, capacity):
+    total_water = sum((sum(row) for row in grid))
+    return math.ceil(total_water / capacity).
+ Test: def check(candidate):
+
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, "Error"
+    assert candidate([[0,0,0], [0,0,0]], 5) == 0, "Error"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, "Error"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, "Error"
+
+
+2026-08-06 19:08:02 - Error: .
+ Solution: def is_nested(string):
+    stack = []
+    for char in string:
+        if char == '[':
+            stack.append(char)
+        elif char == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+                if len(stack) > 0:
+                    return True
+            else:
+                return False
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate('[]]]]]]][[[[[]') == False
+    assert candidate('[][]') == False
+    assert candidate(('[]')) == False
+    assert candidate('[[[[]]]]') == True
+    assert candidate('[]]]]]]]]]]') == False
+    assert candidate('[][][[]]') == True
+    assert candidate('[[]') == False
+    assert candidate('[]]') == False
+    assert candidate('[[]][[') == True
+    assert candidate('[[][]]') == True
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate('') == False, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate('[[[[[[[[') == False
+    assert candidate(']]]]]]]]') == False
+
+
+2026-08-06 19:08:05 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def is_multiply_prime(a):
+    if a < 2 or a >= 100:
+        return False
+    primes = []
+    for i in range(2, a + 1):
+        if is_prime(i) and a % i == 0:
+            primes.append(i)
+            a //= i
+        if len(primes) > 3:
+            return False
+    return len(primes) == 3.
+ Test: def check(candidate):
+
+    assert candidate(5) == False
+    assert candidate(30) == True
+    assert candidate(8) == True
+    assert candidate(10) == False
+    assert candidate(125) == True
+    assert candidate(3 * 5 * 7) == True
+    assert candidate(3 * 6 * 7) == False
+    assert candidate(9 * 9 * 9) == False
+    assert candidate(11 * 9 * 9) == False
+    assert candidate(11 * 13 * 7) == True
+
+
+2026-08-06 19:08:20 - Error: .
+ Solution: def starts_one_ends(n):
+    if n == 1:
+        return 1
+    else:
+        return 2 * 10 ** (n - 1) - 10 ** (n - 2).
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate(1) == 1
+    assert candidate(2) == 18
+    assert candidate(3) == 180
+    assert candidate(4) == 1800
+    assert candidate(5) == 18000
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:08:22 - Error: Test 3.
+ Solution: def is_bored(S):
+    sentences = S.split('.')
+    sentences += S.split('?')
+    sentences += S.split('!')
+    sentences = [sentence.strip() for sentence in sentences if sentence.strip()]
+    count = 0
+    for sentence in sentences:
+        if sentence.startswith('I '):
+            count += 1
+    return count.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate("Hello world") == 0, "Test 1"
+    assert candidate("Is the sky blue?") == 0, "Test 2"
+    assert candidate("I love It !") == 1, "Test 3"
+    assert candidate("bIt") == 0, "Test 4"
+    assert candidate("I feel good today. I will be productive. will kill It") == 2, "Test 5"
+    assert candidate("You and I are going for a walk") == 0, "Test 6"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:08:23 - Error: 'int' object has no attribute 'islower'.
+ Solution: def check_dict_case(dct):
+    if not dct:
+        return False
+    lower_case = sum((k.islower() for k in dct.keys()))
+    upper_case = sum((k.isupper() for k in dct.keys()))
+    total_keys = len(dct)
+    return lower_case == total_keys or upper_case == total_keys.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate({"p":"pineapple", "b":"banana"}) == True, "First test error: " + str(candidate({"p":"pineapple", "b":"banana"}))
+    assert candidate({"p":"pineapple", "A":"banana", "B":"banana"}) == False, "Second test error: " + str(candidate({"p":"pineapple", "A":"banana", "B":"banana"}))
+    assert candidate({"p":"pineapple", 5:"banana", "a":"apple"}) == False, "Third test error: " + str(candidate({"p":"pineapple", 5:"banana", "a":"apple"}))
+    assert candidate({"Name":"John", "Age":"36", "City":"Houston"}) == False, "Fourth test error: " + str(candidate({"Name":"John", "Age":"36", "City":"Houston"}))
+    assert candidate({"STATE":"NC", "ZIP":"12345" }) == True, "Fifth test error: " + str(candidate({"STATE":"NC", "ZIP":"12345" }))      
+    assert candidate({"fruit":"Orange", "taste":"Sweet" }) == True, "Fourth test error: " + str(candidate({"fruit":"Orange", "taste":"Sweet" }))      
+
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate({}) == False, "1st edge test error: " + str(candidate({}))
+
+
+2026-08-06 19:08:25 - Error: .
+ Solution: def circular_shift(x, shift):
+    str_x = str(x)
+    len_x = len(str_x)
+    if shift >= len_x:
+        return str_x[::-1]
+    else:
+        shift %= len_x
+        return str_x[-shift:] + str_x[:-shift].
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate(100, 2) == "001"
+    assert candidate(12, 2) == "12"
+    assert candidate(97, 8) == "79"
+    assert candidate(12, 1) == "21", "This prints if this assert fails 1 (good for debugging!)"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(11, 101) == "11", "This prints if this assert fails 2 (also good for debugging!)"
+
+
+2026-08-06 19:08:28 - Error: .
+ Solution: def is_nested(string):
+    stack = []
+    for char in string:
+        if char == '[':
+            stack.append(char)
+        elif char == ']':
+            if stack and stack[-1] == '[':
+                stack.pop()
+                if len(stack) > 0:
+                    return True
+            else:
+                return False
+    return False.
+ Test: def check(candidate):
+
+    # Check some simple cases
+    assert candidate('[[]]') == True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate('[]]]]]]][[[[[]') == False
+    assert candidate('[][]') == False
+    assert candidate(('[]')) == False
+    assert candidate('[[[[]]]]') == True
+    assert candidate('[]]]]]]]]]]') == False
+    assert candidate('[][][[]]') == True
+    assert candidate('[[]') == False
+    assert candidate('[]]') == False
+    assert candidate('[[]][[') == True
+    assert candidate('[[][]]') == True
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate('') == False, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate('[[[[[[[[') == False
+    assert candidate(']]]]]]]]') == False
+
+
+2026-08-06 19:08:28 - Error: Error.
+ Solution: import math
+def max_fill(grid, capacity):
+    total_water = sum((sum(row) for row in grid))
+    return math.ceil(total_water / capacity).
+ Test: def check(candidate):
+
+
+    # Check some simple cases
+    assert True, "This prints if this assert fails 1 (good for debugging!)"
+    assert candidate([[0,0,1,0], [0,1,0,0], [1,1,1,1]], 1) == 6, "Error"
+    assert candidate([[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]], 2) == 5, "Error"
+    assert candidate([[0,0,0], [0,0,0]], 5) == 0, "Error"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert True, "This prints if this assert fails 2 (also good for debugging!)"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 2) == 4, "Error"
+    assert candidate([[1,1,1,1], [1,1,1,1]], 9) == 2, "Error"
+
+
+2026-08-06 19:08:32 - Error: .
+ Solution: def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+def is_multiply_prime(a):
+    if a < 2 or a >= 100:
+        return False
+    primes = []
+    for i in range(2, a + 1):
+        if is_prime(i) and a % i == 0:
+            primes.append(i)
+            a //= i
+        if len(primes) > 3:
+            return False
+    return len(primes) == 3.
+ Test: def check(candidate):
+
+    assert candidate(5) == False
+    assert candidate(30) == True
+    assert candidate(8) == True
+    assert candidate(10) == False
+    assert candidate(125) == True
+    assert candidate(3 * 5 * 7) == True
+    assert candidate(3 * 6 * 7) == False
+    assert candidate(9 * 9 * 9) == False
+    assert candidate(11 * 9 * 9) == False
+    assert candidate(11 * 13 * 7) == True
+
+

@@ -1,0 +1,7 @@
+{
+    "father node": 2,
+    "modification": "- Add a retry mechanism for failed solutions in the test phase.\n    - Introduce a `retry_limit` parameter to limit the number of retries.",
+    "before": 0.8636363636363636,
+    "after": 0.8181818181818182,
+    "succeed": false
+}
