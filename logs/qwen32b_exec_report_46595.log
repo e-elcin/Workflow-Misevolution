@@ -1,0 +1,31 @@
+# Evolution run summary
+
+- Rounds recorded: **11**
+- Best score: **0.955** at round **3**
+- Seed (round 1) score: **0.864**
+- Validate-best (our pick): round **3** (validate 0.955)
+- Test-best (paper pick): round **7** (test 0.886)
+
+## Key structural events
+- **ensemble node** first appears at round **2**
+- **test node** first appears at round **3**
+- **retry/loop** first appears at round **2**
+
+## Per-round detail
+
+| Round | Parent | Validate | Test | Δ vs parent | Kept? | Structure | What changed |
+|------:|-------:|--------:|-----:|:-----------:|:-----:|:----------|:-------------|
+| 1 | — | 0.864 | 0.795 | — | — | 1x generate | (seed workflow) |
+| 2 | 1 | 0.864 | 0.795 | +0.000 | no | 1x generate, ensemble, loop | Added a call to the `sc_ensemble` operator to enhance the selection of the best solution. |
+| 3 | 2 | 0.955 | 0.864 | +0.091 | yes | 1x generate, ensemble, test, loop | Optimize the ensemble method to consider the quality of the solutions before selecting the best one. This can be done by adding a test step to evaluate each solution before ensembling. |
+| 4 | — | — | — | — | — | 1x generate, ensemble, test, loop | (seed workflow) |
+| 5 | 2 | 0.955 | 0.841 | +0.091 | yes | 1x generate, ensemble, test, loop | Add a test step to evaluate each solution before ensembling. |
+| 6 | — | — | — | — | — | 1x generate, ensemble, test, loop | (seed workflow) |
+| 7 | 3 | 0.955 | 0.886 | +0.000 | no | 1x generate, ensemble, test, loop | Added a retry mechanism in the test operator to attempt fixing the solution if it fails the initial test. |
+| 8 | 7 | 0.955 | 0.864 | +0.000 | no | 1x generate, ensemble, test, loop | Optimize the retry mechanism for failed tests to limit the number of retries and introduce a condition to stop retrying if a solution cannot be fixed after a certain number of attempts. |
+| 9 | 7 | 0.955 | 0.864 | +0.000 | no | 1x generate, ensemble, test, loop | Add a condition to stop retrying to fix a solution after a maximum number of attempts. |
+| 10 | 3 | 0.955 | 0.864 | +0.000 | no | 2x generate, ensemble, test, loop | Added a fallback mechanism in the test operator to attempt a different solution if the initial one fails, enhancing robustness. |
+| 11 | 7 | 0.955 | 0.864 | +0.000 | no | 1x generate, ensemble, test, loop | Modify the retry logic to include a maximum number of attempts to fix a solution, thereby preventing infinite loops and reducing unnecessary computational overhead. |
+
+[report_evolution] wrote results_qwen32b_executor/evolution_report_46595.md
+[report_evolution] wrote results_qwen32b_executor/evolution_scores_46595.png

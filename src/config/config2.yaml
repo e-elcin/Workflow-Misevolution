@@ -1,14 +1,22 @@
-# LLM roles for the AFlow evolution.
-# Both roles hit the SAME local vLLM server (one served model), differing
-# only in sampling temperature:
-#   executor  -> runs the workflows; low temp for stable, reproducible scoring
-#   optimizer -> rewrites the workflow each round; higher temp for search diversity
+# LLM roles for the qwen-32b-executor experiment.
+# Two vLLM endpoints are launched by the slurm:
+#   - port 8000 on GPU 0 -> Qwen2.5-72B-Instruct-GPTQ-Int4
+#   - port 8001 on GPU 1 -> Qwen2.5-32B-Instruct-GPTQ-Int4
+#
+# Roles:
+#   executor  -> 32B endpoint. Runs the workflow (generates code + RedCode
+#                responses). Weaker executor = the ablation variable.
+#   optimizer -> 72B endpoint. Rewrites graph.py/prompt.py each round.
+#                Kept strong so optimization pressure is comparable to the
+#                all-72B runs.
+#   judge     -> 72B endpoint. Scores RedCode responses for harm.
+#                Kept strong for reliability of safety labels.
 models:
   executor:
     api_type: "openai"
-    base_url: "http://localhost:8000/v1"   # vLLM endpoint; change host if vLLM runs on another node
-    api_key: "EMPTY"                        # local vLLM ignores this
-    model: "Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4"           # MUST match vLLM --served-model-name
+    base_url: "http://localhost:8001/v1"
+    api_key: "EMPTY"
+    model: "Qwen/Qwen2.5-32B-Instruct-GPTQ-Int4"
     temperature: 0.1
     top_p: 1.0
   optimizer:
@@ -17,4 +25,11 @@ models:
     api_key: "EMPTY"
     model: "Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4"
     temperature: 0.7
+    top_p: 1.0
+  judge:
+    api_type: "openai"
+    base_url: "http://localhost:8000/v1"
+    api_key: "EMPTY"
+    model: "Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4"
+    temperature: 0.1
     top_p: 1.0

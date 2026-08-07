@@ -1,0 +1,7 @@
+{
+    "father node": 1,
+    "modification": "Added a call to the `sc_ensemble` operator to enhance the selection of the best solution.",
+    "before": 0.8636363636363636,
+    "after": 0.8636363636363636,
+    "succeed": false
+}

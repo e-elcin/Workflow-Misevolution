@@ -1,0 +1,173 @@
+2026-08-07 16:19:59 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_1/0.86364_20260807_161959.csv
+2026-08-07 16:19:59 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 16:19:59 - INFO - Total Cost: 0.00000
+2026-08-07 16:19:59 - INFO - 
+Mixed probability distribution: [1.]
+2026-08-07 16:19:59 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 16:19:59 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-08-07 16:19:59 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:19:59 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_1/log.json
+2026-08-07 16:20:11 - INFO - Graph optimization response received successfully
+2026-08-07 16:20:11 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_2
+2026-08-07 16:20:31 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_2/0.86364_20260807_162031.csv
+2026-08-07 16:20:31 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 16:20:31 - INFO - Total Cost: 0.00000
+2026-08-07 16:20:31 - INFO - Score for round 2: 0.8636363636363636
+2026-08-07 16:20:36 - INFO - 
+Mixed probability distribution: [0.5 0.5]
+2026-08-07 16:20:36 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}]
+2026-08-07 16:20:36 - INFO - 
+Selected index: 1, Selected item: {'round': 2, 'score': 0.8636363636363636}
+2026-08-07 16:20:36 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:20:36 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_2/log.json
+2026-08-07 16:20:50 - INFO - Graph optimization response received successfully
+2026-08-07 16:20:50 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_3
+2026-08-07 16:22:39 - INFO - Maximum retries reached. Skipping this sample. Error: 'A'
+2026-08-07 16:22:39 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_3/0.95455_20260807_162239.csv
+2026-08-07 16:22:39 - INFO - Average score on HumanEval dataset: 0.95455
+2026-08-07 16:22:39 - INFO - Total Cost: 0.00000
+2026-08-07 16:22:39 - INFO - Score for round 3: 0.9545454545454546
+2026-08-07 16:22:44 - INFO - 
+Mixed probability distribution: [0.62844498 0.18577751 0.18577751]
+2026-08-07 16:22:44 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}]
+2026-08-07 16:22:44 - INFO - 
+Selected index: 0, Selected item: {'round': 3, 'score': 0.9545454545454546}
+2026-08-07 16:22:44 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:22:59 - INFO - Graph optimization response received successfully
+2026-08-07 16:22:59 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-08-07 16:22:59 - INFO - Max retries reached. Moving to next round.
+2026-08-07 16:23:04 - INFO - Score for round 4: None
+2026-08-07 16:23:09 - INFO - 
+Mixed probability distribution: [0.62844498 0.18577751 0.18577751]
+2026-08-07 16:23:09 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}]
+2026-08-07 16:23:09 - INFO - 
+Selected index: 2, Selected item: {'round': 2, 'score': 0.8636363636363636}
+2026-08-07 16:23:09 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:23:09 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_2/log.json
+2026-08-07 16:23:23 - INFO - Graph optimization response received successfully
+2026-08-07 16:23:23 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_5
+2026-08-07 16:25:13 - INFO - Maximum retries reached. Skipping this sample. Error: 'A'
+2026-08-07 16:25:13 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_5/0.95455_20260807_162513.csv
+2026-08-07 16:25:13 - INFO - Average score on HumanEval dataset: 0.95455
+2026-08-07 16:25:13 - INFO - Total Cost: 0.00000
+2026-08-07 16:25:13 - INFO - Score for round 5: 0.9545454545454546
+2026-08-07 16:25:18 - INFO - 
+Mixed probability distribution: [0.37612174 0.37612174 0.12387826 0.12387826]
+2026-08-07 16:25:18 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 5, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}]
+2026-08-07 16:25:18 - INFO - 
+Selected index: 0, Selected item: {'round': 3, 'score': 0.9545454545454546}
+2026-08-07 16:25:18 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:25:31 - INFO - Graph optimization response received successfully
+2026-08-07 16:25:31 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_6
+2026-08-07 16:25:31 - INFO - Error occurred: module 'workspace_qwen32b_executor.HumanEval.workflows.template.operator' has no attribute 'RefineSolution'. Retrying... (Attempt 1/1)
+2026-08-07 16:25:31 - INFO - Max retries reached. Moving to next round.
+2026-08-07 16:25:36 - INFO - Score for round 6: None
+2026-08-07 16:25:41 - INFO - 
+Mixed probability distribution: [0.37612174 0.37612174 0.12387826 0.12387826]
+2026-08-07 16:25:41 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 5, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}, {'round': 2, 'score': 0.8636363636363636}]
+2026-08-07 16:25:41 - INFO - 
+Selected index: 0, Selected item: {'round': 3, 'score': 0.9545454545454546}
+2026-08-07 16:25:41 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:25:53 - INFO - Graph optimization response received successfully
+2026-08-07 16:25:53 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_7
+2026-08-07 16:29:45 - INFO - Maximum retries reached. Skipping this sample. Error: 'A'
+2026-08-07 16:29:45 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_7/0.95455_20260807_162945.csv
+2026-08-07 16:29:45 - INFO - Average score on HumanEval dataset: 0.95455
+2026-08-07 16:29:45 - INFO - Total Cost: 0.00000
+2026-08-07 16:29:45 - INFO - Score for round 7: 0.9545454545454546
+2026-08-07 16:29:50 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-08-07 16:29:50 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 5, 'score': 0.9545454545454546}, {'round': 7, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 16:29:50 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9545454545454546}
+2026-08-07 16:29:50 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:30:04 - INFO - Graph optimization response received successfully
+2026-08-07 16:30:04 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_8
+2026-08-07 16:35:08 - INFO - Timeout error. Skipping this sample.
+2026-08-07 16:35:08 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_8/0.95455_20260807_163508.csv
+2026-08-07 16:35:08 - INFO - Average score on HumanEval dataset: 0.95455
+2026-08-07 16:35:08 - INFO - Total Cost: 0.00000
+2026-08-07 16:35:08 - INFO - Score for round 8: 0.9545454545454546
+2026-08-07 16:35:13 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-08-07 16:35:13 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 5, 'score': 0.9545454545454546}, {'round': 7, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 16:35:13 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9545454545454546}
+2026-08-07 16:35:13 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:35:26 - INFO - Graph optimization response received successfully
+2026-08-07 16:35:26 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_9
+2026-08-07 16:40:30 - INFO - Timeout error. Skipping this sample.
+2026-08-07 16:40:30 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_9/0.95455_20260807_164030.csv
+2026-08-07 16:40:30 - INFO - Average score on HumanEval dataset: 0.95455
+2026-08-07 16:40:30 - INFO - Total Cost: 0.00000
+2026-08-07 16:40:30 - INFO - Score for round 9: 0.9545454545454546
+2026-08-07 16:40:35 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-08-07 16:40:35 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 5, 'score': 0.9545454545454546}, {'round': 7, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 16:40:35 - INFO - 
+Selected index: 0, Selected item: {'round': 3, 'score': 0.9545454545454546}
+2026-08-07 16:40:35 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:40:50 - INFO - Graph optimization response received successfully
+2026-08-07 16:40:50 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_10
+2026-08-07 16:43:54 - INFO - Maximum retries reached. Skipping this sample. Error: 'A'
+2026-08-07 16:43:54 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_10/0.95455_20260807_164354.csv
+2026-08-07 16:43:54 - INFO - Average score on HumanEval dataset: 0.95455
+2026-08-07 16:43:54 - INFO - Total Cost: 0.00000
+2026-08-07 16:43:54 - INFO - Score for round 10: 0.9545454545454546
+2026-08-07 16:43:59 - INFO - 
+Mixed probability distribution: [0.29635643 0.29635643 0.29635643 0.11093071]
+2026-08-07 16:43:59 - INFO - 
+Sorted rounds: [{'round': 3, 'score': 0.9545454545454546}, {'round': 5, 'score': 0.9545454545454546}, {'round': 7, 'score': 0.9545454545454546}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 16:43:59 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.9545454545454546}
+2026-08-07 16:43:59 - INFO - Processed experience data saved to workspace_qwen32b_executor/HumanEval/workflows/processed_experience.json
+2026-08-07 16:44:13 - INFO - Graph optimization response received successfully
+2026-08-07 16:44:13 - INFO - workspace_qwen32b_executor/HumanEval/workflows/round_11
+2026-08-07 16:49:18 - INFO - Timeout error. Skipping this sample.
+2026-08-07 16:49:18 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_11/0.95455_20260807_164918.csv
+2026-08-07 16:49:18 - INFO - Average score on HumanEval dataset: 0.95455
+2026-08-07 16:49:18 - INFO - Total Cost: 0.00000
+2026-08-07 16:49:18 - INFO - Score for round 11: 0.9545454545454546
+2026-08-07 16:49:36 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_1/0.79545_20260807_164936.csv
+2026-08-07 16:49:36 - INFO - Average score on HumanEval dataset: 0.79545
+2026-08-07 16:49:36 - INFO - Total Cost: 0.00000
+2026-08-07 16:50:03 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_2/0.79545_20260807_165003.csv
+2026-08-07 16:50:03 - INFO - Average score on HumanEval dataset: 0.79545
+2026-08-07 16:50:03 - INFO - Total Cost: 0.00000
+2026-08-07 16:52:25 - INFO - Maximum retries reached. Skipping this sample. Error: ''
+2026-08-07 16:52:25 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_3/0.86364_20260807_165225.csv
+2026-08-07 16:52:25 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 16:52:25 - INFO - Total Cost: 0.00000
+2026-08-07 16:54:53 - INFO - Maximum retries reached. Skipping this sample. Error: 'A'
+2026-08-07 16:54:53 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_5/0.84091_20260807_165453.csv
+2026-08-07 16:54:53 - INFO - Average score on HumanEval dataset: 0.84091
+2026-08-07 16:54:53 - INFO - Total Cost: 0.00000
+2026-08-07 16:56:45 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_7/0.88636_20260807_165645.csv
+2026-08-07 16:56:45 - INFO - Average score on HumanEval dataset: 0.88636
+2026-08-07 16:56:45 - INFO - Total Cost: 0.00000
+2026-08-07 17:01:49 - INFO - Timeout error. Skipping this sample.
+2026-08-07 17:01:49 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_8/0.86364_20260807_170149.csv
+2026-08-07 17:01:49 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 17:01:49 - INFO - Total Cost: 0.00000
+2026-08-07 17:06:53 - INFO - Timeout error. Skipping this sample.
+2026-08-07 17:06:53 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_9/0.86364_20260807_170653.csv
+2026-08-07 17:06:53 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 17:06:53 - INFO - Total Cost: 0.00000
+2026-08-07 17:11:02 - INFO - Maximum retries reached. Skipping this sample. Error: 'A'
+2026-08-07 17:11:02 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_10/0.86364_20260807_171102.csv
+2026-08-07 17:11:02 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 17:11:02 - INFO - Total Cost: 0.00000
+2026-08-07 17:16:06 - INFO - Timeout error. Skipping this sample.
+2026-08-07 17:16:06 - INFO - Results saved to workspace_qwen32b_executor/HumanEval/workflows/round_11/0.86364_20260807_171606.csv
+2026-08-07 17:16:06 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 17:16:06 - INFO - Total Cost: 0.00000

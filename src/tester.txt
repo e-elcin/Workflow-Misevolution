@@ -726,3 +726,1774 @@ test_error of circular_shift
 test_error of circular_shift
 test_error of circular_shift
 test_error of circular_shift
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of intersection
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of intersection
+test_error of order_by_points
+test_error of order_by_points
+tri name 'tribonacci' is not defined
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of intersection
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of intersection
+test_error of tri
+test_error of tri
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of intersection
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 28) (<string>, line 28)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 28) (<string>, line 28)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of intersection
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of intersection
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+order_by_points invalid syntax (<string>, line 2)
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+tri unterminated string literal (detected at line 5) (<string>, line 5)
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 22) (<string>, line 22)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 20) (<string>, line 20)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 22) (<string>, line 22)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 28) (<string>, line 28)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of intersection
+test_error of tri
+test_error of tri
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of tri
+test_error of tri
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+tri unterminated string literal (detected at line 8) (<string>, line 8)
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+tri unterminated string literal (detected at line 6) (<string>, line 6)
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of tri
+test_error of tri
+order_by_points unterminated string literal (detected at line 22) (<string>, line 22)
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 22) (<string>, line 22)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of intersection
+test_error of order_by_points
+test_error of intersection
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of intersection
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of intersection
+test_error of tri
+test_error of tri
+test_error of intersection
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+tri invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of tri
+test_error of tri
+order_by_points unterminated string literal (detected at line 22) (<string>, line 22)
+test_error of order_by_points
+tri unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of tri
+test_error of tri
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points invalid syntax (<string>, line 2)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+order_by_points unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+test_error of order_by_points
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of max_fill
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+exchange exchange() missing 1 required positional argument: 'lst2_even_count'
+test_error of max_fill
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of closest_integer
+test_error of circular_shift
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of closest_integer
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of circular_shift
+test_error of closest_integer
+test_error of circular_shift
+test_error of circular_shift
+test_error of closest_integer
+max_fill unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of circular_shift
+test_error of closest_integer
+test_error of circular_shift
+test_error of closest_integer
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+max_fill invalid syntax (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 9) (<string>, line 9)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid syntax (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 7) (<string>, line 7)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid syntax (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 7) (<string>, line 7)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 10) (<string>, line 10)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of closest_integer
+test_error of circular_shift
+test_error of closest_integer
+test_error of circular_shift
+test_error of circular_shift
+test_error of closest_integer
+max_fill invalid decimal literal (<string>, line 2)
+test_error of closest_integer
+test_error of circular_shift
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of closest_integer
+test_error of max_fill
+circular_shift unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of closest_integer
+max_fill unterminated string literal (detected at line 9) (<string>, line 9)
+closest_integer unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+closest_integer unterminated string literal (detected at line 4) (<string>, line 4)
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 5)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 5) (<string>, line 5)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 9) (<string>, line 9)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 36) (<string>, line 36)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 7) (<string>, line 7)
+test_error of max_fill
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of circular_shift
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+fruit_distribution invalid literal for int() with base 10: 'oranges'
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of circular_shift
+test_error of max_fill
+test_error of closest_integer
+test_error of circular_shift
+test_error of circular_shift
+test_error of closest_integer
+test_error of closest_integer
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of closest_integer
+test_error of closest_integer
+max_fill unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+closest_integer unterminated string literal (detected at line 28) (<string>, line 28)
+test_error of closest_integer
+test_error of closest_integer
+test_error of closest_integer
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+closest_integer unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+test_error of closest_integer
+test_error of closest_integer
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 7) (<string>, line 7)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid syntax (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 6) (<string>, line 6)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 7)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid syntax (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 5) (<string>, line 5)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 7) (<string>, line 7)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 10) (<string>, line 10)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 7) (<string>, line 7)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill invalid decimal literal (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 2) (<string>, line 2)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+max_fill unterminated string literal (detected at line 4) (<string>, line 4)
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill
+test_error of max_fill

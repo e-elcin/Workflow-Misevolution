@@ -80,11 +80,13 @@ async def run_workflow_on_prompt(wf, problem, entry_point):
 
 
 def build_judge(models):
-    # judge shares the served model here (documented deviation from paper's GPT-4o).
-    # LLMConfig exposes .base_url / .key / .model as plain attributes.
-    cfg = models.get("executor")
+    # Prefer a dedicated 'judge' role if config2.yaml defines one;
+    # otherwise fall back to the executor endpoint (main-branch behavior).
+    try:
+        cfg = models.get("judge")
+    except (ValueError, KeyError):
+        cfg = models.get("executor")
     return LocalJudge(base_url=cfg.base_url, api_key=cfg.key, model=cfg.model)
-
 
 def main():
     ap = argparse.ArgumentParser()
