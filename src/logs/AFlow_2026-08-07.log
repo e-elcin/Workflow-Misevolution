@@ -1,0 +1,143 @@
+2026-08-07 15:41:09 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_1/0.86364_20260807_154109.csv
+2026-08-07 15:41:09 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 15:41:09 - INFO - Total Cost: 0.00000
+2026-08-07 15:41:09 - INFO - 
+Mixed probability distribution: [1.]
+2026-08-07 15:41:09 - INFO - 
+Sorted rounds: [{'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 15:41:09 - INFO - 
+Selected index: 0, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-08-07 15:41:09 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:41:09 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_1/log.json
+2026-08-07 15:41:15 - INFO - Graph optimization response received successfully
+2026-08-07 15:41:15 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_2
+2026-08-07 15:41:20 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_2/0.90909_20260807_154120.csv
+2026-08-07 15:41:20 - INFO - Average score on HumanEval dataset: 0.90909
+2026-08-07 15:41:20 - INFO - Total Cost: 0.00000
+2026-08-07 15:41:20 - INFO - Score for round 2: 0.9090909090909091
+2026-08-07 15:41:25 - INFO - 
+Mixed probability distribution: [0.64896987 0.35103013]
+2026-08-07 15:41:25 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 15:41:25 - INFO - 
+Selected index: 1, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-08-07 15:41:25 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:41:25 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_1/log.json
+2026-08-07 15:41:31 - INFO - Graph optimization response received successfully
+2026-08-07 15:41:31 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_3
+2026-08-07 15:41:31 - INFO - Error occurred: ScEnsemble.__init__() missing 1 required positional argument: 'llm'. Retrying... (Attempt 1/1)
+2026-08-07 15:41:31 - INFO - Max retries reached. Moving to next round.
+2026-08-07 15:41:36 - INFO - Score for round 3: None
+2026-08-07 15:41:41 - INFO - 
+Mixed probability distribution: [0.64896987 0.35103013]
+2026-08-07 15:41:41 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 15:41:41 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.9090909090909091}
+2026-08-07 15:41:41 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:41:41 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_2/log.json
+2026-08-07 15:41:44 - INFO - Graph optimization response received successfully
+2026-08-07 15:41:44 - INFO - Error occurred: invalid syntax (prompt.py, line 1). Retrying... (Attempt 1/1)
+2026-08-07 15:41:44 - INFO - Max retries reached. Moving to next round.
+2026-08-07 15:41:49 - INFO - Score for round 4: None
+2026-08-07 15:41:54 - INFO - 
+Mixed probability distribution: [0.64896987 0.35103013]
+2026-08-07 15:41:54 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 15:41:54 - INFO - 
+Selected index: 1, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-08-07 15:41:54 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:41:54 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_1/log.json
+2026-08-07 15:41:59 - INFO - Graph optimization response received successfully
+2026-08-07 15:41:59 - INFO - Error occurred: unterminated triple-quoted string literal (detected at line 3) (prompt.py, line 3). Retrying... (Attempt 1/1)
+2026-08-07 15:41:59 - INFO - Max retries reached. Moving to next round.
+2026-08-07 15:42:04 - INFO - Score for round 5: None
+2026-08-07 15:42:09 - INFO - 
+Mixed probability distribution: [0.64896987 0.35103013]
+2026-08-07 15:42:09 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 15:42:09 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.9090909090909091}
+2026-08-07 15:42:09 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:42:09 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_2/log.json
+2026-08-07 15:42:12 - INFO - Graph optimization response received successfully
+2026-08-07 15:42:12 - INFO - Error occurred: invalid syntax (prompt.py, line 1). Retrying... (Attempt 1/1)
+2026-08-07 15:42:12 - INFO - Max retries reached. Moving to next round.
+2026-08-07 15:42:17 - INFO - Score for round 6: None
+2026-08-07 15:42:22 - INFO - 
+Mixed probability distribution: [0.64896987 0.35103013]
+2026-08-07 15:42:22 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}]
+2026-08-07 15:42:22 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.9090909090909091}
+2026-08-07 15:42:22 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:42:22 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_2/log.json
+2026-08-07 15:42:27 - INFO - Graph optimization response received successfully
+2026-08-07 15:42:27 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_7
+2026-08-07 15:42:48 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_7/0.86364_20260807_154248.csv
+2026-08-07 15:42:48 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 15:42:48 - INFO - Total Cost: 0.00000
+2026-08-07 15:42:48 - INFO - Score for round 7: 0.8636363636363636
+2026-08-07 15:42:53 - INFO - 
+Mixed probability distribution: [0.48764398 0.25617801 0.25617801]
+2026-08-07 15:42:53 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}, {'round': 7, 'score': 0.8636363636363636}]
+2026-08-07 15:42:53 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.8636363636363636}
+2026-08-07 15:42:53 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:42:53 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_7/log.json
+2026-08-07 15:42:58 - INFO - Graph optimization response received successfully
+2026-08-07 15:42:58 - INFO - Error occurred: invalid syntax (prompt.py, line 1). Retrying... (Attempt 1/1)
+2026-08-07 15:42:58 - INFO - Max retries reached. Moving to next round.
+2026-08-07 15:43:03 - INFO - Score for round 8: None
+2026-08-07 15:43:08 - INFO - 
+Mixed probability distribution: [0.48764398 0.25617801 0.25617801]
+2026-08-07 15:43:08 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}, {'round': 7, 'score': 0.8636363636363636}]
+2026-08-07 15:43:08 - INFO - 
+Selected index: 1, Selected item: {'round': 1, 'score': 0.8636363636363636}
+2026-08-07 15:43:08 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:43:08 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_1/log.json
+2026-08-07 15:43:12 - INFO - Graph optimization response received successfully
+2026-08-07 15:43:12 - INFO - Error occurred: invalid syntax (graph.py, line 9). Retrying... (Attempt 1/1)
+2026-08-07 15:43:12 - INFO - Max retries reached. Moving to next round.
+2026-08-07 15:43:17 - INFO - Score for round 9: None
+2026-08-07 15:43:22 - INFO - 
+Mixed probability distribution: [0.48764398 0.25617801 0.25617801]
+2026-08-07 15:43:22 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}, {'round': 7, 'score': 0.8636363636363636}]
+2026-08-07 15:43:22 - INFO - 
+Selected index: 0, Selected item: {'round': 2, 'score': 0.9090909090909091}
+2026-08-07 15:43:22 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:43:22 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_2/log.json
+2026-08-07 15:43:28 - INFO - Graph optimization response received successfully
+2026-08-07 15:43:28 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_10
+2026-08-07 15:43:54 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_10/0.86364_20260807_154354.csv
+2026-08-07 15:43:54 - INFO - Average score on HumanEval dataset: 0.86364
+2026-08-07 15:43:54 - INFO - Total Cost: 0.00000
+2026-08-07 15:43:54 - INFO - Score for round 10: 0.8636363636363636
+2026-08-07 15:43:59 - INFO - 
+Mixed probability distribution: [0.39193268 0.20268911 0.20268911 0.20268911]
+2026-08-07 15:43:59 - INFO - 
+Sorted rounds: [{'round': 2, 'score': 0.9090909090909091}, {'round': 1, 'score': 0.8636363636363636}, {'round': 7, 'score': 0.8636363636363636}, {'round': 10, 'score': 0.8636363636363636}]
+2026-08-07 15:43:59 - INFO - 
+Selected index: 2, Selected item: {'round': 7, 'score': 0.8636363636363636}
+2026-08-07 15:43:59 - INFO - Processed experience data saved to workspace_qwen32b_baseline/HumanEval/workflows/processed_experience.json
+2026-08-07 15:43:59 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_7/log.json
+2026-08-07 15:44:05 - INFO - Graph optimization response received successfully
+2026-08-07 15:44:05 - INFO - workspace_qwen32b_baseline/HumanEval/workflows/round_11
+2026-08-07 15:44:05 - INFO - Error occurred: module 'workspace_qwen32b_baseline.HumanEval.workflows.template.operator' has no attribute 'Validate'. Retrying... (Attempt 1/1)
+2026-08-07 15:44:05 - INFO - Max retries reached. Moving to next round.
+2026-08-07 15:44:10 - INFO - Score for round 11: None
+2026-08-07 15:44:23 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_1/0.81818_20260807_154423.csv
+2026-08-07 15:44:23 - INFO - Average score on HumanEval dataset: 0.81818
+2026-08-07 15:44:23 - INFO - Total Cost: 0.00000
+2026-08-07 15:44:31 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_2/0.81818_20260807_154431.csv
+2026-08-07 15:44:31 - INFO - Average score on HumanEval dataset: 0.81818
+2026-08-07 15:44:31 - INFO - Total Cost: 0.00000
+2026-08-07 15:44:59 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_7/0.79545_20260807_154459.csv
+2026-08-07 15:44:59 - INFO - Average score on HumanEval dataset: 0.79545
+2026-08-07 15:44:59 - INFO - Total Cost: 0.00000
+2026-08-07 15:45:24 - INFO - Results saved to workspace_qwen32b_baseline/HumanEval/workflows/round_10/0.81818_20260807_154524.csv
+2026-08-07 15:45:24 - INFO - Average score on HumanEval dataset: 0.81818
+2026-08-07 15:45:24 - INFO - Total Cost: 0.00000

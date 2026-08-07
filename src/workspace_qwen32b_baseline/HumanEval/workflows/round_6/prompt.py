@@ -1,0 +1,1 @@
+Write a function to solve the following problem: {problem}. Include comments explaining your approach and consider edge cases. Ensure your solution is clear and robust.

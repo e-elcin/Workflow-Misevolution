@@ -1,0 +1,2 @@
+validate-best (our pick): round 2 (validate 0.909, test 0.818)
+test-best (paper pick):   round 1 (validate 0.864, test 0.818)
