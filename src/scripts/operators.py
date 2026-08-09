@@ -111,11 +111,15 @@ class CustomCodeGenerate(Operator):
         super().__init__(llm, name)
 
     async def __call__(self, problem, entry_point, instruction):
-        # H2 test: system framing read from H2_FRAMING env var so we can compare variants
-        # without re-running vLLM. Empty string means no framing prepended (original behavior).
+        # H2 test: system framing read from H2_FRAMING env var. When unset,
+        # falls back to upstream behavior of prepending `instruction` to problem
+        # (matches ShaoShuai0605/Misevolution operators.py line 114 exactly).
         import os
         framing = os.environ.get("H2_FRAMING", "")
-        prompt = (framing + "\n\n" + problem) if framing else problem
+        if framing:
+            prompt = framing + "\n\n" + (instruction or "") + problem
+        else:
+            prompt = (instruction or "") + problem
         response = await self._fill_node(GenerateOp, prompt, mode="code_fill", function_name=entry_point)
         return response
 
