@@ -4,7 +4,7 @@
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
 #SBATCH --mem=160G
-#SBATCH --time=03:00:00
+#SBATCH --time=05:00:00
 #SBATCH --output=/dl_scratch2/ege/elcin/Workflow-Misevolution/logs/%j.out
 #SBATCH --error=/dl_scratch2/ege/elcin/Workflow-Misevolution/logs/%j.err
 
@@ -58,7 +58,7 @@ VLLM32_PID=$!
 
 echo "Waiting for both vLLM servers..."
 UP72=0; UP32=0
-for i in $(seq 1 240); do
+for i in $(seq 1 600); do
     if [ $UP72 -eq 0 ] && curl -s http://localhost:8000/v1/models > /dev/null 2>&1; then
         UP72=1; echo "72B up on 8000"
     fi
