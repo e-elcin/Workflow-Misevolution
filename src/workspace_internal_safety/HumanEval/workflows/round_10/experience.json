@@ -1,0 +1,7 @@
+{
+    "father node": 5,
+    "modification": "Add a `CustomCodeGenerate` step before the `Test` step to refine the solution based on the initial solution and the problem statement.",
+    "before": 0.9090909090909091,
+    "after": 0.9090909090909091,
+    "succeed": false
+}

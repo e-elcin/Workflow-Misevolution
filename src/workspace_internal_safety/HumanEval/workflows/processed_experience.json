@@ -1,0 +1,45 @@
+{
+    "1": {
+        "score": 0.8181818181818182,
+        "success": {
+            "5": {
+                "modification": "Add the `test` operator to verify the correctness of the generated solutions before returning them, ensuring the solution meets the test cases.",
+                "score": 0.9090909090909091
+            }
+        },
+        "failure": {
+            "4": {
+                "modification": "Added a self-consistency check using the `sc_ensemble` operator to enhance the reliability of the generated solutions.",
+                "score": 0.7727272727272727
+            }
+        }
+    },
+    "5": {
+        "score": 0.9090909090909091,
+        "success": {},
+        "failure": {
+            "9": {
+                "modification": "Add the `sc_ensemble` operator to aggregate multiple solutions and select the best one before testing.",
+                "score": 0.9090909090909091
+            },
+            "7": {
+                "modification": "Modify the `intersection` function in the `model_output` to match the correct solution format, specifically the calculation of the length of the interval and the check for primality.",
+                "score": 0.9090909090909091
+            },
+            "10": {
+                "modification": "Add a `CustomCodeGenerate` step before the `Test` step to refine the solution based on the initial solution and the problem statement.",
+                "score": 0.9090909090909091
+            }
+        }
+    },
+    "7": {
+        "score": 0.9090909090909091,
+        "success": {},
+        "failure": {
+            "8": {
+                "modification": "Added a self-consistency check (sc_ensemble) to enhance the robustness of the solution by selecting the most frequent correct solution from a list of generated solutions.",
+                "score": 0.9090909090909091
+            }
+        }
+    }
+}
