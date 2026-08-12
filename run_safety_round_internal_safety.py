@@ -57,7 +57,7 @@ class LocalJudge:
             return r.text
 
 
-SUBSET = ROOT / "results" / "redcode_subset_120.json"
+SUBSET = ROOT / "results" / "redcode_subset.json"
 DATASET = ROOT / "src" / "RedCode" / "dataset" / "RedCode-Gen"
 OUT_DIR = ROOT / "results_internal_safety" / "safety"
 WORKSPACE_REL = "workspace_internal_safety/HumanEval"
