@@ -2,26 +2,27 @@
 """
 Plot the internal-safety experiment's refusal rate trajectory.
 Shows the collapse from 100% to ~22% when the optimizer introduces
-sc_ensemble at round 5. Vertical annotations mark structural changes
-per round.
+sc_ensemble at round 5.
+
+Layout: annotations sit BELOW the plot in a stripe, not on top of it,
+so nothing overlaps the trajectory or the reference lines.
 """
 import json
 import matplotlib.pyplot as plt
+from matplotlib.patches import FancyBboxPatch
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 SUMMARY = ROOT / "results_internal_safety" / "safety_summary.json"
 OUT = ROOT / "results_internal_safety" / "refusal_internal_safety.png"
 
-# Per-round structural annotations, matching what the workflows actually contain.
-# Only rounds where a real structural change happened relative to the previous round.
 STRUCTURAL_CHANGES = {
-    1: "seed:\nsingle generate\n+ SAFETY_INSTRUCTION",
-    4: "+ Test node",
-    5: "+ sc_ensemble\n(3-gen + ensemble)",
-    7: "+ retry loop",
-    8: "+ refine feedback",
-    10: "+ full 3-gen\n+ ensemble + Test",
+    1:  "seed:\nsingle generate\n(SAFETY_INSTRUCTION)",
+    4:  "+ Test\nnode",
+    5:  "+ sc_ensemble\n(3-gen → ensemble)",
+    7:  "+ retry\nloop",
+    8:  "+ refine\nfeedback",
+    10: "+ full 3-gen\n+ ensemble\n+ Test",
 }
 
 
@@ -30,57 +31,97 @@ def main():
     rounds = [r["round"] for r in data]
     refusal_pct = [r["refusal_rate"] * 100 for r in data]
 
-    fig, ax = plt.subplots(figsize=(12, 6.5))
+    # Two stacked axes: main plot on top, annotation stripe below
+    fig, (ax, ax_ann) = plt.subplots(
+        2, 1, figsize=(13, 7),
+        gridspec_kw={"height_ratios": [4, 1], "hspace": 0.05},
+        sharex=True,
+    )
 
-    # Main trajectory
+    # ---------- main plot ----------
+    # Shade the "safety intact" region above the no-framing baseline (23.7)
+    ax.axhspan(23.7, 105, facecolor="tab:green", alpha=0.07, zorder=0)
+    ax.axhspan(-5, 23.7, facecolor="tab:red", alpha=0.05, zorder=0)
+
+    # Vertical guides (light)
+    for r in STRUCTURAL_CHANGES:
+        ax.axvline(r, color="steelblue", linestyle="--", linewidth=1, alpha=0.35, zorder=1)
+
+    # Reference: 72B no-framing baseline
+    ax.axhline(23.7, color="dimgray", linestyle=":", linewidth=1.5, alpha=0.85, zorder=2)
+    ax.text(10.4, 25.5, "72B no-framing baseline (23.7%)",
+            fontsize=9, color="dimgray", ha="right", va="bottom", style="italic")
+
+    # Trajectory
     ax.plot(rounds, refusal_pct,
-            marker="o", color="tab:red", linewidth=2.5, markersize=10,
-            label="Refusal rate (SAFETY_INSTRUCTION in mutable graph)",
-            zorder=3)
+            marker="o", color="tab:red", linewidth=2.8, markersize=11,
+            markeredgecolor="darkred", markeredgewidth=1.2,
+            label="SAFETY_INSTRUCTION inside mutable graph",
+            zorder=4)
 
-    # Reference line: baseline 72B refusal without any framing (from paper-replication n=160)
-    ax.axhline(23.7, color="gray", linestyle=":", linewidth=1.5, alpha=0.8, zorder=1)
-    ax.text(10.3, 23.7 + 1.5, "72B no-framing baseline (23.7%)",
-            fontsize=9, color="gray", ha="right", va="bottom")
+    # Point labels
+    for r, pct in zip(rounds, refusal_pct):
+        va = "bottom" if pct < 90 else "top"
+        offset = 4 if pct < 90 else -6
+        ax.annotate(f"{pct:.1f}%",
+                    xy=(r, pct), xytext=(0, offset),
+                    textcoords="offset points",
+                    ha="center", va=va,
+                    fontsize=9.5, fontweight="bold", color="darkred")
 
-    # Vertical dashed lines + labels for each structural change
-    for r, label in STRUCTURAL_CHANGES.items():
-        if r not in rounds:
-            continue
-        ax.axvline(r, color="steelblue", linestyle="--", linewidth=1.2, alpha=0.5, zorder=1)
-        # Label positioning: alternate top-anchored and mid-anchored so they don't collide
-        y_pos = 92 if r in (1, 5, 8) else 55
-        ax.annotate(label, xy=(r, y_pos),
-                    xytext=(5, 0), textcoords="offset points",
-                    fontsize=8.5, color="steelblue",
-                    ha="left", va="top",
-                    bbox=dict(boxstyle="round,pad=0.3", facecolor="white",
-                              edgecolor="steelblue", alpha=0.85))
-
-    # Highlight the misevolution transition
+    # Misevolution annotation
     ax.annotate("",
-                xy=(5, 25), xytext=(4, 100),
+                xy=(5, 27), xytext=(4, 100),
                 arrowprops=dict(arrowstyle="->", color="darkred",
-                                lw=2, connectionstyle="arc3,rad=-0.15"))
-    ax.text(4.5, 63, "MISEVOLUTION\n-75 pp",
-            fontsize=11, color="darkred", fontweight="bold",
+                                lw=2.2, connectionstyle="arc3,rad=-0.25"))
+    ax.text(4.5, 63, "MISEVOLUTION\n−75 pp",
+            fontsize=13, color="darkred", fontweight="bold",
             ha="center", va="center",
-            bbox=dict(boxstyle="round,pad=0.4", facecolor="mistyrose",
-                      edgecolor="darkred", alpha=0.9))
+            bbox=dict(boxstyle="round,pad=0.5", facecolor="mistyrose",
+                      edgecolor="darkred", linewidth=1.5, alpha=0.95))
 
-    ax.set_xlabel("Evolution round", fontsize=12)
+    # Zone labels
+    ax.text(0.5, 60, "safety active\n(refusals above baseline)",
+            fontsize=9, color="darkgreen", alpha=0.7, style="italic",
+            ha="left", va="center")
+    ax.text(0.5, 10, "safety inactive\n(at or below baseline)",
+            fontsize=9, color="darkred", alpha=0.6, style="italic",
+            ha="left", va="center")
+
     ax.set_ylabel("Refusal rate (%)", fontsize=12)
     ax.set_title("Topological misevolution: SAFETY_INSTRUCTION inside mutable graph\n"
-                 "(72B, n=32 RedCode subset, Qwen judge)", fontsize=12)
+                 "72B executor, n=32 RedCode-Gen subset, Qwen judge",
+                 fontsize=12)
     ax.set_ylim(-5, 108)
-    ax.set_xlim(0.3, 11)
+    ax.set_xlim(0.3, 10.7)
+    ax.grid(True, alpha=0.25, zorder=1)
+    ax.legend(loc="upper right", fontsize=10, framealpha=0.95)
+
+    # Match x-ticks on main plot to structural change rounds
     ax.set_xticks(rounds)
-    ax.grid(True, alpha=0.3)
-    ax.legend(loc="center right", fontsize=10, framealpha=0.95)
+
+    # ---------- annotation stripe ----------
+    ax_ann.set_xlim(0.3, 10.7)
+    ax_ann.set_ylim(0, 1)
+    ax_ann.set_yticks([])
+    ax_ann.set_xticks(rounds)
+    ax_ann.set_xlabel("Evolution round", fontsize=12)
+    ax_ann.spines["top"].set_visible(False)
+    ax_ann.spines["left"].set_visible(False)
+    ax_ann.spines["right"].set_visible(False)
+
+    for r, label in STRUCTURAL_CHANGES.items():
+        # tick mark connecting to top
+        ax_ann.plot([r, r], [0.85, 1], color="steelblue", linewidth=1.2, alpha=0.6)
+        ax_ann.annotate(label, xy=(r, 0.75), ha="center", va="top",
+                        fontsize=9, color="steelblue",
+                        bbox=dict(boxstyle="round,pad=0.35",
+                                  facecolor="aliceblue",
+                                  edgecolor="steelblue",
+                                  linewidth=1, alpha=0.9))
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    plt.tight_layout()
-    plt.savefig(OUT, dpi=150, bbox_inches="tight")
+    plt.savefig(OUT, dpi=160, bbox_inches="tight")
     print(f"wrote {OUT}")
     plt.close()
 
