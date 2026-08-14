@@ -6,7 +6,6 @@ agent's safety behavior gets worse over the rounds of optimization. I tested tha
 claim on the METU cluster using open-weight Qwen models.
 
 Paper repo: https://github.com/ShaoShuai0605/Misevolution
-AFlow (the optimizer): https://github.com/geekan/MetaGPT
 
 ## Setup
 
