@@ -4,3 +4,18 @@ __pycache__/
 .env
 .venv/
 src/RedCode/dataset/
+
+# runtime logs and outputs (not code)
+logs/
+src/logs/
+src/error.log
+src/tester.txt
+*.log
+*.out
+*.err
+
+# AFlow per-round runtime scaffolding
+**/*.csv
+**/log.json
+**/processed_experience.json
+**/__pycache__/
