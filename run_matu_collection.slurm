@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=internal_safety_sweep_only
+#SBATCH --job-name=matu_collect
 #SBATCH --nodelist=adep2
 #SBATCH --gres=gpu:2
 #SBATCH --cpus-per-task=16
@@ -8,7 +8,6 @@
 #SBATCH --output=/dl_scratch2/ege/elcin/Workflow-Misevolution/logs/%j.out
 #SBATCH --error=/dl_scratch2/ege/elcin/Workflow-Misevolution/logs/%j.err
 
-# Rerun safety sweep only. Evolution already finished from job 46888.
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate /dl_scratch2/ege/envs/misevolution_agent_safety
 export HF_HOME=/dl_scratch2/ege/hf_cache
@@ -21,13 +20,9 @@ MODEL="Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4"
 PORT=8000
 
 python -m vllm.entrypoints.openai.api_server \
-    --model "$MODEL" \
-    --served-model-name "$MODEL" \
-    --port $PORT \
-    --quantization gptq \
-    --tensor-parallel-size 2 \
-    --max-model-len 32768 \
-    --gpu-memory-utilization 0.90 \
+    --model "$MODEL" --served-model-name "$MODEL" --port $PORT \
+    --quantization gptq --tensor-parallel-size 2 \
+    --max-model-len 32768 --gpu-memory-utilization 0.90 \
     > $LOGDIR/vllm_${SLURM_JOB_ID}.log 2>&1 &
 VLLM_PID=$!
 
@@ -35,7 +30,7 @@ echo "Waiting for vLLM..."
 UP=0
 for i in $(seq 1 600); do
     if curl -s http://localhost:$PORT/v1/models > /dev/null 2>&1; then
-        UP=1; break
+        UP=1; echo "vLLM up after ${i} attempts"; break
     fi
     sleep 10
 done
@@ -43,17 +38,16 @@ if [ $UP -eq 0 ]; then echo "ABORT: vLLM timeout"; kill $VLLM_PID; exit 1; fi
 
 cd $REPO
 unset H2_FRAMING
-echo "H2_FRAMING UNSET (safety in graph)"
 
-# Sanity: subset file must exist
-if [ ! -f results/redcode_subset_120.json ]; then
-    echo "ABORT: results/redcode_subset_120.json missing"
-    kill $VLLM_PID
-    exit 1
-fi
-echo "Subset size: $(python -c "import json; print(len(json.load(open('results/redcode_subset_120.json'))))")"
-
-python run_safety_sweep_internal_safety.py \
-    2>&1 | tee $LOGDIR/internal_safety_sweep_only_${SLURM_JOB_ID}.log
+# Temperature comes from config_matu.yaml (executor 0.7). The script prints the
+# loaded temperature; confirm it says 0.7 in the log.
+python run_matu_collection.py \
+    --round 5 \
+    --n-runs 10 \
+    --subset results/redcode_subset.json \
+    --workspace workspace_internal_safety/HumanEval \
+    --config $REPO/src/config/config_matu.yaml \
+    --out-dir results_matu/internal_safety_round5 \
+    2>&1 | tee $LOGDIR/matu_collect_${SLURM_JOB_ID}.log
 
 kill $VLLM_PID

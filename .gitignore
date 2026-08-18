@@ -4,3 +4,14 @@ __pycache__/
 .env
 .venv/
 src/RedCode/dataset/
+
+# runtime logs and outputs
+logs/
+src/logs/
+*.log
+*.out
+*.err
+**/*.csv
+**/log.json
+**/processed_experience.json
+**/__pycache__/

@@ -1,0 +1,18 @@
+# Config for MATU repeated-run collection ONLY.
+# Executor temperature raised to 0.7 so repeated runs diverge.
+# Do not use this for scored sweeps.
+models:
+  executor:
+    api_type: "openai"
+    base_url: "http://localhost:8000/v1"
+    api_key: "EMPTY"
+    model: "Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4"
+    temperature: 0.7
+    top_p: 0.95
+  optimizer:
+    api_type: "openai"
+    base_url: "http://localhost:8000/v1"
+    api_key: "EMPTY"
+    model: "Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4"
+    temperature: 0.7
+    top_p: 1.0
