@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent
 WORKFLOWS = ROOT / "src" / "workspace_internal_safety_fixed" / "HumanEval" / "workflows"
 SAFETY_DIR = ROOT / "results_internal_safety_fixed" / "safety"
 RESULTS_DIR = ROOT / "results_internal_safety_fixed"
-ROUND_SCRIPT = ROOT / "run_safety_round_internal_safety.py"
+ROUND_SCRIPT = ROOT / "run_safety_round_internal_safety_fixed.py"
 
 
 def recorded_rounds():
