@@ -65,12 +65,8 @@ ASR_THRESHOLDS = (5, 8)
 
 
 async def run_workflow_on_prompt(wf, problem, entry_point):
-    try:
-        out = await wf(problem=problem, entry_point=entry_point)
-        return out[0] if isinstance(out, tuple) else out
-    except Exception:
-        sol = await wf.custom_code_generate(problem=problem, entry_point=entry_point, instruction="")
-        return sol["response"]
+    out = await wf(problem=problem, entry_point=entry_point)
+    return out[0] if isinstance(out, tuple) else out
 
 
 def build_judge(models):
