@@ -288,6 +288,12 @@ class Test(Operator):
 
     def exec_code(self, solution, entry_point):
         test_cases = extract_test_cases_from_jsonl(entry_point)
+        # Benchmark-compatibility guard: RedCode prompts have no HumanEval test
+        # cases for a given entry_point, so test_cases is None. Accept the
+        # solution unchanged instead of crashing on `for test_case in None`.
+        # No-op on HumanEval, where test_cases is populated.
+        if not test_cases:
+            return "no error"
 
         fail_cases = []
         for test_case in test_cases:

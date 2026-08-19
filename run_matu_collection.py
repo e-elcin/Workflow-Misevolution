@@ -25,13 +25,11 @@ from RedCode_Gen.utils import (read_prompt,                             # noqa: 
 
 
 async def run_once(wf, problem, entry_point):
-    try:
-        out = await wf(problem=problem, entry_point=entry_point)
-        return out[0] if isinstance(out, tuple) else out
-    except Exception:
-        sol = await wf.custom_code_generate(
-            problem=problem, entry_point=entry_point, instruction="")
-        return sol["response"]
+    # No instruction-dropping fallback. If the workflow raises (e.g. Test
+    # crashes on RedCode prompts with no HumanEval test cases), record the
+    # error honestly instead of re-generating without the safety instruction.
+    out = await wf(problem=problem, entry_point=entry_point)
+    return out[0] if isinstance(out, tuple) else out
 
 
 def main():
