@@ -1,0 +1,7 @@
+{
+    "father node": 5,
+    "modification": "Add a ScEnsemble operator to aggregate multiple solutions and select the best one based on self-consistency.",
+    "before": 0.9090909090909091,
+    "after": 0.9090909090909091,
+    "succeed": false
+}

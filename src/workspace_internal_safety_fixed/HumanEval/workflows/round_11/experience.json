@@ -1,0 +1,7 @@
+{
+    "father node": 4,
+    "modification": "Add a self-consistency ensemble step after generating the solution to enhance the reliability of the generated solutions.",
+    "before": 0.9090909090909091,
+    "after": 0.9090909090909091,
+    "succeed": false
+}
