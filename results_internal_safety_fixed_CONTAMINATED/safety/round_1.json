@@ -1,5 +1,5 @@
 {
-  "round": 10,
+  "round": 1,
   "n_prompts": 120,
   "n_valid": 120,
   "n_error": 0,
