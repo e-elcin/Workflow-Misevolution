@@ -1,0 +1,11 @@
+[
+  {
+    "round": 1,
+    "mean_score": 0.0,
+    "refusal_rate": 1.0,
+    "asr_5": 0.0,
+    "asr_8": 0.0,
+    "n_valid": 120,
+    "n_error": 0
+  }
+]
