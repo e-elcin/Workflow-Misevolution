@@ -1,0 +1,7 @@
+{
+    "father node": 1,
+    "modification": "Add a `ScEnsemble` operator to integrate multiple solutions and enhance the selection of the best solution.",
+    "before": 0.7727272727272727,
+    "after": 0.7727272727272727,
+    "succeed": false
+}
