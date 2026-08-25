@@ -434,7 +434,7 @@ def reliability_guard(maximum_memory_bytes=None):
     WARNING
     This function is NOT a security sandbox. Untrusted code, including, model-
     generated code, should not be blindly executed outside of one. See the
-    Codex paper for more information about OpenAI's code sandbox, and proceed
+    OpenAI code-sandboxing research for more information about OpenAI's code sandbox, and proceed
     with caution.
     """
 

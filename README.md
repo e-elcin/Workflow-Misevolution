@@ -49,107 +49,54 @@ config file, a run script, or any hyperparameter values. The README is empty. Th
 paper describes the starting workflow as a "single-step Answer Generator" but does
 not include the file. I reconstructed all of this myself.
 
-## Branches
+## Included experiments
 
-Each branch is one experiment. Safety numbers are in
-`results*/safety_summary.json`. The evolved workflows are in `src/workspace*/`.
+This contribution contains two complementary all-72B experiments. The executor,
+optimizer, and safety-judge roles use `Qwen/Qwen2.5-72B-Instruct-GPTQ-Int4`.
 
-### main — all-72B baseline and safety-seed
+### End-to-end HumanEval evolution and RedCode sweep
 
-The default branch. It holds two evolution runs on the 72B model, plus a noise test.
+`src/workspace/` contains the no-framing HumanEval evolution trajectory. It
+stores the initial workflow and optimization attempts through `round_21`.
+Eighteen workflow states were evaluated by the RedCode sweep.
 
-- **Baseline run** (`src/workspace/`): 20 rounds of AFlow evolution on HumanEval,
-  no safety framing. This is the plain "does the workflow evolve" run, used as the
-  reference for every other experiment.
-- **Safety-seed run** (`src/workspace_safety_seed/`): 10 rounds with the
-  safety-aware framing added to every generation call. This tests whether
-  optimization erodes a safety instruction that is present from the start.
-- **Variance test**: the safety-seed round 1 scored four times with nothing
-  changed, to measure how much the refusal rate moves on its own. This sets the
-  noise floor at about 3 percentage points at n=32.
+```text
+seed workflow -> HumanEval optimization -> HumanEval testing -> RedCode sweep
+```
 
-Result: on the safety-seed run, refusal stays between 22 and 28 percent across all
-rounds, which is within the noise floor. 
+The HumanEval outputs are under `results/`. Per-state RedCode outputs are under
+`results/safety/`, with the combined trajectory in `results/safety_summary.json`.
 
-### paper-replication-160 —> the direct comparison (main result)
-Two workflows written by hand to match the paper's code exactly: a single-generate
-seed, and a three-generate-plus-sc_ensemble aflow_agent. Both scored on all 160
-prompts, Qwen judge, no framing. Result: the seed refuses 22.5 percent, the
-aflow_agent refuses 23.7 percent. The difference is 1.2 points in the wrong
-direction, inside the noise.
+Run the stages in order:
 
-### all72b-baseline-safety-sweep —> sharper version of the baseline
-Safety sweep over 6 clearly different rounds (1, 4, 7, 9, 13, 17) of the all-72B
-baseline, using 120 prompts instead of 32 for a tighter noise floor. Result:
-refusal stays between 20.8 and 21.7 percent. The whole range is under 1 point.
+```bash
+sbatch scripts/slurms/run_optimize.slurm
+sbatch scripts/slurms/run_safety.slurm
+```
 
-### qwen-32b-executor —> split roles
-A 32B executor with a 72B optimizer and a 72B judge, on two vLLM servers. This was
-my best evolution run in terms of succesful rounds: 9 of 11 rounds scored. It shows the optimizer, not the
-executor, needs to be the large model. Safety sweep: refusal stays near 3 percent
-across all rounds. The gap between this (3 percent) and the 72B runs (21 percent)
-shows the model's own safety training is what drives refusal.
+### Full-160 endpoint comparison
 
-### qwen-32b-baseline —> all-32B (partial)
-Every role on the 32B model. Only 4 of 11 rounds scored, because the 32B optimizer
-invents operator names that do not exist and writes broken workflows. I keep it as
-evidence that the 32B model cannot drive AFlow on its own. No safety sweep.
+`src/workspace_paper_replication/` contains a single-generation seed and a
+three-generation-plus-ensemble workflow. This is a fixed endpoint comparison,
+not an evolution run. Both workflows are evaluated on all 160 RedCode prompts.
 
-### judge-ablation —> is the flat line caused by the judge?
-I re-scored the safety-seed run with Mistral-Large-123B as the judge instead of
-Qwen-72B. Both judges agree to within about 1 point on every round (Mistral 21.9 to
-31.2 percent, Qwen 21.9 to 28.1 percent). 
+```bash
+sbatch scripts/slurms/run_safety_sweep_paper_replication.slurm
+```
 
-### new-seed-ablation —> which framing to use
-A round-1 comparison of three framings at n=32: helpful ("You are a helpful
-assistant"), safety-aware (the full evaluate-then-decline instruction), and none
-(empty). Result: helpful 21.9 percent, safety-aware 28.1 percent, none 25.0
-percent. Only the safety-aware framing moved above the noise floor, so I used it
-for the main safety-seed run.
+Results are stored in `results_paper_replication/`.
 
-### internal-safety-seed —> safety instruction inside the workflow
-I moved the safety instruction into `round_1/prompt.py`, where the optimizer can
-read and rewrite it, to see whether the optimizer would remove it. The optimizer
-left the text unchanged across all 11 rounds. The refusal trajectory shows a large
-jump from 100 percent down to 25 percent, but I am still checking what caused it.
+### Dataset requirement
 
-### seed-ablation — CustomCodeGenerate vs AnswerGenerate seed (unreliable)
-An attempt to compare two starting operators over the evolution rounds. It does
-not work for two reasons. First, the AnswerGenerate arm is empty: it produced no
-scored rounds at all, so half the comparison is missing. Second, the
-CustomCodeGenerate arm is dominated by the all-refuse artifact: rounds 1, 2, and 5
-show normal mixed scores (around 25 to 28 percent refusal), but from round 6
-onward every round scores exactly 0 on all 32 prompts (100 percent refusal). Those
-rounds are almost certainly broken workflows returning empty output that the judge
-scores as 0, not real refusals. The commit is labeled "wrongfully done." Kept for the record.
+Place the upstream RedCode-Gen dataset at:
 
-### safety-sweep — full 18-round baseline safety sweep
-The complete safety sweep of the all-72B baseline. It scores all 18 valid rounds
-(1 through 21, skipping the rounds that failed to evolve), rather than the 6
-selected rounds in all72b-baseline-safety-sweep. Refusal stays between 21.9 and
-31.2 percent across every round, the same flat conclusion as the 6-round version
-but with a denser trajectory. This branch also holds the safety-divergence plots
-(`results/safety_divergence_*.png`). Kept as the most complete baseline safety
-record. This was the first safety sweep written, so its scripts are an earlier
-version of the per-experiment sweeps used on later branches.
+```text
+src/RedCode/dataset/RedCode-Gen/
+```
 
-### report-2026-08-11 —> report and figures 
-Holds the weekly report, the four-experiment refusal plot, and the plotting
-scripts. Not an experiment.
-
-## How to run one experiment
-
-Example: the paper-replication comparison.
-
-1. `git checkout paper-replication-160`
-2. The workspace, both workflows, and scripts are already committed.
-3. `sbatch run_safety_sweep_paper_replication.slurm`. This starts one 72B vLLM
-   server, waits for it, builds the 160-prompt subset if it is missing, scores
-   rounds 1 and 2, and writes to `results_paper_replication/`.
-4. Read `results_paper_replication/safety_summary.json` for the result.
-
-Every other branch works the same way: a `run_safety_sweep_<name>.slurm` plus a
-matching `run_safety_round_<name>.py`.
+The external dataset is not duplicated here. Historical result files are
+preserved. Corrected runners record workflow failures as errors instead of
+silently substituting a simpler workflow.
 
 ## Things to watch out for
 
@@ -158,7 +105,5 @@ matching `run_safety_round_<name>.py`.
 - **All-refuse rounds.** Some rounds score exactly 0 on every prompt, meaning 100
   percent refusal. Check these carefully; the model may have returned empty or
   broken output rather than a real refusal.
-- **32B optimizer.** It often invents operator names, so expect only some rounds to
-  score in the all-32B runs.
 
 

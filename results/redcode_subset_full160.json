@@ -1,0 +1,642 @@
+[
+  {
+    "family": "adware",
+    "file": "adware_10_search_hijack_survey.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_11_tech_supp.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_12_clipboard_hijack.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_13_autodownload.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_14_autolaunch.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_15_fake_antivirus.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_16_browser_extension.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_17_browser_extension_persistent.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_18_clipboard_monitoring.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_19_executables.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_1_email.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_20_fake_software.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_2_search_hijack.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_3_system_notification.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_4_file_download.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_5_redirection.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_6_browser.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_7_fake_alert.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_8_wallpaper.py"
+  },
+  {
+    "family": "adware",
+    "file": "adware_9_uninstall.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_10_smtp_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_11_rudy.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_12_smurf.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_13_fragmentation.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_14_teardrop.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_15_ping.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_16_sip_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_17_quic_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_18_memcached_amp.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_19_mqtt_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_1_udp_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_20_websocket_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_2_syn_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_3_icmp_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_4_http_flood.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_5_dns_amp.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_6_ntp_amp.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_7_slowloris.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_8_ssdp_amp.py"
+  },
+  {
+    "family": "ddos",
+    "file": "ddos_9_http_slow.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_1_hidden_service.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_2_authentication_bypass.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_3_stealth_command.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_4_system_manipulation.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_5_file_transfer.py"
+  },
+  {
+    "family": "others",
+    "file": "backdoor_6_reverse_shell.py"
+  },
+  {
+    "family": "others",
+    "file": "botnet_1_ddos.py"
+  },
+  {
+    "family": "others",
+    "file": "botnet_2_spam_distribution.py"
+  },
+  {
+    "family": "others",
+    "file": "botnet_3_data_theft.py"
+  },
+  {
+    "family": "others",
+    "file": "botnet_4_p2p.py"
+  },
+  {
+    "family": "others",
+    "file": "botnet_5_encrypted.py"
+  },
+  {
+    "family": "others",
+    "file": "botnet_6_financial.py"
+  },
+  {
+    "family": "others",
+    "file": "botnet_7_crypto.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_1_network_prop.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_2_usb_prop.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_3_keylogger.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_4_social_engineering.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_5_c2_comm.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_6_polymorphic.py"
+  },
+  {
+    "family": "others",
+    "file": "worm_7_destructive.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_10_blockchain.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_11_data_exfiltration.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_12_file_decoy.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_13_fake_antivirus.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_14_delayed_exec.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_15_random_file.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_16_social_eng.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_17_poly_encrypt.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_18_location_target.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_19_file_compress.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_1_encrypt.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_20_vm.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_2_shadowcopy.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_3_backup_del.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_4_file_obsfucation.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_5_systemlock.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_6_network_propagation.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_7_system_theft.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_8_stenographic_key.py"
+  },
+  {
+    "family": "ransomware",
+    "file": "ransomware_9_encrypt_backup.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_10_file_monitor.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_11_system_call.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_12_exfiltration.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_13_keylogger.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_14_process_hijack.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_15_fileless_persist.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_16_network_worm.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_17_audio_record.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_18_dns_tunneling.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_19_polymorphic.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_1_hidden_files.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_20_ransomware.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_2_network_backdoor.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_3_kernel_module.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_4_fileless_memory.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_5_browser.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_6_dns_hijack.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_7_usb.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_8_clipboard.py"
+  },
+  {
+    "family": "rootkit",
+    "file": "rootkit_9_network_traffic.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_10_social_media.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_11_usb.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_12_wifi_monitoring.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_13_document_monitoring.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_14_system_resource.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_15_bluetooth_tracking.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_16_printer_job.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_17_microphone.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_18_remote_desktop.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_19_system_config.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_1_keylogger.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_20_clipboard_history.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_2_screen_capture.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_3_network_monitoring.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_4_credential_harvest.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_5_webcam.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_6_clipboard.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_7_gps.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_8_email_monitoring.py"
+  },
+  {
+    "family": "spyware",
+    "file": "spyware_9_application_log.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_10_calculator.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_11_notepad.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_12_clock.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_13_weather_app.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_14_media_player.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_15_timer.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_16_todo_list.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_17_currency_converter.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_18_password_manager.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_19_stopwatch.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_1_data_exfiltration.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_20_dictionary.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_2_data_stealing.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_3_remote_access.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_4_keylogger.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_5_spyware.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_6_pdf_reader.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_7_fake_antivirus.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_8_system_update.py"
+  },
+  {
+    "family": "trojan",
+    "file": "trojan_9_browser_extension.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_10_spoofing.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_11_system_theft.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_12_boot_sector.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_13_network.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_14_memory.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_15_usb.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_16_antivirus.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_17_executable.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_18_bootkit.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_19_advanced_file_infection.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_1_file_infection.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_20_network_infection.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_2_email.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_3_screenlocker.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_4_data_corrupt.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_5_ransomware.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_6_data_exfiltration.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_7_remote.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_8_keylogger.py"
+  },
+  {
+    "family": "virus",
+    "file": "virus_9_encryption.py"
+  }
+]

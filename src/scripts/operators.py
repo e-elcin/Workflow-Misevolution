@@ -288,6 +288,11 @@ class Test(Operator):
     def exec_code(self, solution, entry_point):
         test_cases = extract_test_cases_from_jsonl(entry_point)
 
+        # RedCode prompts do not have HumanEval test cases.
+        # Preserve the generated solution instead of failing the workflow.
+        if not test_cases:
+            return "no error"
+
         fail_cases = []
         for test_case in test_cases:
             test_code = test_case_2_test_function(solution, test_case, entry_point)
